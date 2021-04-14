@@ -1,285 +1,37 @@
 <!doctype html>
 <html lang="ko">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="format-detection" content="telephone=no, address=no, email=no">
-    <title>광주새백성교회</title>
-    <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/favicon.png">
-    <link href="css/siiru.css" rel="stylesheet" type="text/css">
-    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/basic.css" rel="stylesheet" type="text/css">
-    <link href="css/layout.css" rel="stylesheet" type="text/css">
-    <link href="css/swiper.css" rel="stylesheet" type="text/css">
-    <link href="css/sub.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.ui.min.js"></script>
-    <script src="js/jquery.carouFredSel6.2.1.js"></script>
-    <script src="js/jquery.touchSwipe.js"></script>
-    <script src="js/jquery.scroltable.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/common.js"> </script>
-    <script src="js/main.js"> </script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web Design | nugaBox</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap">
+	<link rel="stylesheet" href="/css/scoredream.css" type="text/css" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/style.css" type="text/css" crossorigin="anonymous">
+	<style>
+		.title_wrap{ background:#38533C }
+	</style>
 </head>
-
 <body>
-    <div id="skiptoContent"><a class="quick_menu" href="#content_wrap">본문 바로가기</a></div>
-    <!-- header -->
-    <header id="header_area">
-        <div class="container">
-            <!--tnb 영역 시작 -->
-            <div class="tnb_wrap">
-                <div class="container">
-                    <a href="#"><img src="images/common/youtube-icon-30.png"> 교회 Youtube 채널</a>
-                    <a href="#" class="login">전체 메뉴</a>
-                    <a href="#" class="login">로그인</a>
-                </div>
-            </div>
-            <!--tnb 영역 끝 -->
-            <!--gnb 영역 시작 -->
-            <div class="gnb_wrap">
-                <div class="container">
-                    <!-- 로고 -->
-                    <h1 class="logo">
-                        <a href="#"><img src="images/common/logo.png" alt="대한예수교장로회 광주새백성교회 Gwangju New People Church"></a>
-                    </h1>
-                    <!-- 모바일메뉴 -->
-                    <nav class="m_gnb">
-                        <div class="m_login_box">
-                            <a href="#">로그인</a>
-                            <a href="#">사이트맵</a>
-                        </div>
-                        <div class="m_sns_box">
-                            <a href="#" title="인스타그램 바로가기 새창" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="#" title="페이스북 바로가기 새창" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" title="유튜브 바로가기 새창" target="_blank"><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="m_sch_box">
-                            <form action="">
-                                <fieldset>
-                                    <legend>전체검색</legend>
-                                    <label for="m_sch_all" class="blind">검색어입력</label>
-                                    <input type="text" class="m_sch_all" id="m_sch_all">
-                                    <input type="submit" value="검색" class="m_btn_sch">
-                                </fieldset>
-                            </form>
-                        </div>
-                        <ul>
-                            <li class="has_sub"><a href="#">교회 소개</a>
-                                <ul>
-                                    <li><a href="#">환영합니다</a></li>
-                                    <li><a href="#">비전과 목표</a></li>
-                                    <li><a href="#">예배 시간 안내</a></li>
-                                    <li><a href="#">섬기는 사람들</a></li>
-                                    <li><a href="#">오시는 길</a></li>
-                                </ul>
-                            </li>
-                            <li class="has_sub"><a href="#">목양 · 사역</a>
-                                <ul>
-                                    <li><a href="#">선교 · 구제</a></li>
-                                    <li><a href="#">자치기관</a></li>
-                                    <li><a href="#">교리 강해</a></li>
-                                    <li><a href="#">자료실</a></li>
-                                </ul>
-                            </li>
-                            <li class="has_sub"><a href="#">설교 영상</a>
-                            </li>
-                            <li class="has_sub"><a href="#">공동체 소식</a>
-                                <ul>
-                                    <li><a href="#">공지사항</a></li>
-                                    <li><a href="#">자치기관</a></li>
-                                    <li><a href="#">금주의 주보</a></li>
-                                    <li><a href="#"><i class='fa fa-external-link'></i> 공동체 앨범</a></li>
-                                    <li><a href="#"><i class='fa fa-external-link'></i> 공동체 밴드</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- 모바일메뉴 열기버튼 -->
-                    <a href="#" class="m_menu"><span>모바일메뉴</span></a>
-                    <!-- 메뉴열림 배경 -->
-                    <div class="drawer"></div>
-                    <!-- PC메뉴 -->
-                    <nav class="gnb">
-                        <ul>
-                            <li><a href="#">교회 소개</a>
-                                <ul>
-                                    <li><a href="#">환영합니다</a></li>
-                                    <li><a href="#">비전과 목표</a></li>
-                                    <li><a href="#">예배 시간 안내</a></li>
-                                    <li><a href="#">섬기는 사람들</a></li>
-                                    <li><a href="#">오시는 길</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">목양 · 사역</a>
-                                <ul>
-                                    <li><a href="#">선교 · 구제</a></li>
-                                    <li><a href="#">자치기관</a></li>
-                                    <li><a href="#">교리 강해</a></li>
-                                    <li><a href="#">자료실</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">설교 영상</a>
-                            </li>
-                            <li><a href="#">공동체 소식</a>
-                                <ul>
-                                    <li><a href="#">공지사항</a></li>
-                                    <li><a href="#">자치기관</a></li>
-                                    <li><a href="#">금주의 주보</a></li>
-                                    <li><a href="#"><i class='fa fa-external-link'></i> 공동체 앨범</a></li>
-                                    <li><a href="#"><i class='fa fa-external-link'></i> 공동체 밴드</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <!-- gnb 영역 끝 -->
-        </div>
-    </header>
-    <!-- header end-->
-    <!-- 메인콘텐츠 시작 -->
-    <section id="main_con_area">
-        <!--비주얼영역 시작-->
-        <div class="visual_area ">
-            <ul class="visual_slide">
-                <li>
-                    <a href="#" class="container exp_box">
-                        <h3>건강한 교회! 확실한 구원! <br>멋있는 신앙!</h3>
-                        <p>어서오세요, 기다리고 있었습니다<br>예수님의 형상을 본받는 올바른 교회,<br class="m_br"> 광주새백성교회입니다</p>
-                    </a>
-                    <div class="bg_visual visual_pc" style="background-image: url(images/main/main_visual_01.png)"></div>
-                    <div class="bg_visual visual_mobile" style="background-image: url(images/main/main_visual_m01.png)"></div>
-                </li>
-                <li>
-                    <a href="#" class="container exp_box">
-                        <h3>바른 신학, 바른 교회, <br>바른 생활</h3>
-                        <p>올바른 개혁주의 신학에 근거하여<br class="m_br">  그리스도인의 바른 자세와 <br class="m_br">신앙 인격 형성을 추구합니다</p>
-                    </a>
-                    <div class="bg_visual visual_pc" style="background-image: url(images/main/main_visual_02.png)"></div>
-                    <div class="bg_visual visual_mobile" style="background-image: url(images/main/main_visual_m02.png)"></div>
-                </li>
-            </ul>
-            <div class="pager_wrap">
-                <a href="#" class="pause1" title="멈춤"><i class="far fa-pause-circle"></i></a>
-                <div id="pager1"></div>
-            </div>
-        </div>
-        <div class="news_area_wrap">
-            <div class="container">
-                <div class="sec">
-                    <div class="box_area box_area01">
-                        <div class="box_weekly box_shadow">
-                            <h2>환영합니다</h2>
-                            <div class="box_weekly_content">
-                                <div class="item_intro">
-                                    <p>만남은 그 사람의 인생을 좌우합니다.<br>진리 되신 예수 그리스도를 진심으로 만나는 것은<br>세상 그 무엇보다 값진 경험입니다.<br><span>광주새백성교회</span>는 값진 행복을 함께 나누는<br>좋은 이웃으로 당신을 늘 맞이합니다.</p>
-                                </div>
-                                <div class="item_time">
-                                    <h4>예배시간</h4>
-                                    <ul>
-                                        <li><span>주일낮예배</span>주일 오전 11시</li>
-                                        <li><span>주일찬양예배</span>주일 오후 1시 30분</li>
-                                        <li><span>수요일밤예배</span>수요일 저녁 8시</li>
-                                        <li><span>새벽기도회</span>24시간 기도운동<small> (6.1 ~ 8.31)</small></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box_sermon box_shadow">
-                            <h2>설교 영상</h2>
-                            <div class="box_sermon_content">
-                                <div class="swiper-container sermon_list">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <a class="ser_img" href="#"><img src="https://img.youtube.com/vi/Z2Agfym1PME/maxresdefault.jpg" alt="시험을 통과해야 역사가 일어난다" title=""></a>
-                                            <ul>
-                                                <li class="ser_desc">마태복음 4장 1~11절</li>
-                                                <li class="ser_title"><a href="#">시험을 통과해야 역사가 일어난다</a></li>
-                                                <li class="ser_date"><span>2020년 8월 30일</span>장 실 목사</li>
-                                            </ul>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="ser_img" href="#"><img src="https://img.youtube.com/vi/ZHS6WjlvhS8/maxresdefault.jpg" alt="신앙의 추상화를 걷어내라" title=""></a>
-                                            <ul>
-                                                <li class="ser_desc">욥기 42장 1~6절</li>
-                                                <li class="ser_title"><a href="#">신앙의 추상화를 걷어내라</a></li>
-                                                <li class="ser_date"><span>2020년 8월 23일</span>장 실 목사</li>
-                                            </ul>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="ser_img" href="#"><img src="https://img.youtube.com/vi/fWzpL4dKmPE/maxresdefault.jpg" alt="고난에 응답하라" title=""></a>
-                                            <ul>
-                                                <li class="ser_desc">로마서 5장 3~6절</li>
-                                                <li class="ser_title"><a href="#">고난에 응답하라</a></li>
-                                                <li class="ser_date"><span>2020년 8월 16일</span>장 실 목사</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sermon_paging swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box_area box_area02">
-                        <div class="box_main box_news box_shadow">
-                            <h2 class="box_title">교회 소식</h2>
-                            <ul>
-                                <li><span>2020-07-11</span><a href="#">전자출입명부 개인 QR코드 발급 안내</a></li>
-                                <li><span>2020-08-29</span><a href="#">코로나19 관련 당회 공지사항 (8월 다섯째주)</a></li>
-                                <li><span>2020-07-04</span><a href="#">코로나19 관련 당회 공지사항 (7월 첫째주)</a></li>
-                                <li><span>2020-05-09</span><a href="#">코로나19 관련 당회 공지사항 (5월 둘째주)</a></li>
-                                <li><span>2020-04-25</span><a href="#">코로나19 관련 당회 공지사항 (4월 넷째주)</a></li>
-                            </ul>
-                        </div>
-                        <div class="box_desc clearfix">
-                            <div class="item_desc item_desc01 box_shadow"><span>금주의 주보</span><a href="#">바로가기</a></div>
-                            <div class="item_desc item_desc02 box_shadow"><span>유튜브 채널</span><a href="#">바로가기</a></div>
-                            <div class="item_desc item_desc03 box_shadow"><span>공동체 앨범</span><a href="#">바로가기</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--메인콘텐츠 끝 -->
-    <!--footer start-->
-    <footer id="footer_area">
-        <div class="container">
-            <h1 class="logo_bottom">
-                <a href="/"><img src="images/common/logo_footer.png" alt="대한예수교장로회(합동) 광주새백성교회"></a>
-            </h1>
-            <ul class="bottom_menu">
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">이메일무단수집거부</a></li>
-            </ul>
-            <div class="telinfo">
-                <p><a href="mailto:newpeoplech@naver.com">newpeoplech@naver.com</a> | <a href="tel:062-515-0675">TEL. 062-515-0675</a></p>
-            </div>
-            <div class="address">
-                <p>[61111] 광주광역시 북구 저불로 23<span class="addInfo">, 2~3층 (용봉동, 모아미래도아파트 상가동)</span><span class="addInfoM"> (용봉동, 모아미래도APT 상가동)</span></p>
-            </div>
-            <div class="copyright">
-                <p>Copyright ⓒ <script>document.write(new Date().getFullYear());</script> Gwangju New People Church. All Rights Reserved.</p>
-            </div>            
-            <div class="go_link_wrap">
-                <a href="#" class="go_link">관련기관 바로가기</a>
-                <i class="fas fa-angle-up"></i>
-                <ul class="go_link_list">
-                    <li><a href="#">대한예수교장로회(합동) 총회</a></li>
-                    <li><a href="#">총신대학교</a></li>
-                    <li><a href="#">광신대학교</a></li>
-                    <li><a href="#">호남노회</a></li>
-                    <li><a href="#">개혁신학연구회</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <!--footer end-->
+	<div class="title_wrap">
+		<a href="/"><h1 class="title">NUGABOX</h1></a>
+		<h3 class="subtitle site">광주새백성교회 홈페이지</h3>
+	</div>
+	<div class="content">
+		<ul>
+			<li><a href="main.html">메인 페이지</a></li>
+			<li><a href="sub.html">서브 페이지</a></li>
+			<li><a href="sitemap.html">사이트맵</a></li>
+		</ul>
+		<a class="btn_before" href="/">앞으로</a>
+	</div>
+	<footer>
+		Copyright <script>document.write(new Date().getFullYear());</script> NUGABOX. All rights reserved.
+	</footer>
+	<script>
+		document.oncontextmenu=function(){return false;} // 우클릭 방지
+		document.onselectstart=function(){return false;} // 드래그 방지
+		document.ondragstart=function(){return false;} // 선택 방지
+	</script>
 </body>
-
 </html>
