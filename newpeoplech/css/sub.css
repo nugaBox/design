@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/* 설교영상 */
+#bo_v_info {padding:25px 40px;margin:30px 0 0;color:#625d5e;font-size: 20px;font-weight: 500;}
+#bo_v_info:after {display:block;visibility:hidden;clear:both;content:""}
+#bo_v_info h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#bo_v_info .bo_v_user{line-height: 35px}
+.bo_v_user {margin-bottom:0px; text-align:center;}
+.bo_v_user span{display: inline-block;margin:0 30px 0 0;}
+.bo_v_user strong {display:inline-block;margin:0 10px 0 0;font-weight:500;color:#a2a1a1}

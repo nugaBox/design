@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+/* 페이지 준비중 */
+.contentsIng { padding: 15px 15px 30px; background: #fff; border: #e7e7e7 solid 1px; margin-bottom: 30px; }
+.contentsIng .siiru-notfound { max-width: 400px; margin: 0 auto; padding: 100px 0; text-align: center; color: #676a6c;}
