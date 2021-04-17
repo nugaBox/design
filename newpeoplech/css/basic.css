@@ -1,5 +1,9 @@
-@charset "utf-8";
+/*
+ * 2020.07.11 Nuga Jang
+ */
+ @charset "utf-8";
 
+/*** Fonts ***/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
 @font-face {
     font-family: 'Noto Sans Korean';
@@ -11,7 +15,6 @@
     url(../fonts/NotoSansKR-Thin-Hestia.woff) format('woff'),
     url(../fonts/NotoSansKR-Thin-Hestia.otf) format('opentype');
 }
-
 @font-face {
     font-family: 'Noto Sans Korean';
     font-style: normal;
@@ -22,7 +25,6 @@
     url(../fonts/NotoSansKR-Light-Hestia.woff) format('woff'),
     url(../fonts/NotoSansKR-Light-Hestia.otf) format('opentype');
 }
-
 @font-face {
     font-family: 'Noto Sans Korean';
     font-style: normal;
@@ -33,7 +35,6 @@
     url(../fonts/NotoSansKR-DemiLight-Hestia.woff) format('woff'),
     url(../fonts/NotoSansKR-DemiLight-Hestia.otf) format('opentype');
 }
-
 @font-face {
     font-family: 'Noto Sans Korean';
     font-style: normal;
@@ -44,7 +45,6 @@
     url(../fonts/NotoSansKR-Regular-Hestia.woff) format('woff'),
     url(../fonts/NotoSansKR-Regular-Hestia.otf) format('opentype');
 }
-
 @font-face {
     font-family: 'Noto Sans Korean';
     font-style: normal;
@@ -55,7 +55,6 @@
     url(../fonts/NotoSansKR-Medium-Hestia.woff) format('woff'),
     url(../fonts/NotoSansKR-Medium-Hestia.otf) format('opentype');
 }
-
 @font-face {
     font-family: 'Noto Sans Korean';
     font-style: normal;
@@ -66,7 +65,6 @@
     url(../fonts/NotoSansKR-Bold-Hestia.woff) format('woff'),
     url(../fonts/NotoSansKR-Bold-Hestia.otf) format('opentype');
 }
-
 @font-face {
     font-family: 'Noto Sans Korean';
     font-style: normal;
@@ -77,20 +75,79 @@
     url(../fonts/NotoSansKR-Black-Hestia.woff) format('woff'),
     url(../fonts/NotoSansKR-Black-Hestia.otf) format('opentype');
 }
+/* 100 - Thin */
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+/* 200 - ExtraLight */
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+/* 300 - Light */
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-3Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+/* 400 - Regular */
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* 500 - Medium */
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+/* 600 - Bold */
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+/* 700 - ExtraBold */
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+/* 800 - Heavy */
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+/* 900 - Black */
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-9Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
 
-
+/*** Reset ***/
 html,body{ position:relative; font-family:'Noto Sans Korean', sans-serif; font-size:16px; font-weight:300; -webkit-text-size-adjust: 100%; }
-
-/*reset*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; vertical-align:baseline; box-sizing: border-box;  }
-
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; vertical-align:baseline; box-sizing: border-box; }
 body { line-height:1 }
 ol, ul { list-style:none; padding:0; margin:0 }
 blockquote, q { quotes:none }
 blockquote:before, blockquote:after, q:before, q:after { content:''; content:none }
 table { border-collapse:collapse; border-spacing:0 }
 a { text-decoration:none; color:#666 }
-
 fieldset { min-width: 0; padding: 0; margin: 0; border: 0; }
 input[type="text"],input[type="submit"],input[type="button"],textarea,select,select option{ font-family:'Noto Sans Korean', sans-serif;  box-sizing: border-box; }
 input[type="search"] { box-sizing: border-box; }
@@ -101,15 +158,15 @@ select[multiple], select[size] { height: auto; }
 input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus { outline: thin dotted; outline: 5px auto; outline-offset: -2px; }
 textarea { height: auto !important; box-sizing: border-box; }
 
-/*reset end*/
+/*** Components ***/
 
-/* form */
+/* Form */
 .form-style { display: inline-block; width:100%; height: 40px; padding: 6px 12px; font-family: 'Noto Sans Korean', sans-serif; font-size: 14px; font-weight:300; vertical-align: middle; line-height: 1.42857143; color: #555; background-color: #fff; background-image: none; border: 1px solid #e5e5e5; box-sizing:border-box;   }
 .form-style:focus { border-color: #66afe9; outline: 0; }
 .form-style:disabled{ background:#fefefe; }
 .form-style.wauto{ width:auto}
 
-/*버튼셋*/
+/* Button */
 .btn_set{ padding:15px 0; text-align:center; overflow:hidden}
 .btn {font-family:'Noto Sans Korean', sans-serif;  display: inline-block; padding: 10px; margin-bottom: 0; font-size: 14px; font-weight: normal; text-align: center; white-space: nowrap; vertical-align: middle;  cursor: pointer; background-image: none; border: 1px solid #393939; color:#313131 }
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus { outline: thin dotted; outline: 5px auto; outline-offset: -2px; }
@@ -117,23 +174,23 @@ textarea { height: auto !important; box-sizing: border-box; }
 .btn:active, .btn.active { background-image: none; outline: 0; box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125); }
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn { cursor: not-allowed; box-shadow: none; opacity: .65; }
 
-
-/*check_box*/
+/* Check Box */
 input[type='checkbox'],input[type='radio']{ margin-right:15px; width:20px; height:20px; opacity:0; position:absolute;  cursor:pointer}
-input[type='checkbox'] + label {display:inline-block;  background:url(../img/sub/icon_checked.png) 0px 0px  no-repeat; margin:5px;  font-size:16px;  height:20px; line-height:1;  padding-left:30px; cursor:pointer; background-size:20px; margin:10px 10px 10px 0; ; text-align:left; }
-input[type='radio'] + label {display:inline-block;  background:url(../img/sub/icon_radio.png) 0px 0px  no-repeat; margin:5px; font-size:18px;  height:20px; line-height:1;  padding-left:30px; cursor:pointer; background-size:20px; text-align:left;  }
+input[type='checkbox'] + label {display:inline-block;  background:url(../images/sub/icon_checked.png) 0px 0px  no-repeat; margin:5px;  font-size:16px;  height:20px; line-height:1;  padding-left:30px; cursor:pointer; background-size:20px; margin:10px 10px 10px 0; ; text-align:left; }
+input[type='radio'] + label {display:inline-block;  background:url(../images/sub/icon_radio.png) 0px 0px  no-repeat; margin:5px; font-size:18px;  height:20px; line-height:1;  padding-left:30px; cursor:pointer; background-size:20px; text-align:left;  }
 input[type='checkbox']:checked + label{ background-position: 0px -20px}
 input[type='radio']:checked + label{ background-position: 0px -20px}
-@media screen and (min-width:769px){
-input[type='checkbox'] + label,input[type='radio'] + label {display:inline-block; }
+@media screen and (min-width:768px){
+    input[type='checkbox'] + label,input[type='radio'] + label {display:inline-block; }
 }
 
-.select_custom{ background:#fff url(../img/sub/arrow_select.png) right center no-repeat; padding:0 30px 0 10px; -webkit-appearance:none; -moz-appearance:none; }
+/* Select */
+.select_custom{ background:#fff url(../images/sub/arrow_select.png) right center no-repeat; padding:0 30px 0 10px; -webkit-appearance:none; -moz-appearance:none; }
 .select_custom::-ms-expand{ display:none }
 
-/*basic_layout*/
+/*** Basic Style ***/
 
-/* Padding Style */
+/* Padding  */
 .pt50 {padding-top:50px !important}
 .pt45 {padding-top:45px !important}
 .pt40 {padding-top:40px !important}
@@ -182,7 +239,7 @@ input[type='checkbox'] + label,input[type='radio'] + label {display:inline-block
 .pr5 {padding-right:5px !important}
 .pr0 {padding-right:0px !important}
 
-/* margin Style */
+/* Margin */
 .mt100 {margin-top:100px !important}
 .mt75 {margin-top:75px !important}
 .mt70 {margin-top:70px !important}
@@ -245,6 +302,7 @@ input[type='checkbox'] + label,input[type='radio'] + label {display:inline-block
 .mr5 {margin-right:5px !important}
 .mr0 {margin-right:0px !important}
 
+/* None */
 .margin_none{ margin:0 !important}
 
 .mt_none{ margin-top:0 !important}
@@ -262,6 +320,7 @@ input[type='checkbox'] + label,input[type='radio'] + label {display:inline-block
 .bbr{border-right:0!important;}
 .bbl{border-left:0!important;}
 
+/* Align */
 .clr{ clear:both !important}
 .fl{ float:left  !important}
 .fr{float:right  !important}
