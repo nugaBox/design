@@ -33,8 +33,9 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 .gnb_wrap .m_gnb .m_login_box{ display:table; width:100%; border-top:#000 solid 1px;   border-bottom:#000 solid 1px; background:#282828; }
 .gnb_wrap .m_gnb .m_login_box > a{ display:table-cell; width:33.333%; color:#fff; padding:15px 0; border-right:#000 solid 1px;  font-size:0.75em; font-weight:bold; text-align:center }
 .gnb_wrap .m_gnb .m_login_box > a:last-child{ border-right:0 ;}
-.gnb_wrap .m_gnb .m_sns_box{  width:100%;  border-bottom:#000 solid 1px; background:#282828; text-align: right }
-.gnb_wrap .m_gnb .m_sns_box > a{ display:inline-block; color:#fff; padding:15px 0; margin:0 14px;  font-size:1.2rem; font-weight:bold; text-align:center }
+.gnb_wrap .m_gnb .m_sns_box{ width:100%;  border-bottom:#000 solid 1px; background:#282828; text-align: center; }
+.gnb_wrap .m_gnb .m_sns_box img { width: 20px; position: relative; top: 2px; left: -8px; }
+.gnb_wrap .m_gnb .m_sns_box a{ display:inline-block; color:#fff; padding:15px 0; margin:0 14px;  font-size:16px; font-weight:bold; text-align:center }
 .gnb_wrap .m_gnb > ul{ padding:0 15px; background:#f5f5f5; border-top:#d1d1d1 solid 1px;  overflow-y:auto  }
 .gnb_wrap .m_gnb > ul > li:last-child > a{ border-bottom:0; }
 .gnb_wrap .m_gnb > ul > li > a{ display:block; font-size:16px; font-weight:bold; padding:22px 15px 18px 15px; border-bottom:#d1d1d1 solid 1px;  }
@@ -115,6 +116,9 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 .go_link_wrap .go_link_list{ display:none; position:absolute; width:100%; bottom:40px; border:#fff solid 1px; background:#282828; padding:10px; border-radius: 10px;  }
 .go_link_wrap i.revers{ transform:rotate(-180deg) translateY(50%); transition:0.3s; }
 .go_link_wrap .go_link_list li a{ display:block; padding:5px; text-align: left; color:#fff; font-size:14px; }
+@media all and ( min-width:1024px){	
+	.go_link_wrap{ bottom:-60px }
+}
 @media all and ( min-width:1200px){	
 	#footer_area{ padding-top:50px; padding-bottom:50px; }
 	#footer_area .container{ position:relative; }
@@ -133,7 +137,7 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 	.address p span.addInfo{ display: inline-block; }
 	.address p span.addInfoM{ display: none; }
 	.copyright p{ padding:0; text-align: left; font-size:14px; letter-spacing: normal;}
-	.go_link_wrap{ left:auto; right:0; transform: none }
+	.go_link_wrap{ left:auto; right:0; bottom:0; transform: none }
 }
 
 /*** Sub Layout ***/
