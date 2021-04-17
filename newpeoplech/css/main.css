@@ -1,5 +1,5 @@
 /*
- * 2020.07.11 Nuga Jang
+ * 2021.04.17 Nuga Jang
  */
 @charset "utf-8";
 #main_con_area{ position:relative; }
@@ -153,8 +153,8 @@
 #box_sermon .sermon_list .ser_img img{width:95%; border-radius: 0.3em;}
 #box_sermon .sermon_list ul {text-align: center;}
 #box_sermon .sermon_list ul .ser_btn{margin:10px 0 0; color:#848484; font-size: 13px; letter-spacing:-0.025em;font-weight: 200;}
-#box_sermon .sermon_list ul .ser_desc{margin-top:10px;}
-#box_sermon .sermon_list ul .ser_title a{color:#362c2c;display: inline-block;height:54px;margin:5px 0 10px;font-size: 22px;font-weight:bold;line-height: 28px;overflow: hidden;text-overflow: ellipsis;-ms-text-overflow: ellipsis;-webkit-text-overflow: ellipsis;display: -webkit-box;display: -ms-box; -webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+#box_sermon .sermon_list ul .ser_desc{font-weight:100; margin-top:10px;}
+#box_sermon .sermon_list ul .ser_title a{color:#362c2c;display: inline-block;height:54px;margin:5px 0 10px;font-size: 22px;font-weight:bold;line-height: 28px;overflow: hidden;text-overflow: ellipsis;}
 #box_sermon .sermon_list ul .ser_title a:hover{text-decoration: underline;}
 #box_sermon .sermon_list ul .ser_date{color:#362c2c;font-size: 16px;letter-spacing:-0.025em;font-weight:500;}
 #box_sermon .sermon_list ul .ser_date span{display: inline-block;margin:0 13px 0 0;color:#4899F7}
