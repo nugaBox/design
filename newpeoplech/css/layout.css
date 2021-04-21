@@ -14,7 +14,7 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 #back-btn { display: block; position: fixed; bottom: 0; right: 30px; padding: 10px; border-radius: 4px 4px 0 0; background-color: #666; color: #fff; opacity: .8; cursor: pointer; font-weight: 500; font-size: 12pt; z-index: 9999; }
 #back-btn:hover{opacity: 1; transition:all .2s;}
 /*** Header ***/
-#header_area{ position:absolute; width:100%; z-index: 1000; }
+#header_area{ position:absolute; width:100%; z-index: 999; }
 #header_area > .container{ padding:20px 0 30px;  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0.8) 100%); }
 #header_area.sub_header_area{ position: relative;  background:#282828 url(../images/common/sub-header-area.jpg); background-position:center 55%; background-repeat: no-repeat;} 
 .tnb_wrap{ display:none; }
