@@ -174,7 +174,7 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 .sub_menu ul li i{ position:absolute; right:20px; top:13px; font-size:1.2rem; color:#fff;  } 
 .content_top{ margin:0 15px; padding:30px 0 15px; }
 .content_top:after{ display:block; clear: both; content:""}
-.content_top h3{ font-size:1.8rem; font-weight:500; text-align: center; }
+.content_top h3{ font-size:2rem; font-weight:500; text-align: center; }
 .content_top h3 span{ padding: 0px 7px; box-shadow: inset 0 -13px 0 #B4E074;}
 .breadcrumb{ overflow:hidden }
 .breadcrumb li{ float:left; font-size:12px; line-height: 12px; font-family: 'Noto Sans Korean';  }
