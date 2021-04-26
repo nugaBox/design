@@ -11,8 +11,8 @@
 .visual_area .visual_slide li .visual_pc{ display:none } 
 .visual_area .visual_slide li .visual_mobile{ display:block  } 
 .visual_area .visual_slide li a{ position:relative; display:block; z-index: 100 }
-.visual_area .visual_slide li a h3{ color:#fff; font-size:1.6rem; margin-bottom:40px; line-height:1.3em; text-align:center; text-shadow: #000 1px 1px 3px;}
-.visual_area .visual_slide li a p{ color:rgba(255,255,255,0.8); line-height: 1.5; font-size:1.1rem; margin-bottom:1.2rem; text-align:center; font-weight: 400; text-shadow: #000 1px 1px 3px; }
+.visual_area .visual_slide li a h3{ color:#fff; font-size:1.5rem; margin-bottom:40px; line-height:1.3em; text-align:center; text-shadow: #000 1px 1px 3px;}
+.visual_area .visual_slide li a p{ color:rgba(255,255,255,0.8); line-height: 1.5; font-size:1rem; margin-bottom:1.2rem; text-align:center; font-weight: 400; text-shadow: #000 1px 1px 3px; }
 .visual_area .visual_slide li a button{ color:#fff; border:solid #fff 1px; background-color:rgba(0, 0, 255, 0); font-size: 1.2em; border-radius: 5em; margin: 10px; padding: 15px 30px; box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 100px 80px rgba(0, 0, 0, 0.12);}
 .visual_area .visual_slide li a button:hover{ background-color:rgba(255, 255, 255, 0.3); }
 .visual_slide .info_box{ position:relative;  transform:translateX(50px); margin-bottom:80px; opacity: 0; z-index: 100 }
@@ -41,7 +41,7 @@
     .visual_area .visual_slide li{ padding:0 80px 0; height:475px; overflow:hidden  }
     .visual_area .visual_slide li .visual_pc{ display:block  } 
     .visual_area .visual_slide li .visual_mobile{ display:none  } 
-    .visual_area .visual_slide li a h3{ font-size:2.3rem; }
+    .visual_area .visual_slide li a h3{ font-size:2.2rem; }
     .visual_area .visual_slide li a h3 br{ display: none; }
     .visual_slide .exp_box{ margin-top:180px; margin-bottom:140px;  }
     .visual_slide .info_box{ float:right; width:40%; margin-top:195px; }
@@ -88,8 +88,8 @@
 .box_area_wrap .box_area {width:100%;}
 .box_area_wrap .box_area box {width:100%;}
 .box_area_wrap .box_shadow{border-radius: 1.5em;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 100px 80px rgba(0, 0, 0, 0.12);}
-.box_area_wrap .box_area .box .box_title { width:100%; display:inline-block; }
-.box_area_wrap .box_area .box .box_title h2 { color:#000; font-size:1.4rem; float:left; margin-bottom:20px;}
+.box_area_wrap .box_area .box .box_title { width:100%; display:inline-block; padding-top: 10px;}
+.box_area_wrap .box_area .box .box_title h2 { color:#000; font-size:1.6rem; float:left; margin-bottom:20px;}
 .box_area_wrap .box_area .box .box_title h2:before{ display:inline-block;  width:20px; height:3px; background:#0a9aff; content:""; vertical-align: 7px; margin-right:10px;   }
 .box_area_wrap .box_area .box .box_title .more { float:right; margin-top:5px;}
 @media all and (min-width:375px){
@@ -101,6 +101,7 @@
     .box_area_wrap{ padding:20px 20px 50px 20px;}
     .box_area_wrap > .container { width:728px}
     .box_area_wrap .box_area {float: left; margin:0 auto;}
+    .box_area_wrap .box_area .box .box_title { padding-top:0; }
     .box_area_wrap #box_area01{width:100%;max-width:100%;margin: 0;}
     .box_area_wrap #box_area02{width:100%;max-width:100%;margin-top:10px;}
 }
@@ -122,11 +123,11 @@
 #box_welcome .item_intro p{color:#999;line-height: 1.8em; font-size:0.9rem; letter-spacing: -0.5px;}
 #box_welcome .item_intro span{color:#000;font-weight:bold; padding: 0px 1px; box-shadow: inset 0 -7px 0 #B4E074;}
 #box_welcome .item_time {text-align: center}
-#box_welcome .item_time h4{display:inline-block;width:150px;height:50px;padding:12px 0 0;border-radius:2em;font-size:20px;color:#4899F7;font-weight: 600;box-sizing: border-box;border:3px solid #4899F7;text-align: center}
+#box_welcome .item_time h4{display:inline-block;width:150px;height:45px;padding:12px 0 0;border-radius:2em;font-size:20px;color:#4899F7;font-weight: 600;box-sizing: border-box;border:3px solid #4899F7;text-align: center}
 #box_welcome .item_time h5{float:left;display: inline-block;width:90px;height:90px;padding:33px 0 0;border-radius: 50%;text-align: center;font-size: 18px;color:#4899F7;font-weight: 600;box-sizing: border-box;letter-spacing: -0.05em;border:3px solid #4899F7}
 #box_welcome .item_time ul{width:100%;margin-top:20px;padding:0; text-align: left;}
-#box_welcome .item_time ul li{color:#000;font-size: 14px;line-height: 25px;font-weight: 500;margin-bottom: 10px;}
-#box_welcome .item_time ul li span{display:inline-block; font-size:16px; text-align:center; width:115px;margin-right:6px;background-color: #4899F7;color:#fff;padding:1px;border-radius: 0.2em;}
+#box_welcome .item_time ul li{color:#000;font-size: 15px;line-height: 25px;font-weight: 500;letter-spacing: -1px;margin-bottom: 10px;}
+#box_welcome .item_time ul li span{display:inline-block; font-size:15.5px; letter-spacing: -0.5px;text-align:center; width:115px;margin-right:10px;background-color: #4899F7;color:#fff;padding:1px 0;border-radius: 0.2em;}
 #box_welcome .item_time ul li small{font-weight: 200}
 @media all and ( min-width:375px){
     #box_welcome { padding:20px 25px; }
@@ -138,13 +139,11 @@
     #box_welcome {float:left; width:48.25%; height:460px; margin:0 20px 0 0; padding:30px; background: #fff;overflow: hidden; }
     #box_welcome .week_img{max-width: 185px;}
     #box_welcome .week_title{font-size: 20px;}
-    #box_welcome .item_intro p{font-size:17px;}
-    #box_welcome .item_time ul li{font-size: 17px;}
+    #box_welcome .item_intro p{font-size: 16px; letter-spacing: -0.5px;}
     #box_welcome .item_time ul li span{margin-right:10px;}
 }
 @media screen and (min-width: 1200px){
     #box_welcome {padding:30px; width:48%;}
-    #box_welcome .item_time ul li{font-size: 18px;}
 }
 
 /*** 설교 영상 박스 ***/
@@ -155,7 +154,7 @@
 #box_sermon .sermon_list ul {text-align: center;}
 #box_sermon .sermon_list ul .ser_btn{margin:10px 0 0; color:#848484; font-size: 13px; letter-spacing:-0.025em;font-weight: 200;}
 #box_sermon .sermon_list ul .ser_desc{font-weight:100; margin-top:10px;}
-#box_sermon .sermon_list ul .ser_title a{color:#362c2c;display: inline-block;height:54px;margin:5px 0 10px;font-size: 22px;font-weight:bold;line-height: 28px;overflow: hidden;text-overflow: ellipsis;}
+#box_sermon .sermon_list ul .ser_title a{color:#362c2c;display: inline-block;height:54px;margin:5px 0 10px;font-size: 22px;font-weight:500;line-height: 28px;overflow: hidden;text-overflow: ellipsis;}
 #box_sermon .sermon_list ul .ser_title a:hover{text-decoration: underline;}
 #box_sermon .sermon_list ul .ser_date{color:#362c2c;font-size: 16px;letter-spacing:-0.025em;font-weight:500;}
 #box_sermon .sermon_list ul .ser_date span{display: inline-block;margin:0 13px 0 0;color:#4899F7}
@@ -179,26 +178,28 @@
 
 /*** 교회 소식 박스 ***/
 #box_news {float:left; margin:0 3.5% 0 0; padding:20px 25px; margin:15px 10px 30px 10px; background: #fff; overflow:hidden;}
-#box_news li{font-size: 13.5px;padding:10px 0 11px;line-height: 1.3;border-bottom: 1px solid #cccabe;letter-spacing: -0.025em;font-weight: 300;}
-#box_news li:first-child{padding:0 0 11px 0;}
-#box_news li:last-child{border-bottom: 0;}
-#box_news li a{display:inline-block;width:70%;color:#362c2c;vertical-align: middle;;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
-#box_news li span{display: inline-block;width:30%;color:#0b9afe;vertical-align: middle;font-weight:500;}
-#box_news li:hover a,#box_news li:hover span{font-weight:500;}
+#box_news ul li{font-size: 13.5px;padding:10px 0 11px;line-height: 1.3;border-bottom: 1px solid #cccabe;letter-spacing: -0.025em;font-weight: 300;}
+#box_news ul li:first-child{padding:0 0 11px 0;}
+#box_news ul li:last-child{border-bottom: 0;}
+#box_news ul li a{display:inline-block;width:70%;color:#362c2c;vertical-align: middle;;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+#box_news ul li span{display: inline-block;width:30%;color:#0b9afe;vertical-align: middle;font-weight:500;letter-spacing: -1px;font-size: 0.98em;}
+#box_news ul li:hover a,#box_news li:hover span{font-weight:500;}
 @media all and ( min-width:375px){
-    #box_news li a{ width: 73%;}
-    #box_news li span{width: 27%;}
+    #box_news ul li a{ width: 73%;}
+    #box_news ul li span{width: 27%;}
 }
 @media screen and (min-width: 768px) {
     #box_news { float:left; width:540px; height:345px; padding:30px; margin:20px 0 0 0;}
-    #box_news li {padding:10px 0 14px;font-size: 16px;}
-    #box_news li span{width:22%;}
-    #box_news li a{width:78%}
+    #box_news ul {padding-top:10px;}
+    #box_news ul li {padding:10px 0 14px;font-size: 16px;}
+    #box_news ul li span{width:22%;}
+    #box_news ul li a{width:78%}
 }
 @media screen and (min-width: 1200px){
     #box_news { width:100%; height: 335px; padding:30px; margin:0;}
-    #box_news li span{width:24%; font-size:14px;}
-    #box_news li a{width:75%; font-size: 17px;}
+    #box_news ul {padding-top:20px;}
+    #box_news ul li span{width:24%; font-size:14px;}
+    #box_news ul li a{width:75%; font-size: 15px;}
 }
 
 /*** 버튼 박스 ***/
