@@ -35,7 +35,7 @@
 #pager1 a.selected span{ background:#1F9CFC; width:30px; }
 @media all and ( min-width:375px){
     .visual_area .visual_slide li{ padding:0 40px 0; }
-    .visual_area .visual_slide li a h3{ font-size:1.7rem; }
+    .visual_area .visual_slide li a h3{ font-size:1.6rem; }
 }
 @media all and (min-width:768px) {
     .visual_area .visual_slide li{ padding:0 80px 0; height:475px; overflow:hidden  }
@@ -127,11 +127,11 @@
 #box_welcome .item_time h5{float:left;display: inline-block;width:90px;height:90px;padding:33px 0 0;border-radius: 50%;text-align: center;font-size: 18px;color:#4899F7;font-weight: 600;box-sizing: border-box;letter-spacing: -0.05em;border:3px solid #4899F7}
 #box_welcome .item_time ul{width:100%;margin-top:20px;padding:0; text-align: left;}
 #box_welcome .item_time ul li{color:#000;font-size: 15px;line-height: 25px;font-weight: 500;letter-spacing: -1px;margin-bottom: 10px;}
-#box_welcome .item_time ul li span{display:inline-block; font-size:15.5px; letter-spacing: -0.5px;text-align:center; width:115px;margin-right:10px;background-color: #4899F7;color:#fff;padding:1px 0;border-radius: 0.2em;}
+#box_welcome .item_time ul li span{display:inline-block; font-size:15.5px; letter-spacing: -0.5px;text-align:center; width:115px;margin-right:10px;background-color: #4899F7;color:#fff;padding:3px 0 1px;border-radius: 0.2em;}
 #box_welcome .item_time ul li small{font-weight: 200}
 @media all and ( min-width:375px){
     #box_welcome { padding:20px 25px; }
-    #box_welcome .item_intro p{line-height:1.8em;font-size:0.98em;}
+    #box_welcome .item_intro p{line-height:1.8em;font-size:0.95em;}
     #box_welcome .item_time ul li {font-size: 16px;}
     #box_welcome .item_time ul li span {font-size:16px; margin-right:15px;}
 }
