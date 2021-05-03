@@ -268,7 +268,7 @@
                 }
 
                 .swiper-wrapper > div:first-child {
-                    margin-left:20px;
+                    margin-left: 10vw;
                 }
                 .swiper-container {
                     width: 100%;
@@ -408,8 +408,10 @@
 
     <script>
     $(document).ready(function() {
+        var sliderWidth = (window.innerWidth * 0.8) ;
+        var spaceWidth = (window.innerWidth * 0.05) ;
         var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 20,
+          spaceBetween: spaceWidth,
           navigation: {
           },
           pagination: {
@@ -417,7 +419,7 @@
           },
           mousewheel: true,
           keyboard: true,
-          width: 280,
+          width: sliderWidth,
         });
     });
       </script>
