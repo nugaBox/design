@@ -23,7 +23,7 @@
     <script src="../../js/common.js"> </script>
 </head>
 <body>
-    <a id="back-btn" href="/newpeoplech/index.html"><i class="fas fa-arrow-left"></i> 목록으로</a>
+    <a id="back-btn" href="/newpeoplech/index.html"><i class="fad fa-arrow-left"></i> 목록으로</a>
     <div id="skiptoContent"><a class="quick_menu" href="#content_wrap">본문 바로가기</a></div>
     <!-- header -->
     <header id="header_area" class="sub_header_area">
@@ -194,17 +194,41 @@
             </nav>
             <style>
                 #introduction { padding-left: 0; padding-right: 0;}
-                #welcome {padding:50px 30px; text-align: center;}
-                #welcome img {width:120px;}
-                #welcome h2 {padding:30px 0;}
-                #welcome hr {width:170px; border-color:#0066B3;}
-                
-                #welcome p a{font-weight:400;}
+                #welcome {padding:50px 10px; text-align: center;}
+                #welcome img {width:100px;}
+                #welcome h2 {padding:30px 0 15px; font-size: 21px; letter-spacing: -0.5px;}
+                #welcome h3 {font-size:18px;color:#727479; padding-bottom:0}
+                #welcome hr {width:170px; border-color:#0066B3; margin-top: 30px; margin-bottom: 30px;}
+                #welcome p {}
+                #welcome p a{font-weight:500;}
                 #welcome p > a:nth-child(3) {color:#0066B3}
                 #welcome p > a:nth-child(4) {color:#A5D546}
-                #vision {padding:30px 30px; background-color: #f7f7f7;}
-                #vision h2 {color:#0066B3}
-                #vision h2 {color:#0066B3}
+                @media all and ( min-width:375px){
+                    #welcome {padding:50px 30px;}
+                    #welcome img {width:120px;}
+                }
+                @media all and ( min-width:768px){
+                }
+                @media all and ( min-width:1024px){
+                }
+                @media all and ( min-width:1200px){
+                }
+
+
+
+
+                #vision {padding:50px 10px; background-color: #f7f7f7; text-align: center;}
+                #vision h2 {color:#0066B3; margin-bottom:30px;}
+                #vision h3 {line-height: 1.8em;}
+                #vision h3 i {width:25px; margin-right:5px;}
+                @media all and ( min-width:375px){
+                }
+                @media all and ( min-width:768px){
+                }
+                @media all and ( min-width:1024px){
+                }
+                @media all and ( min-width:1200px){
+                }
             </style>
             <!--콘텐츠영역 시작-->
             <div class="content_warp">
@@ -223,7 +247,7 @@
                         </div>
                         <div id="vision">
                             <h2>우리 교회의 목표와 비전</h2>
-                            <h3><i class="fad fa-church"></i>건강한 교회! <i class="fad fa-bible"></i>확실한 구원! <i class="fad fa-hands-helping"></i>멋있는 신앙</h3>
+                            <h3><i class="fad fa-church"></i>건강한 교회! <br><i class="fad fa-bible"></i>확실한 구원! <br><i class="fad fa-hands-helping"></i>멋있는 신앙!</h3>
                             <hr>
                             <p>“건강한 교회! 확실한 구원! 멋있는 신앙!”을 목표로 2001년 11월 12일 설립되어,
                                 복음을 바로 이해하고 증거하는 교회, 예수 그리스도의 생명과 능력을 누리고 행사하는 교회,
