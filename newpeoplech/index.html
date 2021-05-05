@@ -6,9 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Web Design | nugaBox</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap">
-	<link rel="stylesheet" href="/home/css/scoredream.css" type="text/css" crossorigin="anonymous">
+	<link rel="stylesheet" href="/home/css/jquery-ui.min.css">
 	<link rel="stylesheet" href="/home/css/fontAwesome.min.css" type="text/css" crossorigin="anonymous">
+	<link rel="stylesheet" href="/home/css/basic.css" type="text/css" crossorigin="anonymous">
 	<link rel="stylesheet" href="/home/css/style.css" type="text/css" crossorigin="anonymous">
+	<script src="/home/js/jquery.min.js"></script>
+	<script src="/home/js/jquery.ui.min.js"></script>
 	<style>
 		.title_wrap{ background:#38533C }
 	</style>
@@ -19,12 +22,16 @@
 		<h3 class="subtitle site">광주새백성교회 홈페이지</h3>
 	</div>
 	<div class="content">
+		<div class="co-progress">
+			작업 진행도 <span id="progressNum">0%</span>
+			<div id="progressBar"></div>
+		</div>
 		<ul>
 			<li>
 				<p class="co-title"><i class="fad fa-sitemap"></i> 메인 & 메뉴</p>
 				<ul class="co-list">
-					<li><a href="html/main.html">메인 페이지</a></li>
-					<li><a href="html/sitemap.html">전체 사이트맵</a></li>
+					<li><a href="html/main.html">메인 페이지<i class="fad fa-check-circle"></i></a></li>
+					<li><a href="html/sitemap.html">전체 사이트맵<i class="fad fa-check-circle"></i></a></li>
 				</ul>
 			</li>
 		</ul>
@@ -32,11 +39,11 @@
 			<li>
 				<p class="co-title"><i class="fad fa-newspaper"></i> 콘텐츠 페이지</p>
 				<ul class="co-list">
-					<li><a href="html/content/교회소개/환영합니다.html">환영합니다</a></li>
-					<li><a href="html/content/교회소개/섬기는사람들.html">섬기는사람들</a></li>
-					<li><a href="html/content/교회소개/교회연혁.html">교회연혁</a></li>
-					<li><a href="html/content/교회소개/예배시간안내.html">예배시간안내</a></li>
-					<li><a href="html/content/교회소개/오시는길.html">오시는길</a></li>
+					<li><a href="html/content/교회소개/환영합니다.html">환영합니다<i class="fad fa-check-circle"></i></a></li>
+					<li><a href="html/content/교회소개/교회연혁.html">교회 연혁<i class="fad fa-check-circle"></i></a></li>
+					<li><a href="html/content/교회소개/섬기는사람들.html">섬기는 사람들</a></li>
+					<li><a href="html/content/교회소개/예배시간안내.html">예배 시간 안내</a></li>
+					<li><a href="html/content/교회소개/오시는길.html">오시는 길</a></li>
 					<li><a href="html/content/선교구제.html">선교 · 구제</a></li>
 					<li><a href="html/content/자치기관소개.html">자치기관 소개</a></li>
 					<li><a href="html/content/기도요청.html">기도 요청</a></li>
@@ -44,10 +51,10 @@
 					<li><a href="html/content/금주의주보.html">금주의 주보</a></li>
 					<li><a href="html/content/로그인.html">로그인</a></li>
 					<li><a href="html/content/회원가입.html">회원가입</a></li>
-					<li><a href="html/content/전체메뉴.html">전체 메뉴</a></li>
-					<li><a href="html/content/이용약관.html">이용약관</a></li>
-					<li><a href="html/content/개인정보처리방침.html">개인정보 처리방침</a></li>
-					<li><a href="html/content/이메일무단수집거부.html">이메일 무단수집 거부</a></li>
+					<li><a href="html/content/전체메뉴.html">전체 메뉴<i class="fad fa-check-circle"></i></a></li>
+					<li><a href="html/content/이용약관.html">이용약관<i class="fad fa-check-circle"></i></a></li>
+					<li><a href="html/content/개인정보처리방침.html">개인정보 처리방침<i class="fad fa-check-circle"></i></a></li>
+					<li><a href="html/content/이메일무단수집거부.html">이메일 무단수집 거부<i class="fad fa-check-circle"></i></a></li>
 				</ul>
 			</li>
 		</ul>
@@ -70,6 +77,13 @@
 		document.oncontextmenu=function(){return false;} // 우클릭 방지
 		document.onselectstart=function(){return false;} // 드래그 방지
 		document.ondragstart=function(){return false;} // 선택 방지
+		$(document).ready(function() {
+			var taskNum = $('li').length;
+			var checkNum = $('.fa-check-circle').length;
+			var progress = checkNum / taskNum * 100
+			$('#progressNum').text(progress.toFixed(1)+'%');
+			$('#progressBar').progressbar({ value: progress });
+		});
 	</script>
 </body>
 </html>
