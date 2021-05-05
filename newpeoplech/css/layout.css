@@ -113,8 +113,8 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 .bottom_menu li{ display:inline-block; font-size:13px; }
 .bottom_menu li a{ display:inline-block; padding:5px; color:#949494; font-weight: 500;}
 .bottom_menu li a:hover{ color:#cccccc }
-.bottom_menu li a span{ color:#834141; }
-.bottom_menu li a span:hover{ color:#c25e5e; }
+.bottom_menu li:nth-child(1) a{ color:#834141; }
+.bottom_menu li:nth-child(1) a:hover{ color:#c25e5e; }
 .telinfo { padding:0; margin-top:20px;}
 .telinfo p{ font-size:12px; font-weight:500; line-height:2.3; color:#949494; margin:0; text-align: center; }
 .telinfo p a{ color:#949494; }
