@@ -105,3 +105,92 @@
 .bo_v_user {margin-bottom:0px; text-align:center;}
 .bo_v_user span{display: inline-block;margin:0 30px 0 0;}
 .bo_v_user strong {display:inline-block;margin:0 10px 0 0;font-weight:500;color:#a2a1a1}
+
+
+
+
+/* 환영합니다 */
+#introduction { padding: 0;}
+#welcome {padding:50px 10px; text-align: center;}
+#welcome .welcome_logo img {width:100px;}
+#welcome .welcome_intro h3 {padding:30px 0 15px; font-family:'Playfair Display', serif; font-size:18px;color:#a9aaab; font-weight:600; }
+#welcome .welcome_intro h2 {font-size: 21px; letter-spacing: -0.5px;}
+#welcome .welcome_intro hr {width:170px; border-color:#0066B3; margin-top: 30px; margin-bottom: 30px;}
+#welcome .welcome_intro p a{font-weight:500;}
+#welcome .welcome_intro p > a:nth-child(3) {color:#0066B3}
+#welcome .welcome_intro p > a:nth-child(4) {color:#A5D546}
+@media all and ( min-width:375px){
+	#welcome {padding:50px 30px;}
+	#welcome .welcome_logo img {width:120px;}
+	#welcome .welcome_intro h3 {font-size:20px;}
+	#welcome .welcome_intro h2 {font-size:23px;}
+	#welcome .welcome_intro p {font-size:15px;}
+}
+@media all and ( min-width:768px){
+	#welcome {display:flex; padding-top:30px;}
+	#welcome .welcome_logo {float:left; width:35%;}
+	#welcome .welcome_logo img { width:140px; position:relative; top:20%; left: 10%;}
+	#welcome .welcome_intro {width:65%; text-align: left; padding-left:20px;}
+	#welcome .welcome_intro h3 {text-align: left; }
+	#welcome .welcome_intro hr {margin-left:0;}
+}
+@media all and ( min-width:1024px){
+	#welcome {width:1024px; margin: 0 auto;}
+	#welcome .welcome_logo img { width:160px; left:15%;}
+	#welcome .welcome_intro h3 {font-size:24px}
+	#welcome .welcome_intro h2 {font-size:27px;}
+	#welcome .welcome_intro p {font-size:18px;}
+}
+
+/* 비전과 목표 */
+#vision {padding:50px 10px 30px; background-color: #f7f7f7; text-align: center;}
+#vision .content_top {padding: 0 0 30px;}
+#vision .content_top h3 { font-size:2rem; }
+#vision .slogan_area { margin:0 auto 30px; max-width:400px; }
+#vision .slogan_area ul > li {float:left; width:33.33%; text-align:center;}
+#vision .slogan_area ul > li > img { display:block; width:60%; margin:0 auto;}
+#vision .slogan_area ul > li > span { display: block; width:90%;margin:15px auto; padding:8px 3px 6px; font-size:15px; border-radius:5px; background:#62AEF8; color:#fff; font-weight:500; letter-spacing:-0.04em;}
+#vision .slogan_area ul > li:nth-child(2) > span { background-color: #e6bf6c;}
+#vision .slogan_area ul > li:nth-child(3) > span { background-color: #b3cc75;}
+#vision p b {font-size: 1.08em;}
+@media all and ( min-width:375px){
+	#vision .slogan_area ul > li > span { font-size:17.5px;}
+	#vision p { font-size:15px;}
+}
+@media all and ( min-width:768px){
+	#vision { padding: 50px 10px;}
+	#vision .slogan_area ul > li > span { font-size:20px;}
+}
+@media all and ( min-width:1024px){
+	#vision { padding: 70px 10px 50px;}
+	#vision .slogan_area { margin:0 auto 30px; max-width:600px; }
+	#vision .slogan_area ul > li > img { width:100px;}
+	#vision .slogan_area ul > li > span { width:80%; font-size:24px; padding: 10px 3px 8px;}
+	#vision p { font-size:18px;}
+}
+@media all and ( min-width:1200px){
+	#vision { padding: 90px 10px 50px;}
+	#vision .content_top h3 { padding: 0 0 25px;}
+}
+
+/* 교회 표어 */
+#vision_year { padding:30px 0 50px; background-color: #f7f7f7; text-align: center;}
+#vision_year h3 { display:block; width:220px; padding:9px 0 7px; font-size:18px; margin: 0 auto 30px; border:2px solid #62AEF8; font-weight:500; border-radius:30px; letter-spacing:-0.04em; }
+#vision_year .swiper-slide { text-align: center; font-size: 18px; background: #fff; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: block; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;
+	justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; padding: 12px; box-shadow: 0 2px 6px rgb(0 0 0 / 6%); -webkit-tap-highlight-color: transparent; flex-shrink: 0; box-sizing: border-box; border-radius: 12px; overflow: hidden; background-color: #fff; }
+#vision_year .swiper-slide > div { display:inline-table; height:130px; text-align:left;}
+#vision_year .swiper-slide span:before{ display:inline-block; content:""; position:relative; top:2px; width:16px; height:16px; background:url(../images/sub/bullet_h4.gif) center no-repeat; background-size:cover; margin-right:10px; }
+#vision_year .swiper-slide span { display: inline-block; font-size:15px; font-weight:500; margin:5px 5px 15px; color:#757575;}
+#vision_year .swiper-slide img { display: block; width: 100%; object-fit: cover; margin:0 auto; }
+#vision_year .swiper-wrapper > div:first-child { margin-left: 10vw; }
+#vision_year .swiper-container { width: 100%; height: 100%; }
+@media all and ( min-width:375px){
+	#vision_year .swiper-slide img { max-width:400px;}
+}
+@media all and ( min-width:768px){
+	#vision_year .swiper-slide > div {margin: 20px 0;}
+	#vision_year h3 { font-size:24px; width:320px; padding: 15px 0 13px;}
+}
+@media all and ( min-width:1024px){
+	#vision_year .swiper-wrapper > div:first-child { margin-left: calc( 50% - 250px ) }
+}

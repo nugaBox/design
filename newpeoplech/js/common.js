@@ -40,11 +40,16 @@ $(document).ready(function() {
 	$('.sch_close').on('click',function(){
 		$('.search_box').slideUp();
 	});
-	$('.sub_menu .open').on('click',function(){
+	// $('.sub_menu .open').on('click',function(){
+	// 	$('.sub_menu ul').slideToggle();
+	// 	$(this).toggleClass('close');
+	// });
+	$('.sub_menu h2').on('click',function(){
+		$(this).toggleClass('active');
 		$('.sub_menu ul').slideToggle();
-		$(this).toggleClass('close');
+		$('.sub_menu > ul').toggleClass('opened');
 	});
-	
+
 	var brSize= 1;
 	function browserSize(size){
 		//if (jQuery.browser.mozilla) {
