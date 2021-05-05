@@ -185,74 +185,6 @@
                     <li><a href="#" title="오시는 길 페이지로 이동">오시는 길</a></li>
                 </ul>
             </nav>
-            <style>
-                /* 교회 연혁 */
-                #history > ul{ padding:5px 10px; font-size:18px;  }
-                #history > ul > li{ font-size:18px; font-weight:500; padding:3px 10px 3px 15px; position:relative; line-height: 1.3; margin:2px 0; }
-                #history > ul > li:before{ position:absolute; left:0; top:10px; display:block; width:4px; height:4px; border-radius: 10px; border:#eb4141 solid 2px; content: "" }
-                #history > ul > li > ul { padding:10px; border-radius: 10px;  margin:4px 0; background: #f1f1f1 }
-                #history > ul > li > ul > li{ font-size:14px; font-weight:300; line-height: 1.4; letter-spacing:-0.5px;}
-                #history > ul > li > ul > li > span { color: #bb8383; font-weight:400; margin-right:3px;}
-                @media all and ( min-width:375px){
-                }
-                @media all and ( min-width:768px){
-                }
-                @media all and ( min-width:1024px){
-                }
-                @media all and ( min-width:1200px){
-                }
-
-
-                #history { padding:30px 15px;}
-                #history .tab_list li{float:left;width:33.33%;padding:13px 0;font-size: 17px;font-weight:400;text-align: center;letter-spacing: -0.04em;background: #c7c4c2;color:#756d66;cursor: pointer;}
-                #history .tab_list li.on{background: #756d66;color:#fff;}
-                .tab_item{display:none;}
-                .tab_item.on{display:block;}
-                .tab_his .tab_item{position: relative;margin:50px 0 0;padding:0 0 0 6.5%}
-                .tab_his .date_item:before{position: absolute;top:0;left:55px;display: block;clear: both;content: '';width:2px;background: #c7c4c2;height:100%;}
-                .tab_his .date_item:last-child:before{display: none;}
-                .tab_his .date_item{position: relative;padding:0 0 40px 0;}
-                .tab_his .date_his{float:left;/*width:12.3%;max-width:110px;*/width:110px;}
-                .tab_his .date_item:nth-child(2n-1) .date_his>div{background:#e6bf6c}
-                .tab_his .date_his>div{position: relative;width:100%;height:110px;border-radius: 50%;background:#efd8a8;text-align: center;color:#3a2c2d;font-size: 20px;}
-                .tab_his .date_his span{position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);font-weight: 600;letter-spacing: -0.05em;color:#6d5642;font-size: 1.4em;}
-                .tab_his .tab_item .date_txt{position: relative;float:left;width:87.5%;min-height: 110px;padding:0 0 0 5%;}
-                
-                .tab_his .tab_item .date_txt_h{min-height: 170px;}
-                .date_txt_v2>ul{position: absolute;top:50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);margin:-10px 0 0;}
-                .tab_his .tab_item .date_txt>ul{margin-bottom:20px;}
-                .tab_his .tab_item .date_txt>ul>li{margin:10px 0 0;font-size: 16.5px;font-weight: 400;line-height: 1.3}
-                .tab_his .tab_item .date_txt>ul>li span.date_month {display:block; color:#bb4040; font-weight:500;}
-                .tab_his .tab_item .date_txt>ul>li span.date_txt_add {display:block; font-weight:300; font-size:0.98em; padding:12px; border-radius: 8px;  margin:4px 0; background: #f1f1f1}
-                .tab_his .tab_item .date_txt>ul>li>ul{margin:10px 0 0;}
-                .tab_his .tab_item .date_txt>ul>li>ul>li{color:#3a2c2d;font-size: 14.5px;line-height: 30px;letter-spacing: -0.025em;}
-
-
-                .yet{font-size: 20px;color:#333;text-align: center;padding:80px 0;}
-
-                @media screen and (max-width: 1024px){
-                .tab_his .tab_item{padding:0}
-                .tab_his .date_his{width:100px;}
-                .tab_his .date_his>div{height:100px;font-size: 18px;}
-                .tab_his .tab_item .date_txt{width:85%;}
-                }
-                @media screen and (max-width: 767px){
-                .tab_his .date_item{padding:0 0 40px 0;}
-                .tab_his .date_item:before{width:1px;left:28px;}
-                .tab_his .date_his{width:55px}
-                .tab_his .date_his>div{height:55px;font-size: 10px;line-height: 10px}
-                .tab_his .tab_item .date_txt{width:80%;}
-                .tab_his .tab_item .date_txt>ul>li>ul>li{font-size: 14px;line-height: 28px;}
-                .tab_his .tab_item .date_txt>ul>li{margin:0;font-size: 15px;line-height: 1.5}
-                .tab_his .tab_item .date_txt>ul>li:nth-child(2){margin:5px 0 0;}
-                .date_txt_v2>ul{margin:0;}
-                .tab_his .tab_item .date_txt{min-height: 55px;}
-                .tab_his .tab_item .date_txt_h{min-height:240px;}
-                .tab_his .tab_item .data_txt_h2{min-height: 150px;}
-                .tab_his .tab_item .data_txt_h3{min-height: 100px;}
-                }
-                
-            </style>
             <!--콘텐츠영역 시작-->
             <div class="content_warp">
                 <div class="content_top">
@@ -260,8 +192,6 @@
                 </div>
                 <!--본문 시작-->
                 <div class="content" id="history">
-                    
-
                     <div class="tab_list">
                         <ul class="clearfix">
                             <li class="on">2000년대</li>
@@ -269,7 +199,6 @@
                             <li>2020년대</li>
                         </ul>
                     </div>
-                    
                     <div class="tab_item_wrap tab_his">
                         <div class="tab_item tab_item01 on">
                             <div class="date_item clearfix">
@@ -302,7 +231,7 @@
                                 <div class="date_txt">
                                     <ul>
                                         <li><span class="date_month">4월</span>청년대학부를 조직하다. (12명)</li>
-                                        <li><span class="date_month">11.10~12.</span>종교개혁 486주년 기념 청년대학 신앙 세미나를 개최하다.<br>(강사 : 박용민 목사, 김권배 목사, 장 실 목사)</li>
+                                        <li><span class="date_month">11.10~12.</span>종교개혁 486주년 기념 청년대학 신앙 세미나를 개최하다.<span class="date_txt_add">강사 : 박용민 목사, 김권배 목사, 장 실 목사</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -325,6 +254,8 @@
                                 </div>
                                 <div class="date_txt">
                                     <ul>
+                                        <li><span class="date_month">5월</span>대한예수교 장로회(개혁) 서광주노회와 나주노회가 합동한 호남노회에 소속되다.</li>
+                                        <li><span class="date_month">9월</span>대한예수교 장로회 개혁 교단과 합동 교단이 합동하여 대한예수교 장로회 합동 교단에 소속되다.</li>
                                         <li><span class="date_month">10월</span>최기남 전도사가 협동 전도사로 부임하다.</li>
                                     </ul>
                                 </div>
@@ -335,7 +266,7 @@
                                 </div>
                                 <div class="date_txt">
                                     <ul>
-                                        <li><span class="date_month">1월</span>교회 제직회가 분기별로 재정부 보고를 받기로 하다.<span class="date_txt_add">1분기 : 4월 첫 주, 2분기 : 7월 첫 주, 3분기 : 10월 첫 주, 4분기 : 공동의회 시</span></li>
+                                        <li><span class="date_month">1월</span>제직회가 분기별로 재정부 보고를 받기로 하다.<span class="date_txt_add">1분기 : 4월 첫 주, 2분기 : 7월 첫 주, <br class="m_br">3분기 : 10월 첫 주, 4분기 : 공동의회 시</span></li>
                                         <li><span class="date_month">10월</span>서연주 전도사가 교육 전도사로 부임하다.</li>
                                     </ul>
                                 </div>
@@ -346,7 +277,7 @@
                                 </div>
                                 <div class="date_txt">
                                     <ul>
-                                        <li><span class="date_month">1월</span>새벽기도회를 전/후반기 24시간 기도운동으로 대체하다.<span class="date_txt_add">전반기 : 1.1.~2.28. / 후반기 : 7.1.~8.31.</li>
+                                        <li><span class="date_month">1월</span>새벽기도회를 전/후반기 24시간 기도운동으로 대체하다.<span class="date_txt_add">- 전반기 : 1.1. ~ 2.28. <br >- 후반기 : 7.1. ~ 8.31.</li>
                                         <li><span class="date_month">4.10.</span>김경님 전도사가 협동 전도사로 부임하다.</li>
                                     </ul>
                                 </div>
@@ -359,7 +290,7 @@
                                     <ul>
                                         <li><span class="date_month">4.15.</span>우리 교회에서 호남노회 제4대 정기회의가 열리고, 장 실 목사가 노회장에 취임하다.</li>
                                         <li><span class="date_month">4.20.</span>우리 교회의 조직교회 축하를 기념하여 전반기 2.3.7 전도운동을 100일간 실시하다.</li>
-                                        <li><span class="date_month">4.26.</span>제1대 임직식 및 임직 예배를 드리다.<span class="date_txt_add">시무장로 : 장 광, 장 진 / 안수집사 : 정경호, 이충택 / 시무권사 : 박경욱, 김옥희</span></li>
+                                        <li><span class="date_month">4.26.</span>제1대 임직식 및 임직 예배를 드리다.<span class="date_txt_add">- 시무장로 : 장  광, 장  진 <br>- 안수집사 : 정경호, 이충택 <br>- 시무권사 : 박경욱, 김옥희</span></li>
                                         <li><span class="date_month">5.3.</span>광주새백성교회 조직교회 첫 당회를 소집하다.</li>
                                         <li><span class="date_month">5.11.</span>현 건물 2층(206, 207호)을 식당 및 목양실(당회실)로 확장하다.</li>
                                         <li><span class="date_month">5.18.</span>조용현 목사가 교육 목사로 부임하다.</li>
@@ -383,501 +314,137 @@
                         <div class="tab_item tab_item01">
                             <div class="date_item clearfix">
                                 <div class="date_his">
-                                    <div><span>01.01</span></div>
+                                    <div><span>2010</span></div>
                                 </div>
                                 <div class="date_txt">
                                     <ul>
-                                        <li>2019년 교직원을 다음과 같이 공표하다.
-                                            <ul>
-                                                <li>담임목사: 이원석</li>
-                                                <li>박일섭(1교구, 제직회), 김대영(2교구, 봉사위원회), 이소명(유학), 김정원(3교구, 예배위원회), 서동진(4교구, 교육위원회), 박지웅(행정, 푸른씨앗), 우병수(씨앗스쿨 교목), 정환석(찬양)</li>
-                                                <li>전도사: 김선민(사랑씨앗 소년, 교육부 행정), 백경진(예닮씨앗 유아), 이경은(예닮씨앗 유치), 이은철(드림씨앗 청소년), 김주선(사랑씨앗 유년)</li>
-                                                <li>사무간사: 이진우</li>
-                                                <li>음향간사: 황영길, 양재영</li>
-                                            </ul>
-                                        </li>
+                                        <li><span class="date_month">1.3.</span>오나종 목사가 원로 목사로 부임하다.</li>
+                                        <li><span class="date_month">3월</span>특별 새벽기도회를 차수 없이 매년 고난주간에 7일간 하기로 하다.</li>
+                                        <li><span class="date_month">11월</span>성찬식을 매년 종려주일, 성령강림절, 종교개혁기념주일, 설립기념예배, 송구영신예배 시에 드리기로 하다.</li>
                                     </ul>
                                 </div>
                             </div>
-                    
                             <div class="date_item clearfix">
                                 <div class="date_his">
-                                    <div><span>01.07<br>-<br> 01.11</span></div>
+                                    <div><span>2011</span></div>
                                 </div>
-                                <div class="date_txt date_txt_v2">
+                                <div class="date_txt">
                                     <ul>
-                                        <li>신년새벽기도회가 “소망” 이라는 주제 아래 열리다.</li>
+                                        <li><span class="date_month">7.24.</span>김명수 강도사가 협동 강도사로 부임하다.</li>
                                     </ul>
                                 </div>
                             </div>
-                    
                             <div class="date_item clearfix">
                                 <div class="date_his">
-                                    <div><span>01.27</span></div>
+                                    <div><span>2012</span></div>
                                 </div>
-                                <div class="date_txt date_txt_v2">
+                                <div class="date_txt">
                                     <ul>
-                                        <li>2019년에 후원할 기관 및 선교사를 공개적으로 선발하다. (기관 2개, 선교사 3명)</li>
+                                        <li><span class="date_month">5.5.</span>제2대 임직식 및 임직 예배를 드리다.<span class="date_txt_add">- 안수집사 : 장국성 <br>- 시무권사 : 원정희, 박애순, 이라임 <br>- 명예권사 : 정정심</span></li>
+                                        <li><span class="date_month">10.16.</span>유영국 목사가 교육 목사로 부임하다.</li>
                                     </ul>
                                 </div>
                             </div>
-                    
                             <div class="date_item clearfix">
                                 <div class="date_his">
-                                    <div><span>02.16</span></div>
+                                    <div><span>2013</span></div>
                                 </div>
-                                <div class="date_txt date_txt_v2">
+                                <div class="date_txt">
                                     <ul>
-                                        <li>사랑씨앗 유년부 겨울캠프 ‘세계를 품는 아이들’이 본 교회에서 진행되다.</li>
-                                        <li>드림씨앗 청소년부 새학년맞이 캠프가 천안 일대에서 진행되다.</li>
+                                        <li><span class="date_month">3.31.</span>오철정 전도사가 교육 전도사로 부임하다.</li>
                                     </ul>
                                 </div>
                             </div>
-                    
                             <div class="date_item clearfix">
                                 <div class="date_his">
-                                    <div><span>02.17</span></div>
+                                    <div><span>2014</span></div>
                                 </div>
-                                <div class="date_txt date_txt_v2">
+                                <div class="date_txt">
                                     <ul>
-                                        <li>건축준비위원회 모임을 시작하다.</li>
+                                        <li><span class="date_month">6.1.</span>김명수 목사가 협동 목사로 부임하다.</li>
+                                        <li><span class="date_month">8월</span>전교우 일일친교회를 매년 전반기(2월), 후반기(8월)에 개최하기로 하다.</li>
+                                        <li><span class="date_month">12.21.</span>송강호 강도사가 협동 강도사(교육 목사)로 부임하다.</li>
                                     </ul>
                                 </div>
                             </div>
-                    
                             <div class="date_item clearfix">
                                 <div class="date_his">
-                                    <div><span>02.23</span></div>
+                                    <div><span>2015</span></div>
                                 </div>
-                                <div class="date_txt date_txt_v2">
+                                <div class="date_txt">
                                     <ul>
-                                        <li>사랑씨앗 소년부 새학년맞이 캠프가 서울에서 진행되다.</li>
-                                        <li>푸른씨앗 청년부 겨울 리트릿이 본 교회에서 진행되다.</li>
+                                        <li><span class="date_month">1.26.</span>송강호 선교사를 파라과이로 파송하다. (호남노회 주관)</span></li>
+                                        <li><span class="date_month">4월</span>장 실 목사가 총신대학교 운영이사로 암명되어 활동하다.</span></li>
+                                        <li><span class="date_month">10.12.</span>김우승 목사가 교육 목사로 부임하다. (미국 플러신학교)</span></li>
+                                        <li><span class="date_month">12.25.</span>제3대 임직식 및 임직 예배를 드리다.<span class="date_txt_add">- 안수집사 : 이광춘, 최병종, 전병춘 <br>- 시무권사 : 고승남, 오창주</span></li>
                                     </ul>
                                 </div>
                             </div>
-                    
                             <div class="date_item clearfix">
                                 <div class="date_his">
-                                    <div><span>02.24</span></div>
+                                    <div><span>2016</span></div>
                                 </div>
-                                <div class="date_txt date_txt_v2">
+                                <div class="date_txt">
                                     <ul>
-                                        <li>교회학교 교사 세미나 ‘협동 학습’이 본 교회에서 진행되다. (강사: 권진하 목사)</li>
+                                        <li><span class="date_month">2.26~27.</span>전교우 야유회를 영광 야월교회 순교기념관에서 시행하다.</li>
+                                        <li><span class="date_month">8.7.</span>중직자회(항존직원)를 조직하다. (10명)</li>
+                                        <li><span class="date_month">9.11.</span>전교우 새백성 탁구대회를 개최하다. (청년회 주관)</li>
                                     </ul>
                                 </div>
                             </div>
-                    
                             <div class="date_item clearfix">
                                 <div class="date_his">
-                                    <div><span>03.16</span></div>
+                                    <div><span>2017</span></div>
                                 </div>
-                                <div class="date_txt date_txt_v2">
+                                <div class="date_txt">
                                     <ul>
-                                        <li>2019년 상반기 순 개강 세미나가 본 교회에서 열리다. (강사: 유재경 목사, 대덕교회)</li>
+                                        <li><span class="date_month">1.6.</span>제직세미나(청지기 훈련)를 실시하다.</li>
+                                        <li><span class="date_month">4월</span>장 실 목사가 호남노회 교회자립위원장으로 임명되어 활동하다.</li>
+                                        <li><span class="date_month">5.21.</span>전교우 성경읽기, 암송퀴즈대회를 개최하다. (남전도회 주관)</li>
                                     </ul>
                                 </div>
                             </div>
-                    
                             <div class="date_item clearfix">
                                 <div class="date_his">
-                                    <div><span>03.17</span></div>
+                                    <div><span>2018</span></div>
                                 </div>
-                                <div class="date_txt date_txt_v2">
+                                <div class="date_txt">
                                     <ul>
-                                        <li>2018년 결산 및 감사 보고의 건으로 공동회의가 열리다.</li>
+                                        <li><span class="date_month">4.14.</span>장 광 장로가 호남노회 제14대 부노회장에 취임하다.</li>
+                                        <li><span class="date_month">5.20.</span>새백성 성경찬양대회를 개최하다. (남전도회 주관)</li>
                                     </ul>
                                 </div>
                             </div>
-                    
                             <div class="date_item clearfix">
                                 <div class="date_his">
-                                    <div><span>04.15<br>-<br>04.19</span></div>
+                                    <div><span>2019</span></div>
                                 </div>
-                                <div class="date_txt date_txt_v2">
+                                <div class="date_txt">
                                     <ul>
-                                        <li>고난주간 새벽기도회가 ‘십자가 위에서’라는 주제로 본 교회에서 진행되다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>05.05</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>2부 예배 시에 유아세례식을 진행하다.</li>
-                                        <li>세례자: 박도준, 방이현</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>05.18</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>3.1절 100주년 기념 역사탐방을 하다. (장소: 화성 제암리 교회, 양화진 외인 묘지, 서대문 형무소 등)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>06.09</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>강원도 산불 피해 지원을 위한 특별 헌금을 민간구호 단체인 써빙프렌즈를 통해 여름철 무더위를 대비한 선풍기 및 청소기 구입에 사용하다. </li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>06.15</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>교회학교 교사들을 위한 교사DAY를 세종시 베어트리파크에서 진행하다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>06.24<br>-<br>07.05</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>종교개혁지 답사(유인경 장로 외 24명, 체코, 독일, 스위스, 프랑스)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>07.12<br>-<br>07.14</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>푸른씨앗 청년부 여름수련회가  ‘난 함께 산다.’라는 주제로 공주시 소랭이마을에서 진행되다.(강사: 배덕만 목사)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>07.13<br>-<br>07.14</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>예닮씨앗 유아부, 유치부 여름 캠프를  ‘여호와만 참 하나님’이라는 주제로 본 교회에서 진행되다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>07.20<br>-<br>07.21</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>드림씨앗 청소년부 여름수련회  ‘내 말 좀 들어줄래?’라는 주제로 경기도 광주에서 진행되다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>07.25<br>-<br>07.27</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>사랑씨앗 소년부 여름 캠프를  ‘여호와만 참 하나님’이라는 주제로 본 교회에서 진행되다. </li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>07.26<br>-<br>07.28</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>사랑씨앗 유년부 여름 캠프를  ‘여호와만 참 하나님’이라는 주제로 본 교회에서 진행되다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>07.28</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>박지웅 목사(푸른씨앗 청년부 및 행정)가 사임하다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>08.04</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>정환석 목사가 푸른씨앗 청년부 및 행정으로 보직이동하다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>09.07</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>2019년 하반기 순 개강 세미나가 본 교회에서 열리다.</li>
-                                        <li>이보열 전도사(찬양인도)가 부임하다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>10.06</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>양재영 간사(방송 및 음향)가 사임하다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>10.19</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>2019년 신앙과 삶 세미나  ‘3·1운동, 임시정부 그리고 기독교’가 본 교회에서 진행되다.(강사: 박명수 교수)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>11.18</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>추수감사 예배를 드리고 2부 예배 시에 세례.입교식을 진행하다.</li>
-                                        <li>세례자: 김민규, 김홍옥, 김희원, 윤덕용, 이덕수, 쟝바이메이, 최택진</li>
-                                        <li>입교자: 김예준, 김은혜, 김정환, 김준성, 김지민, 서준규, 이재민, 이지성, 이하원, 허민서, 황수민</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>11.29</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li> ‘나무엔’과 함께하는 찬양콘서트를 진행하다. </li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>12.08</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>추수감사헌금 전액을 높은뜻 씨앗스쿨 버스구입 비용으로 전달하다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>12.15</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>2부 예배 후에 2020년 예산 심의 및 통과와 관련하여 공동의회가 열리다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>12.24</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>성탄절 전야제  ‘별과 목자들의 노래’를 본 교회에서 진행하다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>12.25</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>성탄절 온가족 예배를 드리다.</li>
-                                        <li>2부 예배 시에 유아세례식을 진행하다.</li>
-                                        <li>세례자: 김보혜, 김서준, 김시훈, 김예은, 김이든A, 김이든B, 김주아, 김주원, 박서진, 박세연, 원하준, 이예온, 이우진, 이은휼, 이하이, 전유주, 전지안, 정서언, 조은설, 허아인, Elsie</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>12.31</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>신순옥 권사 시무 성료</li>
-                                        <li>송구영신예배를 드리다.</li>
-                                        <li>나찬형 간사(행정)가 부임하다.</li>
+                                        <li><span class="date_month">1.6.</span>광주새백성교회 성경적 창조론 선언문을 발표하다.</li>
+                                        <li><span class="date_month">9월</span>장 실 목사가 총회 고시부 실행위원으로 활동하다.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    
                         <div class="tab_item tab_item01">
                             <div class="date_item clearfix">
                                 <div class="date_his">
-                                    <div><span>2001</span></div>
+                                    <div><span>2020</span></div>
                                 </div>
                                 <div class="date_txt">
                                     <ul>
-                                        <li><span>9.23.</span>광주광역시 북구 용봉동 1406-1 (모아미래도아파트 상가 304, 305호)에서 첫 예배를 드리다.</li>
-                                        <li><span>9.23.</span>대한예수교 장로회(개혁) 서광주노회로부터 설립 허락을 받아 개척 설립 예배를 드리다.</li>                                      </li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>2002</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>푸른씨앗 청년부 예배장소를 천안시 동남구 먹거리8길 41 예수전도단 천안 아산지부 사무실로 이동하다.</li>
-                                        <li>전교인 성경통독 ‘The 말씀, 말씀이 씨앗이되어’를 하다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>2003</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>사랑씨앗 소년부 새학년맞이 캠프가 군산에서 진행되다.</li>
-                                        <li>드림씨앗 청소년부 새학년맞이 캠프가 서울에서 진행되다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>03.10</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>2018년 상반기 순 개강 세미나가 본 교회에서 열리다. (강사: 최승기 교수)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>2004</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>2017년 결산 및 감사 보고의 건으로 공동의회가 열리다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>2005</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>고난주간 새벽기도회가 ‘좁은 길로 걷는 기쁨’이라는 주제로 본 교회에서 진행되다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>2006</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>청지기스쿨을 "이와 같이 주 안에 서라"라는 주제로 본 교회에서 열리다. (김병년 목사, 다드림교회)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>2007</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>교회학교 가정 방문 신앙교육 ‘우리집 씨앗이되어’를 시작하다.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>2008</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>2부 예배 시에 유아세례식을 진행하다.</li>
-                                        <li>세례자: 권혜인, 김예서, 김이준, 김하준, 김하영, 성루아, 오주아 ,윤진온, 임주호, 전지윤, 황우영</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    
-                            <div class="date_item clearfix">
-                                <div class="date_his">
-                                    <div><span>2009</span></div>
-                                </div>
-                                <div class="date_txt date_txt_v2">
-                                    <ul>
-                                        <li>신앙과 삶 세미나 ‘그리스도인은 어떻게 튼튼한 재정의 집을 지어야 할까’가 본 교회에서 진행되다.</li>
-                                        <li>(강사: 박갑윤, Kingdom Advisor Korea)</li>
+                                        <li><span class="date_month">2.23.</span>코로나19로 인해 주일 중식 교제와 오후 찬양예배를 임시 중단하다.</li>
+                                        <li><span class="date_month">3.1.</span>사회적 거리두기 조치에 따라 주일낮예배를 온라인(비대면) 예배로 드리다.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- // }tab_item -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <script>
     $(document).ready(function() {
         /* 연대 탭 메뉴 클릭 */
@@ -888,7 +455,7 @@
             $(".tab_item").eq(index).addClass('on').siblings().removeClass('on');
         })
     });
-      </script>
+    </script>
     <!--footer start-->
     <footer id="footer_area">
         <div class="container">
