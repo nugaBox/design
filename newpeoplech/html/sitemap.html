@@ -6,10 +6,12 @@
 	<title>광주새백성교회 사이트맵</title>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap">
-	<link rel="stylesheet" href="/home/css/scoredream.css" type="text/css" crossorigin="anonymous">
 	<link rel="stylesheet" href="/home/css/fontAwesome.min.css" type="text/css" crossorigin="anonymous">
+	<link rel="stylesheet" href="/home/css/basic.css" type="text/css" crossorigin="anonymous">
 	<link rel="stylesheet" href="/home/css/style.css" type="text/css" crossorigin="anonymous">
 	<link rel="stylesheet" href="/home/css/sitemap.css" type="text/css" crossorigin="anonymous">
+	<script src="/home/js/jquery.min.js"></script>
+	<script src="/home/js/script.js"></script>
 </head>
 <body>
 	<div id="wrap">
@@ -134,37 +136,5 @@
 			</li>
 		</ul>
 	</div>
-	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-	<script>
-		document.oncontextmenu=function(){return false;} // 우클릭 방지
-		document.onselectstart=function(){return false;} // 드래그 방지
-		document.ondragstart=function(){return false;} // 선택 방지
-		$(document).ready(function(){
-			var btn_hide1_click=0;
-			var btn_hide2_click=0;
-			$('.btn_hide1').on('click',function(){
-				$('.sitemap > li > ul > li > ul').slideToggle(200);		
-				btn_hide1_click++;
-				if(btn_hide1_click % 2 == 0){
-					$(this).removeClass('hide');
-					$(this).html('2차메뉴 <i class="fas fa-eye">');
-				} else {
-					$(this).addClass('hide');
-					$(this).html('2차메뉴 <i class="fas fa-eye-slash">');
-				}
-			});
-			$('.btn_hide2').on('click',function(){
-				$('.sitemap > li > ul > li > ul > li > ul').slideToggle(200);				
-				btn_hide2_click++;
-				if(btn_hide2_click % 2 == 0){
-					$(this).removeClass('hide');
-					$(this).html('3차메뉴 <i class="fas fa-eye">');
-				} else {
-					$(this).addClass('hide');
-					$(this).html('3차메뉴 <i class="fas fa-eye-slash">');
-				}
-			});
-		})
-	</script>
 </body>
 </html>
