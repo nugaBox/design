@@ -14,10 +14,16 @@ a { text-decoration: none;}
 .title_wrap .subtitle { color: #f8f8f845; font-size: 1.5em; margin-top:5px;}
 .title_wrap .site { color: #fff; position:relative; top:15px; font-family:'S-CoreDream', sans-serif; }
 .content { width:100%; margin:0 auto; background:#f5f5f5; padding-top:50px; padding-bottom:50px; text-align:center;}
-.content .co-progress { font-size: 1.2em; margin-bottom: 40px; }
-.content .co-progress #progressBar {width: 50%;height: 10px;margin: 10px auto; background: #e6e6e6;}
+.content .co-progress { font-size: 1.2em; margin-bottom:60px; }
+.content .co-progress #progressNum { font-weight:600; }
+.content .co-progress #progressBar {width: 50%;height: 10px;margin: 10px auto 30px; background: #e6e6e6;}
 .content .co-progress #progressBar .ui-widget-header {border:none;background: #c5c5c5;}
 .content .co-progress #progressBar .ui-progressbar-value {margin:0}
+.content .co-progress p {font-weight: 600; font-size: 0.85em;}
+.content .co-progress p a {color: #777; margin-right:18px;}
+.content .co-progress p a:last-child { margin-right:0;}
+.content .co-progress p a:hover, .content .co-progress p a.active { color: #414141; }
+.content .co-progress p a i {margin-right:3px;}
 .content > ul { text-align:center; margin-bottom:50px; list-style: none;}
 .content > ul > li{ width:100%; }
 .content ul li .co-title { font-size: 1.3em; margin-bottom: 15px; }
@@ -26,8 +32,8 @@ a { text-decoration: none;}
 .content ul li ul.co-list li a{ text-align:center; text-decoration:none; font-size:1.1em; color:#4d4b4b; display:block; padding:30px 0; background:#fff; letter-spacing:-0.05em; border-radius: 1.2em; box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 100px 80px rgba(0, 0, 0, 0.12);}
 .content ul li ul.co-list li a:hover{ background:#4b4b4b; color:#fff; }
 .content ul li ul.co-list li a i {margin-left:10px;}
-.content a { color: #828282; font-size:1.2em;}
-.content a:hover { color: #414141; }
+.content > a { color: #828282; font-size:1.2em;}
+.content > a:hover { color: #414141; }
 @media (min-width:375px) {
 	.content { width:350px; }
 }

@@ -18,6 +18,23 @@ $(document).ready(function() {
     $('#progressNum').text(progress.toFixed(1)+'%');
     $('#progressBar').progressbar({ value: progress });
     
+    // 작업 진행상태 클릭
+    $('.progress').on('click',function(){
+        $(this).siblings('a').removeClass('active');
+        $(this).addClass('active');
+        
+        var progress = $(this).data('progress');
+        if( progress == 'done') {
+            $('.co-list > li').hide();
+            $('.co-list > li').has('.fa-check-circle').fadeIn();
+        } else if (progress == 'working') {
+            $('.co-list > li').hide();
+            $('.co-list > li').has('.fa-tools').fadeIn();
+        } else {
+            $('.co-list > li').fadeIn();
+        }
+    });
+
     // 사이트맵 메뉴 숨김 버튼
     var btn_hide1_click=0;
     var btn_hide2_click=0;
