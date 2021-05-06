@@ -41,7 +41,7 @@ a { text-decoration: none;}
 	.content ul li ul.co-list{ width:60%; text-align:left; margin-bottom:20px; }
 	.content ul li ul.co-list li{ display:inline-block; width:45%; margin:0 1%; padding:0;}
 	.content ul li ul.co-list li a{ height: 80px; overflow: hidden;}
-	.content ul li ul.co-list li:nth-child(2n+0) { margin-bottom:30px;}
+	.content ul li ul.co-list li:nth-child(2n+1) { margin-bottom:30px;}
 	.content ul li.no-title{ display:inline-block; }
 	.content ul li.no-title ul{ width:100%; text-align: center;}
 	footer { font-size:1em; }
@@ -52,4 +52,6 @@ a { text-decoration: none;}
 	.content ul li ul.co-list{ width:80%; }
 	.content ul li ul.co-list li{ width:22%; }
 	.content ul li ul.co-list li:nth-child(4n+0) { margin-bottom:30px;}
+	.content ul li ul.co-list.item-3 li{ width:30%; }
+	.content ul li ul.co-list.item-3 li:nth-child(3n+0) { margin-bottom:30px;}
 }
