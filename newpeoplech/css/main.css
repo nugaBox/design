@@ -210,7 +210,7 @@
 #box_btn .item_btn a{display:inline-block;padding:8px 7px 7px;margin:14px 0 0;border-radius: 14px;color:#e2e0de;font-size: 15px;letter-spacing: -0.025em;border:1px solid #e5d6ca;transition: all .2s;font-weight: 500;}
 #box_btn .item_btn:nth-child(2) a{color:#f7fbec;border-color: #f4f4d7}
 #box_btn .item_btn:nth-child(3) a{color:#f9eae6;border-color: #fee5de}
-#box_btn .item_btn{background: url({imgDirectory}main/bg_main.png) no-repeat}
+#box_btn .item_btn{background: url(../images/main/bg_main.png) no-repeat}
 #box_btn .item_btn:nth-child(1){background-position: 0 0}
 #box_btn .item_btn:nth-child(2){background-position: 0 -109px}
 #box_btn .item_btn:nth-child(3){background-position: 0 -218px}
