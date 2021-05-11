@@ -95,11 +95,11 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 	.gnb_wrap .gnb > a{ display:inline-block; margin-left:20px; margin-top:14px; vertical-align: top; color:#fff;   }	 
 	.gnb_wrap .gnb > ul > li.recent:after{ width:100%; background:#008fe9; transition:0.3s  }
 }
-@media all and ( min-width:1200px){	
-	.gnb_wrap > .container{ width:1120px; }
+@media all and ( min-width:1200px){
+	.tnb_wrap > .container, .gnb_wrap > .container{ width:1120px; }
 }
-@media all and ( min-width:1360px){	
-	.gnb_wrap > .container{ width:1280px; }
+@media all and ( min-width:1360px){
+	.tnb_wrap > .container, .gnb_wrap > .container{ width:1280px; }
 }
 
 /* Footer */
