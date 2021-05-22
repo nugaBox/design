@@ -158,10 +158,11 @@
 .pp_box02 .pp_list .pp_info li{line-height: 1.5}
 @media all and (min-width:768px){
 	#people {max-width:768px;}
-	.pp_box01 { display:flex; padding:40px 40px 0;}
-	.pp_box01 .pastor_img{width:300px;}
-	.pp_box01 .pastor_name{font-size:21px;}
+	.pp_box01 { display:flex; padding:0 40px;}
+	.pp_box01 .pastor_img{width:300px; padding-top: 50px;}
+	.pp_box01 .pastor_name{font-size:21px; text-align:left; padding-left:40px;}
 	.pp_box01 .pastor_name > b{ font-size:24px;}
+	.pp_box01 .pastor_name > span{ display:inline; margin-left:10px;}
 	.pp_box01 .pastor_txt{padding:0 0 0 30px;}
 	.pp_box01 .pastor_txt ul {background:none;}
 	.pp_box02 .pp_list .pp_item{width:20%;margin:0 4% 30px !important;}
