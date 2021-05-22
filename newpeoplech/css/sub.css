@@ -190,6 +190,39 @@
 	}
 
 /* 오시는 길 */
+#location {margin:30px 0; padding:0;}
+#location > h4 {margin:40px auto 10px;}
+#location > h4:nth-child(3) {margin:0 auto 30px;}
+#location > div > h4 { margin:40px auto 0;}
+.wrap_content {overflow:hidden;padding-bottom: 40px;}
+.wrap_map, .wrap_roadview, #map, #roadview { -moz-border-radius:1em;-webkit-border-radius:1em; border-radius:1em;}
+.wrap_map {width:90%;height:300px;position:relative; margin:10px auto 60px;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
+.wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) {border-radius:5px;width: 150px !important;height:32px !important}
+.wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {left:6px !important; top:2px !important; padding:5px; font-size:19px; font-weight:400;}
+.wrap_roadview {width:90%;height:300px;position:relative; margin:20px auto 30px;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
+.wrap_roadview #roadview > div:nth-child(2) > div:nth-child(2) {border-radius:5px;width: 220px !important;height:29px !important}
+.wrap_roadview #roadview > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {padding:5px;}
+#location ul {max-width:768px; padding:0 20px; margin:5px auto 0;}
+#location > ul > li.depth02 {font-weight:500; font-size:20px;line-height:1.2em; margin-bottom:40px;}
+#location > ul > li > ul > li:before{position: relative; left: -17px; top: 15px; display: block; width: 4px; height: 4px; border-radius: 10px; border: #62AEF8 solid 2px; content: "";}
+#location > ul > li > ul > li {font-weight:300; font-size:16px;}
+#location > ul > li.bus > ul > li:before {top:17px}
+#location > ul > li.bus > ul > li > span {display: inline-block; border: #000 solid 1px;border-radius: 3px;padding: 1px 4px;margin:1px 5px; font-size:0.9em;}
+@media all and (min-width:768px) {
+	#location > div > h4 {display: none;}
+	.wrap_content {margin:30px auto; display: flex;}
+	.wrap_map, .wrap_roadview, #map, #roadview { -moz-border-radius:0;-webkit-border-radius:0;border-radius: 0;}
+	.wrap_map {width:50%;height:300px;float:left;position:relative; margin:0 auto;box-shadow:none}
+	.wrap_roadview {width:50%;height:300px;float:left;position:relative; margin:0 auto;box-shadow:none}
+	#map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) {border-radius:5px;width: 150px !important;height:32px !important}
+	#map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {left:6px !important; top:2px !important; padding:5px; font-size:19px; font-weight:400;}
+	#location ul {width:768px;}
+}
+@media all and (min-width:1024px) {
+	.wrap_map {height:400px;}
+	.wrap_roadview {height:400px;}
+	#location ul {width:1024px;}
+}
 
 /* 설교영상 */
 #bo_v_info {padding:25px 40px;margin:30px 0 0;color:#625d5e;font-size: 20px;font-weight: 500;}
