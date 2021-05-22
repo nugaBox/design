@@ -203,53 +203,72 @@
                     #location {margin:30px 0; padding:0;}
                     #location > h4 {margin:40px auto 10px;}
                     #location > h4:nth-child(3) {margin:0 auto 30px;}
-                    .box-shadow {}
-
-                    .wrap_content {overflow:hidden;padding-bottom: 50px;}
+                    #location > div > h4 { margin:40px auto 0;}
+                    .wrap_content {overflow:hidden;padding-bottom: 40px;}
                     .wrap_map, .wrap_roadview, #map, #roadview { -moz-border-radius:1em;-webkit-border-radius:1em; border-radius:1em;}
-                    .wrap_map {width:90%;height:300px;position:relative; margin:10px auto 40px;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
-                    .wrap_roadview {width:90%;height:300px;position:relative; margin:40px auto 30px;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
-                    #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) {border-radius:5px;width: 150px !important;height:32px !important}
-                    #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {left:6px !important; top:2px !important; padding:5px; font-size:19px; font-weight:400;}
-                    #roadview > div:nth-child(2) > div:nth-child(2) {border-radius:5px;width: 220px !important;height:29px !important}
-                    #roadview > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {padding:5px;}
-                    .bus ul li span {display: inline-block; border: #000 solid 1px;border-radius: 3px;padding: 2px 5px;margin: 5px 3px; }
+                    .wrap_map {width:90%;height:300px;position:relative; margin:10px auto 60px;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
+                    .wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) {border-radius:5px;width: 150px !important;height:32px !important}
+                    .wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {left:6px !important; top:2px !important; padding:5px; font-size:19px; font-weight:400;}
+                    .wrap_roadview {width:90%;height:300px;position:relative; margin:20px auto 30px;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
+                    .wrap_roadview #roadview > div:nth-child(2) > div:nth-child(2) {border-radius:5px;width: 220px !important;height:29px !important}
+                    .wrap_roadview #roadview > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {padding:5px;}
+                    #location ul {max-width:768px; padding:0 20px; margin:5px auto 0;}
+                    #location > ul > li.depth02 {font-weight:500; font-size:20px;line-height:1.2em; margin-bottom:40px;}
+                    #location > ul > li > ul > li:before{
+                        position: relative;
+                        left: -17px;
+                        top: 15px;
+                        display: block;
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 10px;
+                        border: #62AEF8 solid 2px;
+                        content: "";
+                    }
+                    #location > ul > li.bus > ul > li:before {top:17px}
+                    #location > ul > li > ul > li {font-weight:300; font-size:16px;}
+                    .bus ul li span {display: inline-block; border: #000 solid 1px;border-radius: 3px;padding: 1px 4px;margin:1px 5px; font-size:0.9em;}
                     @media all and (min-width:768px) {
+
+                        #location > div > h4 {display: none;}
                         .wrap_content {margin:30px auto; display: flex;}
                         .wrap_map, .wrap_roadview, #map, #roadview { -moz-border-radius:0;-webkit-border-radius:0;border-radius: 0;}
                         .wrap_map {width:50%;height:300px;float:left;position:relative; margin:0 auto;box-shadow:none}
                         .wrap_roadview {width:50%;height:300px;float:left;position:relative; margin:0 auto;box-shadow:none}
                         #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) {border-radius:5px;width: 150px !important;height:32px !important}
                         #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {left:6px !important; top:2px !important; padding:5px; font-size:19px; font-weight:400;}
+                        #location ul {width:768px;}
                     }
                     @media all and (min-width:1024px) {
                         .wrap_map {height:400px;}
                         .wrap_roadview {height:400px;}
+                        #location ul {width:1024px;}
                     }
                 </style>
                 <div class="content" id="location">
-                    <h4>위치 및 로드뷰</h4>
+                    <h4>위치</h4>
                     <div class="wrap_content">
                         <div class="wrap_map box-shadow">
                             <div id="map" style="width:100%;height:100%"></div> <!-- 지도를 표시할 div 입니다 -->
                         </div>
+                        <h4>로드뷰</h4>
                         <div class="wrap_roadview box-shadow">
                             <div id="roadview" style="width:100%;height:100%"></div> <!-- 로드뷰를 표시할 div 입니다 -->
                         </div>
                     </div>
                     <h4>교통수단 안내</h4>
                     <ul>
-                        <li>자가용 이용 시
+                        <li class="depth02">자가용 이용 시
                             <ul>
                                 <li>도로명 주소 : 광주광역시 북구 저불로 23</li>
                                 <li>지번 주소 : 광주광역시 북구 용봉동 1406-1번지</li>
                                 <li>전화번호 : 062-515-0675</li>
                             </ul>
                         </li>
-                        <li class="bus">버스 이용 시
+                        <li class="depth02 bus">버스 이용 시
                             <ul>
-                                <li>용봉모아아파트 하차: <span><i class="fas fa-bus"></i>용봉83</span><span><i class="fas fa-bus"></i>419</span></li>
-                                <li>유창아파트 하차: <span><i class="fas fa-bus"></i>매월26</span><span><i class="fas fa-bus"></i>첨단30</span><span><i class="fas fa-bus"></i>금남57</span><span><i class="fas fa-bus"></i>상무64</span><span><i class="fas fa-bus"></i>용봉83</span><span><i class="fas fa-bus"></i>419</span></li>
+                                <li>용봉모아아파트 정류장 하차<br><span><i class="fas fa-bus"></i> 용봉83</span><span><i class="fas fa-bus"></i> 419</span></li>
+                                <li>유창아파트 정류장 하차<br><span><i class="fas fa-bus"></i> 매월26</span><span><i class="fas fa-bus"></i> 첨단30</span><span><i class="fas fa-bus"></i> 금남57</span><span><i class="fas fa-bus"></i> 상무64</span><span><i class="fas fa-bus"></i> 용봉83</span><span><i class="fas fa-bus"></i> 419</span></li>
                             </ul>
                         </li>
                     </ul>
