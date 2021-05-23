@@ -200,32 +200,52 @@
                 </div>
                 <!--본문 시작-->
                 <div class="content" id="location">
-                    <h4>위치</h4>
+                    <div class="wrap_map">
+                        <div id="map" style="width:100%;height:100%"></div> <!-- 지도를 표시할 div 입니다 -->
+                    </div>
                     <div class="wrap_content">
-                        <div class="wrap_map box-shadow">
-                            <div id="map" style="width:100%;height:100%"></div> <!-- 지도를 표시할 div 입니다 -->
+                        <div class="wrap_info">
+                            <ul class="depth01">
+                                <li class="depth02">주소
+                                    <ul>
+                                        <li>도로명 : 광주광역시 북구 저불로 23</li>
+                                        <li>지번 : 광주광역시 북구 용봉동 1406-1</li>
+                                        <li>전화번호 : 062-515-0675</li>
+                                    </ul>
+                                </li>
+                                <li class="depth02 bus">대중교통
+                                    <ul>
+                                        <li>용봉모아아파트 정류장 하차<br><span><i class="fas fa-bus"></i> 용봉83</span><span><i class="fas fa-bus"></i> 419</span></li>
+                                        <li>유창아파트 정류장 하차<br><span><i class="fas fa-bus"></i> 매월26</span><span><i class="fas fa-bus"></i> 첨단30</span><span><i class="fas fa-bus"></i> 금남57</span><span><i class="fas fa-bus"></i> 상무64</span><span><i class="fas fa-bus"></i> 용봉83</span><span><i class="fas fa-bus"></i> 419</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                        <h4>로드뷰</h4>
-                        <div class="wrap_roadview box-shadow">
-                            <div id="roadview" style="width:100%;height:100%"></div> <!-- 로드뷰를 표시할 div 입니다 -->
+                        <div class="wrap_road">
+                            <h4>로드뷰</h4>
+                            <div class="wrap_roadview">
+                                <div id="roadview" style="width:100%;height:100%"></div> <!-- 로드뷰를 표시할 div 입니다 -->
+                            </div>
+                            <div class="wrap_btn">
+                                <a class="btn_naver" href="https://map.naver.com/v5/search/%EA%B4%91%EC%A3%BC%EC%83%88%EB%B0%B1%EC%84%B1%EA%B5%90%ED%9A%8C/place/38325403?c=14125403.9814011,4187996.7230305,15,0,0,0,dh" target="_blank">
+                                    <span>네이버지도</span>
+                                </a>
+                                <a class="btn_kakaomap" href="http://kko.to/c5wRlhmYB" target="_blank">
+                                    <span>카카오맵</span>
+                                </a>
+                                <a class="btn_google" href="https://www.google.com/maps/place/%EA%B4%91%EC%A3%BC%EC%83%88%EB%B0%B1%EC%84%B1%EA%B5%90%ED%9A%8C/@35.176101,126.892849,17z/data=!3m1!4b1!4m5!3m4!1s0x35718c4664521c09:0x5d1aae1f41c64984!8m2!3d35.176101!4d126.895043" target="_blank">
+                                    <span>Google Maps</span>
+                                </a>
+                                <a class="btn_tmap" href="https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx4de75d58b0624d539d847a2bb8737c13&name=광주새백성교회&lat=35.17657924590656&lon=126.8951276323102">
+                                    <span>T map으로 길찾기</span>
+                                </a>
+                                <a class="btn_kakaonavi" id="navi" href="#" onclick="navi();">
+                                    <span>카카오내비로 길찾기</span>
+                                </a>
+                                <p>길찾기는 모바일 환경에서 <br class="m_br">앱을 통해 사용할 수 있습니다</p>
+                            </div>
                         </div>
                     </div>
-                    <h4>교통수단 안내</h4>
-                    <ul>
-                        <li class="depth02">자가용 이용 시
-                            <ul>
-                                <li>도로명 주소 : 광주광역시 북구 저불로 23</li>
-                                <li>지번 주소 : 광주광역시 북구 용봉동 1406-1번지</li>
-                                <li>전화번호 : 062-515-0675</li>
-                            </ul>
-                        </li>
-                        <li class="depth02 bus">버스 이용 시
-                            <ul>
-                                <li>용봉모아아파트 정류장 하차<br><span><i class="fas fa-bus"></i> 용봉83</span><span><i class="fas fa-bus"></i> 419</span></li>
-                                <li>유창아파트 정류장 하차<br><span><i class="fas fa-bus"></i> 매월26</span><span><i class="fas fa-bus"></i> 첨단30</span><span><i class="fas fa-bus"></i> 금남57</span><span><i class="fas fa-bus"></i> 상무64</span><span><i class="fas fa-bus"></i> 용봉83</span><span><i class="fas fa-bus"></i> 419</span></li>
-                            </ul>
-                        </li>
-                    </ul>
                     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a7b26186b2b5df92ff2fc9c4d62e69a1&libraries=services"></script>
                     <script>
                         var mapContainer = document.getElementById('map'), // 지도를 표시할 div
@@ -283,14 +303,14 @@
                                 position: myPosition,
                                 map: rv //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
                             });
-                            rMarker.setAltitude(7); //마커의 높이를 설정합니다. (단위는 m입니다.)
+                            rMarker.setAltitude(4); //마커의 높이를 설정합니다. (단위는 m입니다.)
                             rMarker.setRange(50); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
 
                             // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
                             var rLabel = new kakao.maps.InfoWindow({
                                 content: '모아미래도아파트 상가동 3층'
                             });
-                            rLabel.setRange(15); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+                            rLabel.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
                             rLabel.open(rv, rMarker); // open시 마커를 넣어주면, 마커의 altitude와 position값을 모두 따라 갑니다.
 
                             // 로드뷰 마커가 중앙에 오도록 로드뷰의 viewpoint 조정합니다.
@@ -300,6 +320,18 @@
                             var viewpoint = projection.viewpointFromCoords(rMarker.getPosition(), rMarker.getAltitude());
                             rv.setViewpoint(viewpoint); //로드뷰에 뷰포인트를 설정합니다.
                         });
+                    </script>
+                    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+                    <script type="text/javascript">
+                        Kakao.init('a7b26186b2b5df92ff2fc9c4d62e69a1');
+                        function navi() {
+                            Kakao.Navi.share({
+                                name: '광주새백성교회',
+                                x: 126.8951276323102,
+                                y: 35.17657924590656,
+                                coordType: 'wgs84',
+                            })
+                        }
                     </script>
                 </div>
             </div>
