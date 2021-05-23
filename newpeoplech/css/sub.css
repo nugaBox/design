@@ -218,7 +218,8 @@
 .wrap_road .wrap_btn a.btn_tmap {background:#fff;}
 .wrap_road .wrap_btn a.btn_kakaonavi {background:#fae100; color:#594916;}
 .wrap_road .wrap_btn a.btn_naver, .wrap_road .wrap_btn a.btn_kakaomap, .wrap_road .wrap_btn a.btn_google {display:none;}
-.wrap_road .wrap_btn p {margin-top:30px; text-align: center; letter-spacing:-0.03em; font-size:18px; font-weight:400;}
+.wrap_road .wrap_btn p:nth-child(1) {display:none;}
+.wrap_road .wrap_btn p:nth-child(7) {margin-top:30px; text-align: center; letter-spacing:-0.03em; font-size:18px; font-weight:400;}
 @media all and (min-width:375px) {
 	.wrap_info > ul > li.depth02 {font-size:21px;line-height:1.2em; }
 	.wrap_info > ul > li > ul > li {font-size:17px; }
@@ -236,10 +237,16 @@
 	.wrap_map {height:400px;}
 	.wrap_roadview {height:400px;}
 	.wrap_content {width:1024px; margin:0 auto; display: flex;}
+	.wrap_road .wrap_btn {display:inline-flex; width:100%;}
 	.wrap_road .wrap_btn a.btn_tmap, .wrap_road .wrap_btn a.btn_kakaonavi {display:none;}
 	.wrap_road .wrap_btn a.btn_naver, .wrap_road .wrap_btn a.btn_kakaomap, .wrap_road .wrap_btn a.btn_google {display:block;}
-	.wrap_road .wrap_btn a {height:65px; width:65px; margin: 0 10px; -webkit-background-composite: #fff; background-color: #fff; background-size: cover; border-radius: 15px; padding-top: 65px; z-index: 2; text-decoration: none; box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%), -8px -8px 12px 0 rgb(255 255 255 / 30%); }
-	.wrap_road .wrap_btn a span {display: block; font-size: 14px; font-weight: 400; color: #000000; margin-top: 5px;}
+	.wrap_road .wrap_btn a {display:block; height:70px; width:70px; margin: 0 10px; padding:0; -webkit-background-composite: #fff; background-color: #fff; background-size: cover; border-radius: 15px; padding-top: 65px; z-index: 2; text-decoration: none; box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%), -8px -8px 12px 0 rgb(255 255 255 / 30%); }
+	.wrap_road .wrap_btn a span:before {display: none;}
+	.wrap_road .wrap_btn a span {display: block; font-size: 14px; font-weight: 400; color: #000000; margin-top: 20px; top:0;}
+	.wrap_road .wrap_btn a.btn_naver {background:url(../images/sub/location/navermap.png);background-size:cover;}
+	.wrap_road .wrap_btn a.btn_kakaomap {background:url(../images/sub/location/kakaomap.png);background-size:cover;}
+	.wrap_road .wrap_btn a.btn_google {background:url(../images/sub/location/googlemaps.png);background-size:cover;}
+	.wrap_road .wrap_btn p:nth-child(1) {display: block;}
 }
 
 /* 설교영상 */
