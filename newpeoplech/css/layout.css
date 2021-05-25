@@ -69,8 +69,10 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 	.tnb_wrap{ display:block;  text-align:right; padding:20px 0;  }
 	.tnb_wrap a{ display:inline-block;    font-size:14px;   color:#fff; font-weight:300; margin:0 5px;  }
 	.tnb_wrap a img { width: 20px; position: relative; top: 2px; left: -8px; }
-	.tnb_wrap a.youtube-link { font-weight:400; }
-	.tnb_wrap a.youtube-link i { position: relative; bottom: -1px; left: -3px; font-size: 18px; background: linear-gradient(147deg, #f71735 0%, #db3445 74%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+	.tnb_wrap a.youtube-link { font-weight:600; color:#ffffffc9 }
+	.tnb_wrap a.youtube-link:hover { color:#fff }
+	.tnb_wrap a.youtube-link:before { display:inline-block; content:""; background:url(../images/common/youtube-icon-30.png); background-size:cover; width: 20px; height:15px; position: relative; top: 2px; left: -8px; filter:brightness(0.7)}
+	.tnb_wrap a.youtube-link:hover:before{ filter:none; }
 	.tnb_wrap a.login{ border:#fff solid 1px; border-radius: 30px; padding:5px 12px; font-size:12px; font-weight:500 }
 	.tnb_wrap a.login:hover{ background:#fff; border:#282828 solid 1px; color:#282828; transition:0.3s }
 	.tnb_wrap a.logout{ background-color: rgba( 255, 255, 255, 0.8 ); border:#282828 solid 1px; color:#000; border-radius: 30px; padding:5px 12px; font-size:12px; font-weight:500 }
