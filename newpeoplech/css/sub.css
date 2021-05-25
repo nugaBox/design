@@ -257,7 +257,7 @@
 	.wrap_road .wrap_roadview {height:300px;}
 	.wrap_road .wrap_btn {padding-left:40px;}
 	.wrap_road .wrap_btn a.btn_apple {display:none;}
-	.wrap_road .wrap_btn p.pc_txt {display: block;text-indent: -25px; margin:15px 30px 0 20px;}
+	.wrap_road .wrap_btn p.pc_txt {display: block;/*text-indent: -25px;*/ margin:15px 30px 0 20px;}
 }
 
 /* 설교영상 */
