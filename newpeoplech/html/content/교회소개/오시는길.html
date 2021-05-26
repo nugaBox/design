@@ -215,42 +215,37 @@
                                 </li>
                                 <li class="depth02 bus"><h4>대중교통</h4>
                                     <ul>
-                                        <li>용봉모아아파트 정류장 하차<br><span><i class="fas fa-bus"></i> 용봉83</span><span><i class="fas fa-bus"></i> 419</span></li>
-                                        <li>유창아파트 정류장 하차<br><span><i class="fas fa-bus"></i> 매월26</span><span><i class="fas fa-bus"></i> 첨단30</span><span><i class="fas fa-bus"></i> 금남57</span><span><i class="fas fa-bus"></i> 상무64</span><span><i class="fas fa-bus"></i> 용봉83</span><span><i class="fas fa-bus"></i> 419</span></li>
+                                        <li>용봉모아아파트 정류장 하차<br><a class="bus-short" href="https://map.kakao.com/?busInfoId=51132" target="_blank"><i class="fas fa-bus"></i> 용봉83</a><a class="bus-short" href="https://map.kakao.com/?busInfoId=51163" target="_blank"><i class="fas fa-bus"></i> 419</a></li>
+                                        <li>유창아파트 정류장 하차<br><a class="bus-long" href="https://map.kakao.com/?busInfoId=51156" target="_blank"><i class="fas fa-bus"></i> 매월26</a><a class="bus-long" href="https://map.kakao.com/?busInfoId=51150" target="_blank"><i class="fas fa-bus"></i> 첨단30</a><a class="bus-short" href="https://map.kakao.com/?busInfoId=51164" target="_blank"><i class="fas fa-bus"></i> 금남57</a><a class="bus-short" href="https://map.kakao.com/?busInfoId=51123" target="_blank"><i class="fas fa-bus"></i> 상무64</a><a class="bus-short" href="https://map.kakao.com/?busInfoId=51132" target="_blank"><i class="fas fa-bus"></i> 용봉83</a><a class="bus-short" href="https://map.kakao.com/?busInfoId=51163" target="_blank"><i class="fas fa-bus"></i> 419</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                         <div class="wrap_road">
+                            <div class="wrap_btn_m">
+                                <a class="btn_tmap" href="https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx4de75d58b0624d539d847a2bb8737c13&name=광주새백성교회&lat=35.17657924590656&lon=126.8951276323102">
+                                    <span>T map으로<br>길찾기</span>
+                                </a>
+                                <a class="btn_kakaonavi" id="navi" href="#" onclick="navi();">
+                                    <span>카카오내비로<br>길찾기</span>
+                                </a>
+                            </div>
                             <div class="wrap_roadview">
                                 <div id="roadview" style="width:100%;height:100%"></div>
                                 <div class="wrap_button">
                                     <a href="javascript:;" class="btn_comm btn_linkRoadview" target="_blank" onclick="moveKakaoRoadview(this)"><span class="screen_out"> </span></a>
                                 </div>
+                                <div class="txt_roadview">로드뷰를 움직여 주변을 확인할 수 있습니다</div>
                             </div>
                             <div class="wrap_btn">
-                                <p class="pc_txt"> 모바일로 접속 시 <br class="pc_br">길찾기 서비스를 <br class="pc_br">사용할 수 있습니다.</p>
-                                <a class="btn_naver" href="https://map.naver.com/v5/search/%EA%B4%91%EC%A3%BC%EC%83%88%EB%B0%B1%EC%84%B1%EA%B5%90%ED%9A%8C/place/38325403?c=14125403.9814011,4187996.7230305,15,0,0,0,dh" target="_blank">
-                                    <span>네이버지도</span>
-                                </a>
-                                <a class="btn_kakaomap" href="http://kko.to/c5wRlhmYB" target="_blank">
-                                    <span>카카오맵</span>
-                                </a>
-                                <a class="btn_google" href="https://www.google.com/maps/place/%EA%B4%91%EC%A3%BC%EC%83%88%EB%B0%B1%EC%84%B1%EA%B5%90%ED%9A%8C/@35.176101,126.892849,17z/data=!3m1!4b1!4m5!3m4!1s0x35718c4664521c09:0x5d1aae1f41c64984!8m2!3d35.176101!4d126.895043" target="_blank">
-                                    <span>구글 지도</span>
-                                </a>
-                                <a class="btn_apple" href="https://maps.apple.com/?address=%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%EC%A0%80%EB%B6%88%EB%A1%9C%2023,%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%2061111&ll=35.176667,126.895088&q=%EC%A0%80%EB%B6%88%EB%A1%9C%2023&_ext=EiYpgPvw0wmWQUAxdPjUFe+4X0A5/tAWMDCXQUBBME4CJqO5X0BQBA%3D%3D&t=m" target="_blank">
-                                    <span>애플 지도</span>
-                                </a>
-                                <a class="btn_tmap" href="https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx4de75d58b0624d539d847a2bb8737c13&name=광주새백성교회&lat=35.17657924590656&lon=126.8951276323102">
-                                    <span>T map으로 길찾기</span>
-                                </a>
-                                <a class="btn_kakaonavi" id="navi" href="#" onclick="navi();">
-                                    <span>카카오내비로 길찾기</span>
-                                </a>
-                                <p class="m_txt">길찾기 서비스는 모바일 환경에서 <br class="m_br">앱을 통해 사용할 수 있습니다</p>
+                                <div> </div>
+                                <a class="btn_tmap" href="https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx4de75d58b0624d539d847a2bb8737c13&name=광주새백성교회&lat=35.17657924590656&lon=126.8951276323102" title="T map 길찾기" />
+                                <a class="btn_kakaonavi" id="navi" href="#" onclick="navi();" title="카카오내비 길찾기" />
+                                <a class="btn_kakaomap" href="http://kko.to/c5wRlhmYB" target="_blank" title="카카오맵" />
+                                <a class="btn_naver" href="https://map.naver.com/v5/search/%EA%B4%91%EC%A3%BC%EC%83%88%EB%B0%B1%EC%84%B1%EA%B5%90%ED%9A%8C/place/38325403?c=14125403.9814011,4187996.7230305,15,0,0,0,dh" target="_blank" title="네이버 지도" />
+                                <a class="btn_google" href="https://www.google.com/maps/place/%EA%B4%91%EC%A3%BC%EC%83%88%EB%B0%B1%EC%84%B1%EA%B5%90%ED%9A%8C/@35.176101,126.892849,17z/data=!3m1!4b1!4m5!3m4!1s0x35718c4664521c09:0x5d1aae1f41c64984!8m2!3d35.176101!4d126.895043" target="_blank" title="Google Maps" />
+                                <a class="btn_apple" href="https://maps.apple.com/?address=%EA%B4%91%EC%A3%BC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%EC%A0%80%EB%B6%88%EB%A1%9C%2023,%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%2061111&ll=35.176667,126.895088&q=%EC%A0%80%EB%B6%88%EB%A1%9C%2023&_ext=EiYpgPvw0wmWQUAxdPjUFe+4X0A5/tAWMDCXQUBBME4CJqO5X0BQBA%3D%3D&t=m" target="_blank" title="Apple 지도" />
                             </div>
-                            <p class="t_txt"> 모바일로 접속 시 길찾기 서비스를 사용할 수 있습니다.</p>
                         </div>
                     </div>
                     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a7b26186b2b5df92ff2fc9c4d62e69a1&libraries=services"></script>
@@ -354,6 +349,11 @@
                                 coordType: 'wgs84',
                             })
                         }
+                    </script>
+                    <script>
+                        $( function() {
+                            $( document ).tooltip();
+                        } );
                     </script>
                 </div>
             </div>
