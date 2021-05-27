@@ -197,13 +197,19 @@
 .wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {left:12px !important; top:4px !important; padding:5px; font-size:13px; font-weight:600;font-family: Noto Sans Korean;}
 .wrap_content {display:inline-block;width:100%; background: #faf9f8; padding:30px 10px 50px;}
 .wrap_info ul {max-width:768px; padding:0 0 0 15px; margin:5px auto 0;}
-.wrap_info > ul > li.depth02 {font-weight:500; font-size:20px;line-height:1.1em; margin-bottom:40px;}
-.wrap_info > ul > li > ul > li:before{position: relative; left: -17px; top: 15px; display: block; width: 4px; height: 4px; border-radius: 10px; border: #62AEF8 solid 2px; content: "";}
-.wrap_info > ul > li > ul > li {font-weight:300; font-size:16px; letter-spacing:-0.02em;}
-.wrap_info > ul > li.bus > ul > li:before {top:17px}
-.wrap_info > ul > li.bus > ul > li > a {display: inline-block; border:#000 solid 1px; color:#000; border-radius: 3px;padding: 1px 4px;margin:1px 5px; font-size:0.9em;}
-.wrap_info > ul > li.bus > ul > li > a.bus-long:hover {border:#0a53be solid 1px; color:#0a53be; background: #fff;}
-.wrap_info > ul > li.bus > ul > li > a.bus-short:hover {border: #25ac00 solid 1px; color:#25ac00; background: #fff;}
+.wrap_info li:before {display:inline-block; content:""; width: 20px; height: 15px; background-image: url(../images/sub/location/ico_detail_kakao.png); background-size: 270px auto; }
+.wrap_info li.address-road:before { height: 18px; margin: 1px 0 0 3px; background-position: -40px -30px;}
+.wrap_info li.address-num:before { margin: 1px 0 0 3px; }
+.wrap_info li.telnum:before {margin: 4px 0 0 2px;background-position: -100px -30px; }
+.wrap_info li.publicinfo:before { margin: 4px 0 0 2px;background-position: -160px -30px; }
+.wrap_info li.roadinfo:before { margin: 4px 0 0 2px;background-position: -100px -30px; }
+/*.wrap_info > ul > li.depth02 {font-weight:500; font-size:20px;line-height:1.1em; margin-bottom:40px;}*/
+/*.wrap_info > ul > li > ul > li:before{position: relative; left: -17px; top: 15px; display: block; width: 4px; height: 4px; border-radius: 10px; border: #62AEF8 solid 2px; content: "";}*/
+/*.wrap_info > ul > li > ul > li {font-weight:300; font-size:16px; letter-spacing:-0.02em;}*/
+/*.wrap_info > ul > li.bus > ul > li:before {top:17px}*/
+/*.wrap_info > ul > li.bus > ul > li > a {display: inline-block; border:#000 solid 1px; color:#000; border-radius: 3px;padding: 1px 4px;margin:1px 5px; font-size:0.9em;}*/
+/*.wrap_info > ul > li.bus > ul > li > a.bus-long:hover {border:#0a53be solid 1px; color:#0a53be; background: #fff;}*/
+/*.wrap_info > ul > li.bus > ul > li > a.bus-short:hover {border: #25ac00 solid 1px; color:#25ac00; background: #fff;}*/
 .wrap_road {max-width: 768px;}
 .wrap_road .wrap_roadview, #roadview { -moz-border-radius:1em;-webkit-border-radius:1em; border-radius:1em;}
 .wrap_road .wrap_roadview {width:90%;height:200px;position:relative; margin:20px auto 30px;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
