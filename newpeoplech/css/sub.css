@@ -194,81 +194,92 @@
 .wrap_map {width:100%;height:250px;position:relative; margin:10px auto 0;}
 .wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) {border-radius:5px;height:32px !important;border:1px solid #babab8 !important; }
 .wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(1) {top:29px !important;}
-.wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {left:20px !important; top:4px !important; padding:5px; font-size:15px; font-weight:600;font-family: Noto Sans Korean;}
-.wrap_content {display:inline-block;width:100%; background: #faf9f8; padding:30px 10px 50px;}
+.wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {left:20px !important; top:4px !important; padding:5px; font-size:15px; font-weight:600;}
+
+.wrap_content {display:inline-block;width:100%; background: #faf9f8; padding:30px 10px}
 .wrap_info > ul {max-width:768px; padding:0 0 0 10px; margin:5px auto 0;}
-.wrap_info > ul > li:before {display:inline-block; content:""; width: 20px; height: 15px; background-image: url(../images/sub/location/ico_detail_kakao.png); background-size: 270px auto; position: relative;top: 1px; margin-right: 5px !important;}
-.wrap_info > ul > li.address:before { height: 18px; margin: 1px 0 0 3px; background-position: -40px -30px;top: 2px;}
-.wrap_info > ul > li.telnum:before {margin: 4px 0 0 2px;background-position: -100px -30px; }
-.wrap_info > ul > li.publicinfo:before { margin: 4px 0 0 2px;background-position: -160px -30px; }
-.wrap_info > ul > li.roadinfo:before { margin: 4px 0 0 2px;background-position: -20px -50px; top:3px;}
 .wrap_info > ul > li {font-size:16px;line-height: 1.5em;margin-bottom: 10px;}
+.wrap_info > ul > li:before {display:inline-block; content:""; width: 20px; height: 15px; background-image: url(../images/sub/location/ico_detail_kakao.png); background-size: 270px auto; position: relative;top: 1px; margin-right: 5px !important;}
+.wrap_info > ul > li small { padding-left: 10px; }
+.wrap_info > ul > li > ul {padding:15px 0 25px 26px}
+.wrap_info > ul > li.address:before { height: 18px; margin: 1px 0 0 3px; background-position: -40px -30px;top: 2px;}
 .wrap_info > ul > li.address span {padding-left: 28px; color:#8e8e8e}
+.wrap_info > ul > li.telnum:before {margin: 4px 0 0 2px;background-position: -100px -30px; }
 .wrap_info > ul > li.telnum a {color:#5495F7}
-.wrap_info > ul > li > ul {padding:6px 0 0 26px;}
-.wrap_info > ul > li.publicinfo {font-size:0.95em;}
+.wrap_info > ul > li.publicinfo:before { margin: 4px 0 0 2px;background-position: -160px -30px; }
+.wrap_info > ul > li:nth-child(4):before {background: none;}
+.wrap_info > ul > li.publicinfo {font-size:0.95em; }
+.wrap_info > ul > li:nth-child(4) {margin-bottom:20px;}
 .wrap_info > ul > li.publicinfo > span { display: block; margin-top: 3px; margin-left:20px;}
+.wrap_info > ul > li.publicinfo > span br {display:none !important;}
 .wrap_info > ul > li.publicinfo > span a {display: inline-block; border:#000 solid 1px; color:#000; border-radius: 3px;padding: 1px 4px;margin:1px 5px; font-size:0.9em;}
 .wrap_info > ul > li.publicinfo > span a.bus-long:hover {border:#0a53be solid 1px; color:#0a53be; background: #fff;}
 .wrap_info > ul > li.publicinfo > span a.bus-short:hover {border: #25ac00 solid 1px; color:#25ac00; background: #fff;}
+.wrap_info > ul > li.roadinfo:before { margin: 4px 0 0 2px;background-position: -20px -50px; top:3px;}
+.wrap_info > ul > li.roadinfo > ul {display: flex;}
+.wrap_info > ul > li.roadinfo > ul > li {width:48%;}
+.wrap_info > ul > li.roadinfo > ul > li a {display:block; width:85%; border-radius:10px; text-align:center; padding:15px 0;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
+.wrap_info > ul > li.roadinfo > ul > li a.btn_tmap span:before {background:url(../images/sub/location/tmap.png);background-size:cover;}
+.wrap_info > ul > li.roadinfo > ul > li a.btn_kakaonavi span:before {background:url(../images/sub/location/kakaonavi.png);background-size:cover;} a.btn_kakaonavi span:before {background:url(../images/sub/location/kakaonavi.png);background-size:cover;} a.btn_kakaonavi span:before {background:url(../images/sub/location/kakaonavi.png);background-size:cover;}
+.wrap_info > ul > li.roadinfo > ul > li a:hover {cursor: pointer; transform: scale(1.05); -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transition: all 0.3s ease-in-out;}
+.wrap_info > ul > li.roadinfo > ul > li a.btn_tmap {background:#fff;}
+.wrap_info > ul > li.roadinfo > ul > li a.btn_kakaonavi {background:#fae100; color:#594916;}
+.wrap_info > ul > li.roadinfo > ul > li a span:before {display:block;content:"";width:25px;height:25px;margin:0 auto 15px;}
+.wrap_info > ul > li.roadinfo > ul > li a span {font-weight:bold; color:#000;}
+.wrap_info > ul > li.roadview:before { margin: 4px 0 0 2px;background-position: -140px -30px; }
+.wrap_info > ul > li.roadview > .wrap_roadview, #roadview { -moz-border-radius:1em;-webkit-border-radius:1em; border-radius:1em;}
+.wrap_info > ul > li.roadview > .wrap_roadview {width:90%;height:200px;position:relative; margin:20px auto 30px;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
+.wrap_info > ul > li.roadview > .wrap_roadview #roadview > div:nth-child(2) > div:nth-child(2) {border-radius:5px;width: 220px !important;height:29px !important}
+.wrap_info > ul > li.roadview > .wrap_roadview #roadview > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {padding:5px;}
+.wrap_info > ul > li.roadview > .wrap_roadview .wrap_button {position:absolute;left:15px;top:12px;z-index:2}
+.wrap_info > ul > li.roadview > .wrap_roadview .btn_comm {float:left;display:block;width:70px;height:27px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/sample_button_control.png) no-repeat}
+.wrap_info > ul > li.roadview > .wrap_roadview .btn_linkRoadview {background-position:0 0;}
+.wrap_info > ul > li.roadview > .wrap_roadview .btn_resetRoadview {background-position:-69px 0;}
+
 .wrap_road {max-width: 768px;}
 .wrap_road .wrap_roadview, #roadview { -moz-border-radius:1em;-webkit-border-radius:1em; border-radius:1em;}
 .wrap_road .wrap_roadview {width:90%;height:200px;position:relative; margin:20px auto 30px;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
 .wrap_road .wrap_roadview #roadview > div:nth-child(2) > div:nth-child(2) {border-radius:5px;width: 220px !important;height:29px !important}
-.wrap_road .wrap_roadview #roadview > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {padding:5px;font-family: Noto Sans Korean;}
+.wrap_road .wrap_roadview #roadview > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {padding:5px;}
 .wrap_road .wrap_roadview .wrap_button {position:absolute;left:15px;top:12px;z-index:2}
 .wrap_road .wrap_roadview .btn_comm {float:left;display:block;width:70px;height:27px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/sample_button_control.png) no-repeat}
 .wrap_road .wrap_roadview .btn_linkRoadview {background-position:0 0;}
 .wrap_road .wrap_roadview .btn_resetRoadview {background-position:-69px 0;}
 .wrap_road .wrap_roadview .txt_roadview {text-align: center; color:#666; margin-top:20px;}
-.wrap_road .wrap_btn_m {width:90%; margin:10px auto;display:flex}
-.wrap_road .wrap_btn_m a {position:relative;font-size:18px;font-weight:500;width:45%;border-radius:15px; text-align:center;padding:25px 0;margin-bottom:20px;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
-.wrap_road .wrap_btn_m a:first-child{margin-right:8%;}
-.wrap_road .wrap_btn_m a:hover {cursor: pointer; transform: scale(1.05); -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transition: all 0.3s ease-in-out;}
-.wrap_road .wrap_btn_m a img {width:30px; margin-right:5px;}
-.wrap_road .wrap_btn_m a span:before {display:block;content:"";width:35px;height:35px;margin:0 auto 15px;}
-.wrap_road .wrap_btn_m a span {color: #000;font-size: 16px;font-family: Noto Sans Korean;}
-.wrap_road .wrap_btn_m a.btn_tmap span:before {background:url(../images/sub/location/tmap.png);background-size:cover;}
-.wrap_road .wrap_btn_m a.btn_kakaonavi span:before {background:url(../images/sub/location/kakaonavi.png);background-size:cover;}
-.wrap_road .wrap_btn_m a.btn_tmap {background:#fff;}
-.wrap_road .wrap_btn_m a.btn_kakaonavi {background:#fae100; color:#594916;}
-.wrap_road .wrap_btn {display:none;}
-.wrap_road .wrap_btn p.pc_txt {display:none;}
-.wrap_road .wrap_btn p.m_txt {margin-top:30px; text-align: center; letter-spacing:-0.03em; font-size:18px; font-weight:400;}
-.wrap_road p.t_txt {display:none;}
+
+.map_icons {display:none; position:absolute; top:220px; right:20px;}
+.map_icons a {display:block; height:40px; width:40px; margin: 0 6px; padding:0; -webkit-background-composite: #fff; background-color: #fff; background-size: cover; border-radius: 5px; padding-top: 40px; z-index: 2; text-decoration: none; filter:grayscale(1); border: solid 1px #eee;}
+.map_icons a:hover{filter:none;}
+.map_icons a span {display: block; font-size: 14px; font-weight: 400; color: #000000; margin-top: 20px; top:0;}
+.map_icons a.btn_kakao {background:url(../images/sub/location/kakaomap.png);background-size:cover;}
+.map_icons a.btn_naver {background:url(../images/sub/location/navermap.png);background-size:cover;}
+.map_icons a.btn_google {background:url(../images/sub/location/googlemaps.png);background-size:cover;}
+.map_icons a.btn_apple {background:url(../images/sub/location/applemaps.png);background-size:cover;}
 @media all and (min-width:375px) {
+	.wrap_info > ul > li.publicinfo > span br {display:block !important;}
 }
 @media all and (min-width:768px) {
 	#location {display:flex}
-	.wrap_map {width:40%;height:900px;position:relative; margin:0 auto; }
+	.wrap_map {width:40%;height:800px;position:relative; margin:0 auto; }
 	.wrap_content {width:60%; margin:0 auto; background:#faf9f8; padding:30px 15px;}
 	.wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) {border-radius:5px;width: 150px !important;height:32px !important}
 	.wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {left:6px !important; top:2px !important; padding:5px; font-size:19px; font-weight:400;}
-	.wrap_info {margin-bottom:60px;}
+	.wrap_info {margin-bottom:30px;}
 	.wrap_info ul {margin-left:20px;}
 	.wrap_road {margin-left:20px;}
 	.wrap_road .wrap_roadview {height:200px; margin-bottom:80px;}
-	.wrap_road .wrap_btn_m {display:none;}
 	.wrap_road .wrap_btn {display:flex; width:95%; padding-left:20px;}
-	.wrap_road .wrap_btn div {flex-grow: 1;}
-	.wrap_road .wrap_btn a {display:block; height:45px; width:45px; margin: 0 10px; padding:0; -webkit-background-composite: #fff; background-color: #fff; background-size: cover; border-radius: 5px; z-index: 2; text-decoration: none; filter:grayscale(1); box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%), -8px -8px 12px 0 rgb(255 255 255 / 30%); }
-	.wrap_road .wrap_btn a:hover{filter:none;}
-	.wrap_road .wrap_btn a span:before {display: none;}
-	.wrap_road .wrap_btn a span {display: block; font-size: 14px; font-weight: 400; color: #000000; margin-top: 20px; top:0;}
-	.wrap_road .wrap_btn a.btn_tmap {background:url(../images/sub/location/tmap_v2.png);background-size:cover;}
-	.wrap_road .wrap_btn a.btn_kakaonavi {background:url(../images/sub/location/kakaonavi_full.png);background-size:cover;}
-	.wrap_road .wrap_btn a.btn_kakaomap {background:url(../images/sub/location/kakaomap.png);background-size:cover;}
-	.wrap_road .wrap_btn a.btn_naver {background:url(../images/sub/location/navermap.png);background-size:cover;}
-	.wrap_road .wrap_btn a.btn_google {background:url(../images/sub/location/googlemaps.png);background-size:cover;}
-	.wrap_road .wrap_btn a.btn_apple {background:url(../images/sub/location/applemaps.png);background-size:cover;}
 }
 @media all and (min-width:1024px) {
-	.wrap_map {width:35%;height:1000px;}
+	.wrap_map {width:35%;height:750px;}
 	.wrap_content {width:70%;}
-	.wrap_road p.t_txt {display:none;}
+	.wrap_info > ul > li.publicinfo > span br {display:none !important;}
 	.wrap_road .wrap_roadview {height:300px;}
 	.wrap_road .wrap_btn {padding-left:40px;}
-	.wrap_road .wrap_btn p.pc_txt {display: block;/*text-indent: -25px;*/ margin:15px 30px 0 20px;}
+	.map_icons {display:flex;}
+}
+@media all and (min-width:1200px) {
+	.map_icons {top:260px;}
 }
 
 /* 설교영상 */
