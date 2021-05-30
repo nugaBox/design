@@ -236,17 +236,6 @@
 .wrap_info > ul > li.roadview > .wrap_roadview .btn_linkRoadview {background-position:0 0;}
 .wrap_info > ul > li.roadview > .wrap_roadview .btn_resetRoadview {background-position:-69px 0;}
 
-.wrap_road {max-width: 768px;}
-.wrap_road .wrap_roadview, #roadview { -moz-border-radius:1em;-webkit-border-radius:1em; border-radius:1em;}
-.wrap_road .wrap_roadview {width:90%;height:200px;position:relative; margin:20px auto 30px;box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 20px 20px rgba(0, 0, 0, 0.12);}
-.wrap_road .wrap_roadview #roadview > div:nth-child(2) > div:nth-child(2) {border-radius:5px;width: 220px !important;height:29px !important}
-.wrap_road .wrap_roadview #roadview > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {padding:5px;}
-.wrap_road .wrap_roadview .wrap_button {position:absolute;left:15px;top:12px;z-index:2}
-.wrap_road .wrap_roadview .btn_comm {float:left;display:block;width:70px;height:27px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/sample_button_control.png) no-repeat}
-.wrap_road .wrap_roadview .btn_linkRoadview {background-position:0 0;}
-.wrap_road .wrap_roadview .btn_resetRoadview {background-position:-69px 0;}
-.wrap_road .wrap_roadview .txt_roadview {text-align: center; color:#666; margin-top:20px;}
-
 .map_icons {display:none; position:absolute; top:220px; right:20px;}
 .map_icons a {display:block; height:40px; width:40px; margin: 0 6px; padding:0; -webkit-background-composite: #fff; background-color: #fff; background-size: cover; border-radius: 5px; padding-top: 40px; z-index: 2; text-decoration: none; filter:grayscale(1); border: solid 1px #eee;}
 .map_icons a:hover{filter:none;}
@@ -266,16 +255,13 @@
 	.wrap_map #map > div:nth-child(1) > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {left:6px !important; top:2px !important; padding:5px; font-size:19px; font-weight:400;}
 	.wrap_info {margin-bottom:30px;}
 	.wrap_info ul {margin-left:20px;}
-	.wrap_road {margin-left:20px;}
-	.wrap_road .wrap_roadview {height:200px; margin-bottom:80px;}
-	.wrap_road .wrap_btn {display:flex; width:95%; padding-left:20px;}
 }
 @media all and (min-width:1024px) {
-	.wrap_map {width:35%;height:750px;}
+	.wrap_map {width:35%;height:650px;}
 	.wrap_content {width:70%;}
 	.wrap_info > ul > li.publicinfo > span br {display:none !important;}
-	.wrap_road .wrap_roadview {height:300px;}
-	.wrap_road .wrap_btn {padding-left:40px;}
+	.wrap_info > ul > li.roadinfo {display:none;}
+	.wrap_info > ul > li.roadview > .wrap_roadview {height:250px;}
 	.map_icons {display:flex;}
 }
 @media all and (min-width:1200px) {
