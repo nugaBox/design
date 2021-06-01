@@ -35,67 +35,45 @@
 	#welcome .welcome_intro p {font-size:1.2rem;}
 }
 
-/* 비전과 목표 */
-#vision {padding:50px 0 30px; background-color: #f7f7f7; text-align: center;}
-#vision .content_top {padding: 0 0 30px;}
-#vision .content_top h3 { font-size:2rem; }
-#vision .content_slogan .slogan_area { margin:0 auto 30px; }
-#vision .content_slogan .slogan_area ul > li {float:left; width:33.33%; text-align:center;}
-#vision .content_slogan .slogan_area ul > li > img { display:block; width:60%; margin:0 auto;}
-#vision .content_slogan .slogan_area ul > li > span { display: block; width:90%;margin:15px auto; padding:8px 3px 6px; font-size:15px; border-radius:5px; background:#62AEF8; color:#fff; font-weight:500; letter-spacing:-0.04em;}
-#vision .content_slogan .slogan_area ul > li:nth-child(2) > span { background-color: #e6bf6c;}
-#vision .content_slogan .slogan_area ul > li:nth-child(3) > span { background-color: #b3cc75;}
-#vision p b {font-size: 1.08em;}
+/* 교회 비전 */
+#vision { padding: 0;}
+#slogan {padding:50px 0 30px; background-color: #fff; text-align: center;}
+#slogan .slogan_area { margin:0 auto 30px; }
+#slogan .slogan_area ul > li {float:left; width:33.33%; text-align:center;}
+#slogan .slogan_area ul > li > img { display:block; width:60%; margin:0 auto;}
+#slogan .slogan_area ul > li > span { display: block; width:90%;margin:15px auto; padding:8px 3px 6px; font-size:15px; border-radius:5px; background:#62AEF8; color:#fff; font-weight:500; letter-spacing:-0.04em;}
+#slogan .slogan_area ul > li:nth-child(2) > span { background-color: #e6bf6c;}
+#slogan .slogan_area ul > li:nth-child(3) > span { background-color: #b3cc75;}
+#slogan p b {font-size: 1.08em;}
 @media all and (min-width:375px){
-	#vision .content_slogan .slogan_area { width:375px; padding:0 10px;}
-	#vision .content_slogan .slogan_area ul > li > span { font-size:17.5px;}
-	#vision .content_slogan p { font-size:15px;}
+	#slogan .slogan_area { width:375px; padding:0 10px;}
+	#slogan .slogan_area ul > li > span { font-size:17.5px;}
+	#slogan p { font-size:15px;}
 }
 @media all and (min-width:768px){
-	#vision { padding: 50px 0;}
-	#vision .content_top {padding: 0 0 50px;}
-	#vision .content_slogan .slogan_area { width:768px; padding:0 60px;}
-	#vision .content_slogan .slogan_area ul > li > span { font-size:1.5rem}
-	#vision .content_slogan p { font-size: 1.1rem}
+	#slogan { padding: 50px 0;}
+	#slogan .content_top {padding: 0 0 50px;}
+	#slogan .slogan_area { width:768px; padding:0 60px;}
+	#slogan .slogan_area ul > li > span { font-size:1.5rem}
+	#slogan p { font-size: 1.1rem}
 }
 @media all and (min-width:1024px){
-	#vision { padding: 70px 0 50px; }
-	#vision .content_top h3 { font-size:2.4rem; }
-	#vision .content_slogan {width:1024px; margin: 0 auto; display: flex; }
-	#vision .content_slogan .slogan_area { margin:0 auto 30px; width:48%; padding: 0 20px;}
-	#vision .content_slogan .slogan_area ul > li > img { width:100px;}
-	#vision .content_slogan .slogan_area ul > li > span { width:88%; font-size:1.4rem; padding: 10px 3px 8px;}
-	#vision .content_slogan p { width:52%; font-size:1.2rem; text-align:left; padding-left:10px}
+
+	#slogan {width:1024px; margin: 0 auto; display: flex; }
+	#slogan .slogan_area { margin:0 auto 30px; width:48%; padding: 0 20px;}
+	#slogan .slogan_area ul > li > img { width:100px;}
+	#slogan .slogan_area ul > li > span { width:88%; font-size:1.4rem; padding: 10px 3px 8px;}
+	#slogan p { width:52%; font-size:1.2rem; text-align:left; padding-left:10px}
 }
 @media all and (min-width:1200px){
-	#vision { padding: 90px 0 50px;}
-	#vision .content_top h3 { padding: 0 0 25px;}
+	#slogan { padding: 90px 0 50px;}
 }
 
-/* 교회 표어 */
-#vision_year { padding:30px 0 50px; background-color: #f7f7f7; text-align: center;}
-#vision_year h3 { display:block; width:220px; padding:9px 0 7px; font-size:18px; margin: 0 auto 30px; border:2px solid #62AEF8; font-weight:500; border-radius:30px; letter-spacing:-0.04em; }
-#vision_year .swiper-slide { text-align: center; font-size: 18px; background: #fff; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: block; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;
-	justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; padding: 12px; box-shadow: 0 2px 6px rgb(0 0 0 / 6%); -webkit-tap-highlight-color: transparent; flex-shrink: 0; box-sizing: border-box; border-radius: 12px; overflow: hidden; background-color: #fff; }
-#vision_year .swiper-slide > div { display:inline-table; height:130px; text-align:left;}
-#vision_year .swiper-slide span:before{ display:inline-block; content:""; position:relative; top:2px; width:16px; height:16px; background:url(../images/sub/bullet_h4.gif) center no-repeat; background-size:cover; margin-right:10px; }
-#vision_year .swiper-slide span { display: inline-block; font-size:15px; font-weight:500; margin:5px 5px 15px; color:#757575;}
-#vision_year .swiper-slide img { display: block; width: 100%; object-fit: cover; margin:0 auto; }
-#vision_year .swiper-wrapper > div:first-child { margin-left: 10vw; }
-#vision_year .swiper-container { width: 100%; height: 100%; }
-@media all and (min-width:375px){
-	#vision_year .swiper-slide img { max-width:400px;}
-}
-@media all and (min-width:768px){
-	#vision_year .swiper-slide > div {margin: 20px 0;}
-	#vision_year h3 { font-size:24px; width:320px; padding: 15px 0 13px;}
-}
-@media all and (min-width:1024px){
-	#vision_year .swiper-wrapper > div:first-child { margin-left: calc( 50% - 250px ) }
-}
+/* 우리 교회의 사명 */
+#church_mission { padding:30px 0 50px; text-align: center;}
 
 /* 사도행전의 비전 */
-#acts_vision {padding:50px 0 30px; background-color: #fff; text-align: center;}
+#acts_vision {padding:50px 0 30px; background-color: #f7f7f7; text-align: center;}
 #acts_vision .content_top {padding: 0 0 30px;}
 #acts_vision .content_top h3 { font-size:2rem; }
 @media all and (min-width:375px){
@@ -112,6 +90,27 @@
 	#acts_vision { padding: 90px 0 50px;}
 	#acts_vision .content_top h3 { padding: 0 0 25px;}
 }
+
+/* 올해의 교회 표어 */
+#vision_year { padding:30px 0 50px; background-color: #f7f7f7; text-align: center;}
+#vision_year .swiper-slide { text-align: center; font-size: 18px; background: #fff; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: block; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;
+	justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; padding: 12px; box-shadow: 0 2px 6px rgb(0 0 0 / 6%); -webkit-tap-highlight-color: transparent; flex-shrink: 0; box-sizing: border-box; border-radius: 12px; overflow: hidden; background-color: #fff; }
+#vision_year .swiper-slide > div { display:inline-table; height:130px; text-align:left;}
+#vision_year .swiper-slide span:before{ display:inline-block; content:""; position:relative; top:2px; width:16px; height:16px; background:url(../images/sub/bullet_h4.gif) center no-repeat; background-size:cover; margin-right:10px; }
+#vision_year .swiper-slide span { display: inline-block; font-size:15px; font-weight:500; margin:5px 5px 15px; color:#757575;}
+#vision_year .swiper-slide img { display: block; width: 100%; object-fit: cover; margin:0 auto; }
+#vision_year .swiper-wrapper > div:first-child { margin-left: 10vw; }
+#vision_year .swiper-container { width: 100%; height: 100%; }
+@media all and (min-width:375px){
+	#vision_year .swiper-slide img { max-width:400px;}
+}
+@media all and (min-width:768px){
+	#vision_year .swiper-slide > div {margin: 20px 0;}
+}
+@media all and (min-width:1024px){
+	#vision_year .swiper-wrapper > div:first-child { margin-left: calc( 50% - 250px ) }
+}
+
 
 /* 교회 연혁 */
 #history { padding:30px 15px; margin:0 auto;}
