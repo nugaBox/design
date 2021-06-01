@@ -36,33 +36,39 @@
 }
 
 /* 비전과 목표 */
-#vision {padding:50px 10px 30px; background-color: #f7f7f7; text-align: center;}
+#vision {padding:50px 0 30px; background-color: #f7f7f7; text-align: center;}
 #vision .content_top {padding: 0 0 30px;}
 #vision .content_top h3 { font-size:2rem; }
-#vision .slogan_area { margin:0 auto 30px; max-width:400px; }
-#vision .slogan_area ul > li {float:left; width:33.33%; text-align:center;}
-#vision .slogan_area ul > li > img { display:block; width:60%; margin:0 auto;}
-#vision .slogan_area ul > li > span { display: block; width:90%;margin:15px auto; padding:8px 3px 6px; font-size:15px; border-radius:5px; background:#62AEF8; color:#fff; font-weight:500; letter-spacing:-0.04em;}
-#vision .slogan_area ul > li:nth-child(2) > span { background-color: #e6bf6c;}
-#vision .slogan_area ul > li:nth-child(3) > span { background-color: #b3cc75;}
+#vision .content_slogan .slogan_area { margin:0 auto 30px; }
+#vision .content_slogan .slogan_area ul > li {float:left; width:33.33%; text-align:center;}
+#vision .content_slogan .slogan_area ul > li > img { display:block; width:60%; margin:0 auto;}
+#vision .content_slogan .slogan_area ul > li > span { display: block; width:90%;margin:15px auto; padding:8px 3px 6px; font-size:15px; border-radius:5px; background:#62AEF8; color:#fff; font-weight:500; letter-spacing:-0.04em;}
+#vision .content_slogan .slogan_area ul > li:nth-child(2) > span { background-color: #e6bf6c;}
+#vision .content_slogan .slogan_area ul > li:nth-child(3) > span { background-color: #b3cc75;}
 #vision p b {font-size: 1.08em;}
 @media all and (min-width:375px){
-	#vision .slogan_area ul > li > span { font-size:17.5px;}
-	#vision p { font-size:15px;}
+	#vision .content_slogan .slogan_area { width:375px; padding:0 10px;}
+	#vision .content_slogan .slogan_area ul > li > span { font-size:17.5px;}
+	#vision .content_slogan p { font-size:15px;}
 }
 @media all and (min-width:768px){
-	#vision { padding: 50px 10px;}
-	#vision .slogan_area ul > li > span { font-size:20px;}
+	#vision { padding: 50px 0;}
+	#vision .content_top {padding: 0 0 50px;}
+	#vision .content_slogan .slogan_area { width:768px; padding:0 60px;}
+	#vision .content_slogan .slogan_area ul > li > span { font-size:1.5rem}
+	#vision .content_slogan p { font-size: 1.1rem}
 }
 @media all and (min-width:1024px){
-	#vision { padding: 70px 10px 50px;}
-	#vision .slogan_area { margin:0 auto 30px; max-width:600px; }
-	#vision .slogan_area ul > li > img { width:100px;}
-	#vision .slogan_area ul > li > span { width:80%; font-size:24px; padding: 10px 3px 8px;}
-	#vision p { font-size:18px;}
+	#vision { padding: 70px 0 50px; }
+	#vision .content_top h3 { font-size:2.4rem; }
+	#vision .content_slogan {width:1024px; margin: 0 auto; display: flex; }
+	#vision .content_slogan .slogan_area { margin:0 auto 30px; width:48%; padding: 0 20px;}
+	#vision .content_slogan .slogan_area ul > li > img { width:100px;}
+	#vision .content_slogan .slogan_area ul > li > span { width:88%; font-size:1.4rem; padding: 10px 3px 8px;}
+	#vision .content_slogan p { width:52%; font-size:1.2rem; text-align:left; padding-left:10px}
 }
 @media all and (min-width:1200px){
-	#vision { padding: 90px 10px 50px;}
+	#vision { padding: 90px 0 50px;}
 	#vision .content_top h3 { padding: 0 0 25px;}
 }
 
