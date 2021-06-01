@@ -18,19 +18,21 @@
 	#welcome .welcome_intro p {font-size:15px;}
 }
 @media all and (min-width:768px){
-	#welcome {display:flex; padding-top:30px;}
-	#welcome .welcome_logo {float:left; width:35%;}
+	#welcome {width:768px; display:flex; padding-top:30px; margin: 0 auto;}
+	#welcome .welcome_logo {float:left; width:33%;}
 	#welcome .welcome_logo img { width:140px; position:relative; top:20%; left: 10%;}
-	#welcome .welcome_intro {width:65%; text-align: left; padding-left:20px;}
-	#welcome .welcome_intro h3 {text-align: left; }
+	#welcome .welcome_intro {width:66%; text-align: left; padding-left:20px;}
+	#welcome .welcome_intro h3 {text-align: left; font-size:1.6rem}
+	#welcome .welcome_intro h2 {font-size:1.8rem;}
+	#welcome .welcome_intro p {font-size:1rem;}
 	#welcome .welcome_intro hr {margin-left:0;}
 }
 @media all and (min-width:1024px){
-	#welcome {width:1024px; margin: 0 auto;}
-	#welcome .welcome_logo img { width:160px; left:15%;}
-	#welcome .welcome_intro h3 {font-size:24px}
-	#welcome .welcome_intro h2 {font-size:27px;}
-	#welcome .welcome_intro p {font-size:18px;}
+	#welcome {width:1024px;}
+	#welcome .welcome_logo img { width:180px; left:15%;}
+	#welcome .welcome_intro h3 {font-size:2rem}
+	#welcome .welcome_intro h2 {font-size:2.1rem;}
+	#welcome .welcome_intro p {font-size:1.2rem;}
 }
 
 /* 비전과 목표 */
