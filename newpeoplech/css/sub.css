@@ -94,6 +94,24 @@
 	#vision_year .swiper-wrapper > div:first-child { margin-left: calc( 50% - 250px ) }
 }
 
+/* 사도행전의 비전 */
+#acts_vision {padding:50px 0 30px; background-color: #fff; text-align: center;}
+#acts_vision .content_top {padding: 0 0 30px;}
+#acts_vision .content_top h3 { font-size:2rem; }
+@media all and (min-width:375px){
+
+}
+@media all and (min-width:768px){
+	#acts_vision { padding: 50px 0;}
+}
+@media all and (min-width:1024px){
+	#acts_vision { padding: 70px 0 50px; }
+	#acts_vision .content_top h3 { font-size:2.4rem; }
+}
+@media all and (min-width:1200px){
+	#acts_vision { padding: 90px 0 50px;}
+	#acts_vision .content_top h3 { padding: 0 0 25px;}
+}
 
 /* 교회 연혁 */
 #history { padding:30px 15px; margin:0 auto;}
