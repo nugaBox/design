@@ -83,7 +83,7 @@
 /*** 메인 박스 영역 ***/
 .box_area_wrap{ padding:15px 0px 50px 0px; background: #F5F5F7; }
 .box_area_wrap:after{ display:block; clear: both; content:"" }
-.box_area_wrap > .container { margin:10px auto; width:320px}
+.box_area_wrap > .container { margin:10px auto; width:100%;}
 .box_area_wrap a {color:#000;}
 .box_area_wrap .box_area {width:100%;}
 .box_area_wrap .box_area box {width:100%;}
@@ -94,12 +94,12 @@
 .box_area_wrap .box_area .box .box_title .more { float:right; margin-top:5px;}
 @media all and (min-width:375px){
     .box_area_wrap{ padding:15px 10px 50px 10px;}
-    .box_area_wrap > .container { width:355px}
+    .box_area_wrap > .container { max-width:400px}
     .box_area_wrap .box_area .box .box_title h2 { margin-bottom:30px;}
 }
 @media all and (min-width:768px) {
     .box_area_wrap{ padding:20px 20px 50px 20px;}
-    .box_area_wrap > .container { width:728px}
+    .box_area_wrap > .container { max-width:768px}
     .box_area_wrap .box_area {float: left; margin:0 auto;}
     .box_area_wrap .box_area .box .box_title { padding-top:0; }
     .box_area_wrap #box_area01{width:100%;max-width:100%;margin: 0;}
@@ -107,7 +107,7 @@
 }
 @media all and (min-width:1200px){
     .box_area_wrap{ padding:30px;}
-    .box_area_wrap > .container { width:1140px; display: flex;}
+    .box_area_wrap > .container { max-width:1280px; display: flex;}
     .box_area_wrap .box_area {float: none; margin:0 auto;}
     .box_area_wrap .box_area .box .box_title h2 { font-size:1.6em; float:left; margin-bottom:20px;}
     .box_area_wrap .box_area .box .box_title h2:before{ width:30px; height:4px; vertical-align: 7px; }
