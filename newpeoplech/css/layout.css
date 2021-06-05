@@ -1,7 +1,7 @@
 /*
-* 2020.07.11 Nuga Jang
-*/
-@charset "utf-8";
+ * 2020.07.11 Nuga Jang
+ */
+@charset "utf-8"; 
 
 /*** Reset ***/
 html,body{width:100%; height: 100%; position:relative; overflow-x:hidden}
@@ -192,7 +192,7 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 .sub_menu ul > li:hover {transition: .2s; cursor: pointer; color: #526187; background: #f5f5f5}
 .sub_menu .active{transition: .2s; background: #3FA6FD; color: #fff}
 .sub_menu .active:after{border-bottom: 2px solid #fff; border-right: 2px solid #fff; transform: rotate(-135deg); top: 20px; transition: .4s}
-.sub_menu .opened{display: block;opacity:1 !important}
+.sub_menu .opened{display: block; opacity:1 !important}
 .breadcrumb{overflow:hidden}
 .breadcrumb li{float:left; font-size:12px; line-height: 12px; font-family: 'Noto Sans Korean'}
 .breadcrumb li:after{display:inline-block; content:"/"; margin:0 5px}
@@ -225,7 +225,7 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 	.breadcrumb_pc > li > a {color:#636363; display:block; line-height:52px; padding:0 40px 0 10px; font-weight:400}
 	.breadcrumb_pc > li > a.home{padding-left:0; padding-right:15px}
 	.breadcrumb_pc > li.has_sub > a {padding:0 70px 0 5px}
-	.breadcrumb_pc > li > ul {display:none; position:absolute; width:100%; max-width:180px; padding:5px; background:#fcfcfc; top:51px; left:-24px; /*box-shadow: 0px 1px 1px 1px #555;*/ border:#dedede solid 1px; z-index:100}
+	.breadcrumb_pc > li > ul {display:none; position:absolute; width:100%; max-width:180px; padding:5px; background:#fcfcfc; top:51px; left:-24px; /*box-shadow: 0px 1px 1px 1px #555; */ border:#dedede solid 1px; z-index:100}
 	.breadcrumb_pc > li > ul > li {font-size:13px; border-bottom:#999 dashed 1px}
 	.breadcrumb_pc > li.has_sub > a:after {position: absolute; right: 23px; top: 20px; z-index: 5; display: block; height: 8px; width: 2px; background: #727272; content: ""; transition: all 0.1s ease-out}
 	.breadcrumb_pc > li.has_sub > a:after {transform: rotate(45deg)}
