@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 환영합니다 */
-#introduction { padding: 0;}
+#introduction { padding: 0; margin-bottom: 50px;}
 #welcome {padding:50px 10px; text-align: center;}
 #welcome .welcome_logo img {width:100px;}
 #welcome .welcome_intro h3 {padding:30px 0 15px; font-family:'Playfair Display', serif; font-size:18px;color:#a9aaab; font-weight:600; }
@@ -9,32 +9,59 @@
 #welcome .welcome_intro hr {width:170px; border-color:#0066B3; margin-top: 30px; margin-bottom: 30px;}
 #welcome .welcome_intro p a{font-weight:500;}
 #welcome .welcome_intro p > a:nth-child(3) {color:#0066B3}
-#welcome .welcome_intro p > a:nth-child(4) {color:#A5D546}
+#welcome .welcome_intro p > a:nth-child(4) {color:#7bb700}
+#pastor { padding:60px 20px 0; background-color: #f7f7f7; }
+#pastor .pastor_content .pastor_text hr {margin-bottom: 30px; width: 40px; border: solid 1px #0066B3; background: #0066B3;}
+#pastor .pastor_content .pastor_text p { margin-bottom: 15px;}
+#pastor .pastor_content .pastor_image {position: relative; top: 10px; text-align: right; display:flex; -webkit-flex-direction:row-reverse;　flex-direction:row-reverse;}
+#pastor .pastor_content .pastor_image a > img { height:200px; border-radius:20px; box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 16.5px 9.2px rgba(0, 0, 0, 0.083), 0 40px 20px rgba(0, 0, 0, 0.12);}
+#pastor .pastor_content .pastor_image a p {position: absolute; bottom:30px; right: 180px; font-size: 1rem; line-height: 1.6rem; letter-spacing: -1px;}
+#pastor .pastor_content .pastor_image a p span { font-weight:500; font-size: 1.2rem;}
+#pastor .pastor_content .pastor_image a p > img {width:80px; margin-top:10px;}
 @media all and (min-width:375px){
-	#welcome {padding:50px 30px;}
 	#welcome .welcome_logo img {width:120px;}
 	#welcome .welcome_intro h3 {font-size:20px;}
 	#welcome .welcome_intro h2 {font-size:23px;}
-	#welcome .welcome_intro p {font-size:15px;}
+	#welcome .welcome_intro p {font-size:16px;}
+	#pastor .pastor_content .pastor_text p  {font-size:16px;}
+	#pastor .pastor_content .pastor_image a p{font-size:1.1rem; letter-spacing: 0}
+	#pastor .pastor_content .pastor_image a p span { font-size: 1.3rem;}
 }
 @media all and (min-width:768px){
-	#welcome {width:768px; display:flex; padding-top:30px; margin: 0 auto;}
+	#introduction { margin-bottom: 0;}
+	#welcome {width:768px; display:flex; padding:10px 0 60px 0; margin: 0 auto;}
 	#welcome .welcome_logo {float:left; width:33%;}
 	#welcome .welcome_logo img { width:140px; position:relative; top:20%; left: 10%;}
 	#welcome .welcome_intro {width:66%; text-align: left; padding-left:20px;}
 	#welcome .welcome_intro h3 {text-align: left; font-size:1.6rem}
 	#welcome .welcome_intro h2 {font-size:1.8rem;}
-	#welcome .welcome_intro p {font-size:1rem;}
+	#welcome .welcome_intro p {font-size:17px;}
 	#welcome .welcome_intro hr {margin-left:0;}
+	#pastor {padding: 60px 40px}
+	#pastor .pastor_content {display: flex;}
+	#pastor .pastor_content .pastor_text {width: 65%;}
+	#pastor .pastor_content .pastor_text p {font-size: 1.1rem;}
+	#pastor .pastor_content .pastor_image {width: 35%; padding: 0 0 0 40px; display:block; text-align: right;}
+	#pastor .pastor_content .pastor_image a {position: absolute; bottom:0; right:30px;}
+	#pastor .pastor_content .pastor_image a > img { height:240px;}
+	#pastor .pastor_content .pastor_image a p {font-size:1.2rem; right: 0; position:unset; bottom:0; margin-top: 20px; padding-right: 20px}
+	#pastor .pastor_content .pastor_image a p span { display:inline-block; font-size:1.4rem;}
 }
 @media all and (min-width:1024px){
+	#introduction { margin-bottom: 0;}
 	#welcome {width:1024px;}
 	#welcome .welcome_logo img { width:180px; left:15%;}
 	#welcome .welcome_intro h3 {font-size:2rem}
 	#welcome .welcome_intro h2 {font-size:2.1rem;}
 	#welcome .welcome_intro p {font-size:1.2rem;}
+	#pastor .pastor_content .pastor_text {width: 70%;}
+	#pastor .pastor_content .pastor_image {width: 30%;}
+	}
+@media all and (min-width:1200px){
+	#pastor .pastor_content {max-width:1140px; margin: 0 auto;}
+	#pastor .pastor_content .pastor_text {width: 75%;}
+	#pastor .pastor_content .pastor_image {width: 25%;}
 }
-#pastor { padding:30px 0 50px; background-color: #f7f7f7; text-align: center;}
 
 /* 교회 비전 */
 #vision { padding: 0;}
@@ -166,20 +193,20 @@
 .pp_box01{margin-bottom:20px;}
 .pp_box01 .pastor_img{width:200px; margin:0 auto;}
 .pp_box01 .pastor_img img{display: block;width:100%;}
-.pp_box01 .pastor_name{text-align:center;margin:30px 0;color:#58524c;font-size: 20px;line-height: 1;text-indent:0;}
-.pp_box01 .pastor_name > b{ font-weight: 600; font-size:22px}
-.pp_box01 .pastor_name > span{ display: block; margin-top: 10px; font-weight: 200; font-size: 16px;}
+.pp_box01 .pastor_name{text-align:center;margin:30px 0;color:#58524c;font-size: 22px;line-height: 1;text-indent:0;}
+.pp_box01 .pastor_name > b{ font-weight: 600; font-size:24px}
+.pp_box01 .pastor_name > span{ display: block; margin-top: 10px; font-weight: 200; font-size: 17px;}
 .pp_box01 .pastor_name > a{display: block;width:200px;padding:8px 0;margin:10px auto 30px;border-radius: 20px;background: #756d66;font-weight:500;color:#fff;font-size: 14px;letter-spacing: -0.04em;text-align: center;}
 .pp_box01 .pastor_txt{float:none;width:100%;padding:10px 0 0;}
 .pp_box01 .pastor_txt ul { background:#f1f1f1; border-radius: 10px; padding:20px;}
-.pp_box01 .pastor_txt ul li{position: relative;color:#3a2c2d;letter-spacing: -0.06em;font-size: 14px;line-height: 25px;margin-left: 20px;text-indent: -18px;}
+.pp_box01 .pastor_txt ul li{position: relative;color:#3a2c2d;letter-spacing: -0.06em;font-size: 15px;line-height: 25px;margin-left: 20px;text-indent: -18px;}
 .pp_box01 .pastor_txt ul li:before{position: relative;top:-2px;display: inline-block;clear:both;content:'';width:8px;height:8px;margin:0 10px 0 0;border-radius: 50%;background: #756d66}
 .pp_box02 .pp_list .pp_item{float:left;width:48%;margin:0 4% 30px 0}
 .pp_box02 .pp_list .pp_item:nth-child(2n){margin:0 0 20px 0 !important}
 .pp_box02 .pp_list .pp_item:nth-child(3n){margin:0 4% 20px 0}
 .pp_box02 .pp_list .pp_item img{display: block;width:90%; margin:auto;}
 .pp_box02 .pp_list .pp_info{max-width: 100%;padding:15px 5px 12px;text-align: center;}
-.pp_box02 .pp_list .pp_info li{color:#3a2c2d;font-size: 14px;letter-spacing: -0.025em;line-height: 1.5}
+.pp_box02 .pp_list .pp_info li{color:#3a2c2d;font-size: 15px;letter-spacing: -0.025em;line-height: 1.5}
 .pp_box02 .pp_list .pp_info li:first-child{margin:0 0 5px 0;color:#58524c;font-size: 17px; font-weight:500; letter-spacing: -0.04em;line-height: 1.5}
 .pp_box02 .pp_list .pp_info li:nth-child(2){background: #ede5dd; border-radius:10px; padding:2px 0 1px;}
 .pp_box02{margin:50px 0 0;}
