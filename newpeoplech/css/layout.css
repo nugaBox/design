@@ -98,7 +98,7 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 	.gnb_wrap .gnb > ul > li.recent:after{width:100%; background:#008fe9; transition:0.3s}
 }
 @media all and (min-width:1200px){
-	.tnb_wrap > .container, .gnb_wrap > .container{width:1120px}
+	/*.tnb_wrap > .container, .gnb_wrap > .container{width:1120px}*/
 }
 @media all and (min-width:1360px){
 	.tnb_wrap > .container, .gnb_wrap > .container{width:1280px}
@@ -219,7 +219,7 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 	.sub_menu{display:none}
 	.bc_wrap{display:block; background:#fcfcfc; border-bottom:#dedede solid 1px}
 	.bc_wrap:after{display:block; content:""; clear: both}
-	.bc_wrap > .container{width:1120px; position:relative}
+	.bc_wrap > .container{width:100%; position:relative; padding:0 50px; max-width:1360px}
 	.breadcrumb_pc {display:block; float:left}
 	.breadcrumb_pc > li {position:relative; display:inline-block; font-size:16px; vertical-align:top}
 	.breadcrumb_pc > li > a {color:#636363; display:block; line-height:52px; padding:0 40px 0 10px; font-weight:400}
@@ -237,9 +237,6 @@ a.quick_menu:hover, a.quick_menu:focus, a.quick_menu:active {background:#404b64;
 	.breadcrumb_pc > li > ul > li > a {display:block; padding:10px; line-height:120%}
 	.breadcrumb_pc > li > ul > li > a:hover {background:#404850; color:#fff; box-shadow: 1px 1px 2px 0px #555; transition: all 0.5s ease-out}
 	.share_box ul li.print{display:block}
-}
-@media all and (min-width:1360px){
-	.bc_wrap > .container{width:1280px}
 }
 
 /* 제목 영역 */

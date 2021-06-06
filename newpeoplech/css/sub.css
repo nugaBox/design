@@ -230,27 +230,53 @@
 }
 
 /* 예배 시간 안내 */
-#worship_time article {margin: 20px 0 60px 0}
+#worship_time {padding:15px}
+#worship_time article {margin: 20px auto 60px}
+#worship_time article:last-child {margin-bottom: 20px}
+#worship_time h3 {padding: 0 0 10px}
 #worship_time h3 small {display: inline-block; padding: 7px 5px 5px; background: #eee; border-radius: 5px; color: #000; font-size: .9rem; position: relative; top: -3px; margin-left: 5px}
+#worship_time p {margin-top: 15px; text-indent: -17px; left: 17px; position: relative; padding: 0 17px 0 0}
+#worship_time p a {color:#e12f42; font-weight: 500; text-decoration: underline}
 #worship_time table {width: 100%}
-#worship_time table th{padding:8px 0;border-right: 1px solid #efd49c;background: #e6bf6c;color:#fff;font-weight:500;letter-spacing: -0.04em;font-size: 1rem;text-align: center;}
+#worship_time table col:nth-child(1) {width: 35%}
+#worship_time table col:nth-child(2) {width: 40%}
+#worship_time table th{padding:8px 0;border-right: 1px solid #abda3c;background: #9fcf2f;color:#fff;font-weight:500;letter-spacing: -0.04em;font-size: 1rem;text-align: center}
 #worship_time table th:last-child{border-right: 0;}
-#worship_time table td{padding:10px;border-right:1px solid #e7e7e7;border-bottom:1px solid #e7e7e7;line-height: 30px;vertical-align: middle;font-size: .94rem;letter-spacing: -0.04em;text-align: center;color:#3a2c2d;}
-#worship_time table .td_fs{background: #faf7f0;font-weight: 500;border-right: 0;border-bottom:1px solid #ebe2cf;}
+#worship_time table td {padding:10px;border-right:1px solid #e7e7e7;border-bottom:1px solid #e7e7e7;line-height: 1.4rem;vertical-align: middle;font-size: .94rem;letter-spacing: -0.04em;text-align: center;color:#3a2c2d;}
 #worship_time table td:last-child{border-right: 0;}
-#worship_time table td.td_bor{border-bottom:2px solid #f1e1c0;}
-
-#worship_time .time_24hour table th{background:#9fcf2f;border-color:#abda3c}
-#worship_time .time_24hour table .td_fs{background:#f4f7ed;border-bottom:1px solid #d6dfc0; word-break: keep-all;}
-#worship_time .time_24hour table td.td_bor{border-bottom:2px solid #ddedb8}
+#worship_time table tr:last-child, #worship_time table .td_bor {border-bottom:2px solid #ddedb8}
+#worship_time table td.td_fs{background: #f4f7ed;font-weight: 500;border-right: 0;border-bottom:1px solid #d6dfc0}
+#worship_time table td b, #worship_time table td small{display: block; margin-top: 10px}
+#worship_time table td small span {font-size: .94rem}
+#worship_time .time_24hour table col:nth-child(1) {width: 35%}
+#worship_time .time_24hour table th{background:#e6bf6c;border-color:#efd49c}
+#worship_time .time_24hour table td.td_fs{background:#faf7f0;border-bottom:1px solid #ebe2cf; word-break: keep-all}
+#worship_time .time_24hour table tr:last-child, #worship_time .time_24hour table .td_bor {border-bottom:2px solid #f1e1c0}
+#worship_time .time_corona table col:nth-child(1) {width: 30%}
+#worship_time .time_corona table col:nth-child(2) {width: 33%}
 #worship_time .time_corona table th{background:#fba1a1;border-color:#f9c5c5}
-#worship_time .time_corona table .td_fs{background:#feebeb}
-#worship_time .time_corona table td.td_bor{border-bottom:2px solid #f7e2e2}
-#worship_time .time_24hour table .td_bor_r{border-right:1px solid #ddedb8}
-
-#worship_time table span{display: block;font-size: 14.5px;}
-
-
+#worship_time .time_corona table td.td_fs{background:#feebeb}
+#worship_time .time_corona table tr:last-child, #worship_time .time_corona table .td_bor {border-bottom:2px solid #f7e2e2}
+@media all and (min-width:375px){
+	#worship_time .time_24hour table tr td:nth-child(1) br {display: none}
+	#worship_time .time_corona table td.td_fs br {display: none}
+	#worship_time .time_corona table col:nth-child(1) {width: 31%}
+}
+@media all and (min-width:768px){
+	#worship_time {padding: 20px 30px}
+	#worship_time article {max-width: 960px}
+	#worship_time p {margin: 0; text-indent: -20px; left: 20px; padding: 0 20px 0 0}
+	#worship_time p:nth-child(3) {margin-top: 15px}
+	#worship_time table td {padding: 15px 10px; font-size: 1.05rem}
+	#worship_time table td small {margin-top: 5px}
+	#worship_time table td small br {display: none}
+	#worship_time table td small span {margin-left: 10px}
+	#worship_time .time_24hour table tr:nth-child(2) td br:nth-child(1) {display: none}
+	#worship_time .time_corona table td br {display: none}
+}
+@media all and (min-width:1024px){
+	#worship_time {padding: 20px 30px 60px}
+}
 
 /* 오시는 길 */
 #location {margin:30px 0 0 0; padding:0; font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; font-weight:normal}
