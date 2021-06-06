@@ -229,6 +229,29 @@
 	.pp_box02 .pp_list .pp_item{width:200px; margin:0 7% 30px !important}
 }
 
+/* 예배 시간 안내 */
+#worship_time article {margin: 20px 0 60px 0}
+#worship_time h3 small {display: inline-block; padding: 7px 5px 5px; background: #eee; border-radius: 5px; color: #000; font-size: .9rem; position: relative; top: -3px; margin-left: 5px}
+#worship_time table {width: 100%}
+#worship_time table th{padding:8px 0;border-right: 1px solid #efd49c;background: #e6bf6c;color:#fff;font-weight:500;letter-spacing: -0.04em;font-size: 1rem;text-align: center;}
+#worship_time table th:last-child{border-right: 0;}
+#worship_time table td{padding:10px;border-right:1px solid #e7e7e7;border-bottom:1px solid #e7e7e7;line-height: 30px;vertical-align: middle;font-size: .94rem;letter-spacing: -0.04em;text-align: center;color:#3a2c2d;}
+#worship_time table .td_fs{background: #faf7f0;font-weight: 500;border-right: 0;border-bottom:1px solid #ebe2cf;}
+#worship_time table td:last-child{border-right: 0;}
+#worship_time table td.td_bor{border-bottom:2px solid #f1e1c0;}
+
+#worship_time .time_24hour table th{background:#9fcf2f;border-color:#abda3c}
+#worship_time .time_24hour table .td_fs{background:#f4f7ed;border-bottom:1px solid #d6dfc0; word-break: keep-all;}
+#worship_time .time_24hour table td.td_bor{border-bottom:2px solid #ddedb8}
+#worship_time .time_corona table th{background:#fba1a1;border-color:#f9c5c5}
+#worship_time .time_corona table .td_fs{background:#feebeb}
+#worship_time .time_corona table td.td_bor{border-bottom:2px solid #f7e2e2}
+#worship_time .time_24hour table .td_bor_r{border-right:1px solid #ddedb8}
+
+#worship_time table span{display: block;font-size: 14.5px;}
+
+
+
 /* 오시는 길 */
 #location {margin:30px 0 0 0; padding:0; font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; font-weight:normal}
 .wrap_map {width:100%; height:250px; position:relative; margin:10px auto 0}
