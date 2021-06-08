@@ -367,29 +367,23 @@
 
 /*======== 부가 서비스 ========*/
 /* 로그인 */
-.login-block{
-	background: #DE6262; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	float:left; 
-	width:100%; 
-	padding : 50px 0; 
-}
-.banner-sec{background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0}
-#login-container.container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1)}
-.carousel-inner{border-radius:0 10px 10px 0}
-.carousel-caption{text-align:left; left:5%}
-.login-sec{padding: 50px 30px; position:relative}
-.login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center}
-.login-sec .copy-text i{color:#FEB58A}
-.login-sec .copy-text a{color:#E36262}
-.login-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #DE6262}
-.login-sec h2:after{content:" "; width:100px; height:5px; background:#FEB58A; display:block; margin-top:20px; border-radius:3px; margin-left:auto; margin-right:auto}
-.btn-login{background: #DE6262; color:#fff; font-weight:600}
-.banner-text{width:70%; position:absolute; bottom:40px; padding-left:20px}
-.banner-text h2{color:#fff; font-weight:600}
-.banner-text h2:after{content:" "; width:100px; height:5px; background:#FFF; display:block; margin-top:20px; border-radius:3px}
-.banner-text p{color:#fff}
+.loginColumns {max-width:850px;margin:0 auto;padding:100px 20px 20px 20px;}
+.login-bg {height:370px;position:relative;color:white;background:url(../images/login_bg.png) #2e543a no-repeat;}
+.login-bg .cmstitle {padding:62px 0 0 0;text-align:center;}
+.login-bg .cmstitle h1 {text-align:center;margin:0;padding:15px 0 0 0;font-size:25px;}
+.login-bg .cmslogo {position:absolute;left:40px;bottom:20px;}
+.login-bg .cmslogo h1 {margin:0;padding:0;font-size:25px;font-weight:500;}
+.login-bg .cmslogo small {opacity:0.3;}
+.loginColumns .col-sm-6 {padding-right:0;padding-left:0;}
+.loginColumns .ibox-content {height:370px;padding:50px;border-style:none;}
+.loginLow {box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 100px 80px rgba(0, 0, 0, 0.12);}
+.form-group #userID {border:0; border-bottom: 1px solid #ebedf2;}
+.form-group #passwd {border:0;}
+.loginBtn {background-color:#2e543a;color:#FFFFFF; border-radius:0.8em; box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 100px 80px rgba(0, 0, 0, 0.12);}
+.loginBtn.btn-primary:hover,.loginBtn.btn-primary:focus,.loginBtn.btn-primary:active,.loginBtn.btn-primary[disabled],.loginBtn.btn-primary[disabled]:hover,.loginBtn.btn-primary[disabled]:focus,.loginBtn.btn-primary[disabled]:active {background-color:#386245;color:#FFFFFF;}
+.login-form {position:relative;}
+.login-form .login-copyright {margin:0;padding:0;color:#a2a2a2;position:absolute;right:40px;bottom:20px;}
+
 
 /* 사이트맵 */
 .sitemap > ul{position:relative; overflow:hidden}
