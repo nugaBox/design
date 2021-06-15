@@ -146,42 +146,125 @@
                 <div class="content_top">
                     <h3><span>로그인</span></h3>
                 </div>
+                <style>
+                    /* Section Login */
+
+                    .login {
+                        position: absolute;
+                        top:  50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
+
+                    .login-img {
+                        width: 100px;
+                    }
+
+                    .login-title {
+                        margin: 15px 0px;
+                        padding: 0px 5px;
+                        font-size: 3em;
+                        line-height: 1.1em;
+                        letter-spacing: -1.5px;
+                        text-transform: uppercase;
+                        box-shadow: inset 0 -21px 0 #72646536;
+                    }
+
+                    .login-subtitle {
+                        color:rgb(114, 101, 101);
+                        font-size: 2em;
+                        margin-bottom: 1em;
+                        position: relative;
+                        bottom: 15px;
+                    }
+
+                    .form-group {
+                        position: relative;
+                        margin-bottom: 1em;
+                    }
+
+                    .form-label {
+                        color: rgba(0,0,0,.4);
+                        font-weight: 600;
+                        position: absolute;
+                        margin-bottom: .6em;
+                    }
+
+                    .form-input {
+                        color: rgba(0,0,0,.8);
+                        font-weight: 600;
+                        font-size: 1em;
+                        width: 100%;
+                        border: none;
+                        border-bottom: 1px solid rgba(0,0,0,.3);
+                        padding: 1.2em 0 .8em 0;
+                        transition: all 300ms;
+
+                    }
+
+                    .form-input:focus, .form-input:active {
+                        outline: none;
+                        padding-top: 2em;
+                    }
+
+
+
+                    .login-forgot {
+                        text-align: center;
+                        margin: 20px 0px;
+                    }
+
+                    .login-forgot a {
+                        color: rgba(0,0,0,.6);
+                        text-decoration: none;
+                        font-size: .9em;
+                        font-weight: 600;
+                    }
+
+                    .login-submit {
+                        margin-top: 1em;
+                        font-family: inherit;
+                        font-size: 1.2em;
+                        letter-spacing: .1em;
+                        width: 100%;
+                        height: 35px;
+                        border-radius: 35px;
+                        border: none;
+                        background-color: #8DAE5B;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all 300ms;
+                    }
+
+                    .login-submit:hover {
+                        opacity: .9;
+                    }
+
+                </style>
                 <!--본문 시작-->
                 <div class="content" id="">
-                    <section>
-                        <div class="loginColumns animated fadeIn">
-                            <div class="row loginLow">
-                                <div class="col-sm-6 login-bg">
-                                    <div class="cmstitle">
-                                        <img src="/siiru/images/cms_logo.png" alt="SiiRU">
-                                        <h1>광주새백성교회</h1>
-                                    </div>
-                                    <div class="cmslogo">
-                                        <h1>newpeoplech.com</h1>
-                                        <small>CONTENT MANAGEMENT SYSTEM</small>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 login-form">
-                                    <div class="ibox-content">
-                                        <form id="syForm" name="syForm" novalidate="novalidate">
-                                            <input type="hidden" id="action" name="action" value="login">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control alphanum nothangul" id="userID" name="userID" placeholder="ID" required="" aria-required="true">
-                                                <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Password" autocomplete="off" required="" aria-required="true">
-                                            </div>
-                                            <button type="submit" class="loginBtn btn btn-primary block full-width m-b"><i class="fa fa-sign-in" style="margin-right:5px;"></i>&nbsp;관리자 로그인</button>
-                                        </form>
-                                        <p class="login-copyright text-right">
-                                            <small>
-                                                Copyright 2020. <a href="https://www.newpeoplech.com/" target="_blank" class="comin">NEWPEOPLECH</a> all rights reserved.<br>
-                                                SiiRU v4.0.1
-                                            </small>
-                                        </p>
-                                    </div>
-                                </div>
+                    <div class="login">
+                        <img src="<?=$gs_imagesFolder?>nuga_circle.png" alt="Persona" class="login-img" />
+                        <h1 class="login-title">NUGABOX</h1>
+                        <h3 class="login-subtitle">DevLabs</h3>
+                        <form class="login-form" method='post' action='include/loginChk.php'>
+                            <div class="form-group">
+                                <label class="form-label" for="username">id</label>
+                                <input type="text" class="form-input" id="username" name='user_id' />
                             </div>
-                        </div>
-                    </section>
+                            <div class="form-group">
+                                <label class="form-label" for="password">password</label>
+                                <input type="password" class="form-input" id="password" name='user_pw' />
+                            </div>
+                            <button type="submit" class="login-submit">LOGIN</button>
+                            <div class="login-forgot">
+                                <a href='javascript:void(0);' onclick="alert('저런.... 😔');$.confetti.start();">혹시... 로그인이 안되나요?</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
