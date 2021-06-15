@@ -367,22 +367,6 @@
 
 /*======== 부가 서비스 ========*/
 /* 로그인 */
-.loginColumns {max-width:850px;margin:0 auto;padding:100px 20px 20px 20px;}
-.login-bg {height:370px;position:relative;color:white;background:url(../images/login_bg.png) #2e543a no-repeat;}
-.login-bg .cmstitle {padding:62px 0 0 0;text-align:center;}
-.login-bg .cmstitle h1 {text-align:center;margin:0;padding:15px 0 0 0;font-size:25px;}
-.login-bg .cmslogo {position:absolute;left:40px;bottom:20px;}
-.login-bg .cmslogo h1 {margin:0;padding:0;font-size:25px;font-weight:500;}
-.login-bg .cmslogo small {opacity:0.3;}
-.loginColumns .col-sm-6 {padding-right:0;padding-left:0;}
-.loginColumns .ibox-content {height:370px;padding:50px;border-style:none;}
-.loginLow {box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 100px 80px rgba(0, 0, 0, 0.12);}
-.form-group #userID {border:0; border-bottom: 1px solid #ebedf2;}
-.form-group #passwd {border:0;}
-.loginBtn {background-color:#2e543a;color:#FFFFFF; border-radius:0.8em; box-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.037), 0 8.7px 6.9px rgba(0, 0, 0, 0.053), 0 17.7px 14.2px rgba(0, 0, 0, 0.067), 0 36.5px 29.2px rgba(0, 0, 0, 0.083), 0 100px 80px rgba(0, 0, 0, 0.12);}
-.loginBtn.btn-primary:hover,.loginBtn.btn-primary:focus,.loginBtn.btn-primary:active,.loginBtn.btn-primary[disabled],.loginBtn.btn-primary[disabled]:hover,.loginBtn.btn-primary[disabled]:focus,.loginBtn.btn-primary[disabled]:active {background-color:#386245;color:#FFFFFF;}
-.login-form {position:relative;}
-.login-form .login-copyright {margin:0;padding:0;color:#a2a2a2;position:absolute;right:40px;bottom:20px;}
 
 /* 사이트맵 */
 .sitemap > ul{position:relative; overflow:hidden}

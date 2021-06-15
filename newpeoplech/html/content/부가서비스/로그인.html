@@ -149,7 +149,8 @@
                 <style>
                     /* Section Login */
 
-                    .login {
+                    .login-wrap {
+                        padding:0 15%;
                         position: absolute;
                         top:  50%;
                         left: 50%;
@@ -242,14 +243,20 @@
                     .login-submit:hover {
                         opacity: .9;
                     }
+                    /* Desktop */
+                    @media screen and (min-width: 960px) {
+                        /* Section Login */
 
+                        .login-wrap {
+                            position: static;
+                            transform: translate(0);
+                        }
+
+                    }
                 </style>
                 <!--본문 시작-->
                 <div class="content" id="">
-                    <div class="login">
-                        <img src="<?=$gs_imagesFolder?>nuga_circle.png" alt="Persona" class="login-img" />
-                        <h1 class="login-title">NUGABOX</h1>
-                        <h3 class="login-subtitle">DevLabs</h3>
+                    <div class="login-wrap">
                         <form class="login-form" method='post' action='include/loginChk.php'>
                             <div class="form-group">
                                 <label class="form-label" for="username">id</label>
