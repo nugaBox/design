@@ -412,6 +412,8 @@
 	background-size: 900px;
 	padding: 30px 100px 160px;
 }
+#login .login_wrap {}
+#login .login_wrap > div{width:50%}
 .sf-modal{position:fixed;z-index:10001;top:0;left:0;right:0;bottom:0;display:none;overflow-y:auto;background:rgba(10,15,33,0.75);-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation:fade .25s linear;animation:fade .25s linear}
 .sf-modal.active{display:block}
 .sf-modal-wrapper{position:relative;display:flex;width:100%;min-height:100vh;align-items:center;justify-content:center}
@@ -467,3 +469,6 @@ a.social-btn img{display:inline-block;max-height:30px}
 .tap:hover{background:#0066B3;color:#fff;text-decoration:none}
 .tap:active{-webkit-transform:scale(0.97);-moz-transform:scale(0.97);transform:scale(0.97)}
 .tap svg{display:inline-block;vertical-align:middle;position:relative;top:-1px}
+@media all and (min-width:640px){
+
+}
