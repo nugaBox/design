@@ -407,13 +407,10 @@
 }
 
 /* Aero Forms */
-#login{
-	background: url(../images/sub/jesus1.png) 58% 98% no-repeat;
-	background-size: 900px;
-	padding: 30px 100px 160px;
-}
-#login .login_wrap {}
-#login .login_wrap > div{width:50%}
+#login{padding:60px 20px}
+#login .login_wrap {width:100%}
+
+#login .login_welcome {display:none}
 .sf-modal{position:fixed;z-index:10001;top:0;left:0;right:0;bottom:0;display:none;overflow-y:auto;background:rgba(10,15,33,0.75);-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation:fade .25s linear;animation:fade .25s linear}
 .sf-modal.active{display:block}
 .sf-modal-wrapper{position:relative;display:flex;width:100%;min-height:100vh;align-items:center;justify-content:center}
@@ -424,6 +421,7 @@
 }
 .sf-modal-closer{font-size:20px;font-weight:400;display:flex;align-items:center;justify-content:center;color:#fff;position:absolute;bottom:100%;right:0;width:40px;height:40px;border-radius:50%;opacity:.7;cursor:pointer;-webkit-transition:all .15s linear;-moz-transition:all .15s linear;transition:all .15s linear}
 .sf-modal-closer:hover{opacity:1;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg)}
+.aero-form-container{margin:0 auto}
 form.aero-form{display:block;position:relative;padding:40px 30px;border-radius:20px;max-width:400px;margin:0 auto;-webkit-box-sizing:border-box;box-sizing:border-box}
 form.aero-form.small-width{max-width:350px}
 form.aero-form.transparent{background:rgba(255,255,255,0.5)}
@@ -458,7 +456,7 @@ a.social-btn img{display:inline-block;max-height:30px}
 .flex{display:flex}
 .flex.middle{align-items:center}
 .flex .container{width:100%}
-.flex.half > div{width:50%}
+
 .flex.spacing{margin-left:-8px;margin-right:-8px}
 .flex.spacing > div{padding-left:8px;padding-right:8px}
 .flex.reverse{flex-direction:row-reverse}
@@ -471,4 +469,13 @@ a.social-btn img{display:inline-block;max-height:30px}
 .tap svg{display:inline-block;vertical-align:middle;position:relative;top:-1px}
 @media all and (min-width:640px){
 
+}
+@media all and (min-width:768px){
+	#login{
+		background: url(../images/sub/jesus1.png) 58% 98% no-repeat;
+		background-size: 900px;
+		padding: 30px 100px 160px;
+	}
+	#login .login_wrap > div{width:50%}
+	#login .login_welcome {display:block}
 }
