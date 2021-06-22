@@ -406,8 +406,8 @@
   .mail_wrap p br{display: none}
 }
 
-/* Aero Forms */
-#login{padding:60px 20px}
+/* 로그인 & 회원가입 */
+#login{padding:40px 0}
 #login .login_wrap {width:100%}
 
 #login .login_welcome {display:none}
