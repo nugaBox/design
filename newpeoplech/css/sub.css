@@ -414,10 +414,7 @@
 .sf-modal.active{display:block}
 .sf-modal-wrapper{position:relative;display:flex;width:100%;min-height:100vh;align-items:center;justify-content:center}
 .sf-modal-content{position:relative;max-width:500px;min-width:300px;margin:50px auto}
-@media (max-width: 480px) {
-	.sf-modal-content{min-width:300px;width:100%;padding:0 20px}
-	.sf-modal .sf-modal-closer{right:30px}
-}
+
 .sf-modal-closer{font-size:20px;font-weight:400;display:flex;align-items:center;justify-content:center;color:#fff;position:absolute;bottom:100%;right:0;width:40px;height:40px;border-radius:50%;opacity:.7;cursor:pointer;-webkit-transition:all .15s linear;-moz-transition:all .15s linear;transition:all .15s linear}
 .sf-modal-closer:hover{opacity:1;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg)}
 .aero-form-container{margin:0 auto}
@@ -466,6 +463,10 @@ a.social-btn img{display:inline-block;max-height:30px}
 .tap:hover{background:#0066B3;color:#fff;text-decoration:none}
 .tap:active{-webkit-transform:scale(0.97);-moz-transform:scale(0.97);transform:scale(0.97)}
 .tap svg{display:inline-block;vertical-align:middle;position:relative;top:-1px}
+@media (max-width: 480px) {
+	.sf-modal-content{min-width:300px;width:100%;padding:0 20px}
+	.sf-modal .sf-modal-closer{right:30px}
+}
 @media all and (min-width:640px){
 
 }
