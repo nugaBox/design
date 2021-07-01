@@ -466,9 +466,6 @@ a.social-btn img{display:inline-block;max-height:30px}
 	.sf-modal-content{min-width:300px;width:100%;padding:0 20px}
 	.sf-modal .sf-modal-closer{right:30px}
 }
-@media all and (min-width:640px){
-
-}
 @media all and (min-width:768px){
 	#login{
 		background: url(../images/sub/jesus1.png) 58% 98% no-repeat;
