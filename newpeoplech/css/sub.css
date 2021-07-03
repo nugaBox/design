@@ -426,6 +426,7 @@ form.aero-form input[type=text],form.aero-form input[type=password],form.aero-fo
 form.aero-form textarea{padding:20px;height:auto;min-height:90px;resize:none}
 form.aero-form input:focus,form.aero-form select:focus,form.aero-form textarea:focus{outline:none;background-color:#fff;box-shadow:rgba(68,96,241,0.2) 0 5px 30px 0}
 form.aero-form label{display:block;width:100%;padding:0;margin-bottom:15px}
+
 .aero-form-header{margin-bottom:30px;text-align:center;padding:0 20px;font-size:14px}
 .aero-form-header h2{margin-bottom:10px!important}
 .aero-form-submit{margin-top:30px}
