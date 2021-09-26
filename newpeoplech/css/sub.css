@@ -439,6 +439,7 @@
 }
 
 /* 사이트맵 */
+.sitemap {max-width: 1280px; margin:0 auto}
 .sitemap > ul{position:relative; overflow:hidden}
 .sitemap > ul > li{float:left; width:100%; margin-right:0%; margin-bottom:2%; border-top:#909090 solid 2px}
 .sitemap > ul > li:nth-child(even){margin-right:0; margin-bottom:0}
