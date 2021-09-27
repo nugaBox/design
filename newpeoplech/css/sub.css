@@ -355,6 +355,32 @@
 	.map_icons {top:260px}
 }
 
+/*======== 목양 사역 ========*/
+/* 자치기관소개 */
+.teams-card {display: block;padding:20px 8px}
+.teams-card .card {display: block; background-color: #fff; border-radius: .4rem; box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3), 0 0 0 1px rgba(10, 10, 10, 0.03); color: #4a4a4a; max-width: 90%; position: relative; margin: 0 auto 30px}
+.teams-card .card .card-img {display: block; height:10em; background: no-repeat center center; background-blend-mode: multiply; background-size: 100% auto; border-radius: .4rem .4rem 0 0}
+.teams-card .card:nth-child(1) .card-img{background-color: rgba(48, 186, 149, 0.5); background-image: url('../images/sub/teams/team1.png');}
+.teams-card .card:nth-child(2) .card-img{background-color: rgba(15, 174, 231, 0.5); background-image: url('../images/sub/teams/team2.png');}
+.teams-card .card:nth-child(3) .card-img{background-color: rgba(217, 59, 110, 0.5); background-image: url('../images/sub/teams/team3.png');}
+.teams-card .card:nth-child(4) .card-img{background-color: rgba(242, 175, 59, 0.5); background-image: url('../images/sub/teams/team4.png'); background-position-y: 30%;}
+.card-content{display: block; padding:20px}
+.card-content .subtitle {line-height: 140%; font-size:1.1rem; margin-bottom: 15px}
+.card-content .title {font-size: 1.8rem; padding-right: 5px; margin-bottom: 25px}
+.card-content .subcontent {font-size: 1rem}
+.card-content .subcontent span {font-weight: 600; padding-right: 5px}
+.card-content .subcontent span i {padding-right: 3px}
+.card-hover { transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transition: all 0.3s ease-in-out; }
+.card-hover:hover{ cursor: pointer; transform: scale(1.05); -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transition: all 0.3s ease-in-out; }
+@media all and (min-width:768px) {
+	.teams-card {display: flex; justify-content: space-between; flex-wrap: wrap;}
+	.teams-card .card {flex-basis: 40%; margin: 0 auto 70px;}
+}
+@media all and (min-width:1200px) {
+	.teams-card {max-width: 1200px; margin: 0 auto}
+	.teams-card .card {flex-basis: 22%; margin: 0 auto 40px;}
+}
+
 /*======== 설교 영상 ========*/
 /* 설교영상 */
 #bo_v_info {padding:25px 40px; margin:30px 0 0; color:#625d5e; font-size: 20px; font-weight: 500}
