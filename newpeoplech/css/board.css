@@ -1,3 +1,9 @@
+/*
+ * 2022.03.02 Nuga Jang
+ */
+@charset "utf-8";
+#board.content {text-align: center}
+
 /* 게시판 검색 폼 */
 .board_search{margin-bottom:15px; background:#f9f9f9; padding:10px;  overflow:hidden}
 .board_search fieldset > *{ margin:5px 0 0 0; }
