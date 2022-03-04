@@ -670,3 +670,17 @@ a.siiru-btn:hover{background:#747070!important;}
 @media all and (min-width:1200px) {
     .siiru-boardWrap {max-width: 1200px; margin: 0 auto}
 }
+
+/* 썸네일 게시판 리스트 */
+.siiruBoard-gallery {border-bottom: 0}
+.siiruBoard-galleryBox {border-radius: 0.8rem}
+.siiruBoard-galleryBox .photoBox {height: auto; border-radius: 0.6rem 0.6rem 0 0;}
+.siiruBoard-galleryBox dl dt {padding-top: 5px;}
+.siiruBoard-galleryBox dl dt span.ctgry {display: inline-block; background-color:#000; color:#fff; font-size:12px; font-weight:500; border-radius:5px; padding:5px}
+.siiruBoard-galleryBox dl dt span.title {font-weight:500; font-size:1.3rem; padding-top: 10px; padding-bottom: 15px;display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap}
+.siiruBoard-galleryBox dl dd { display: inline-flex; margin: 0 10px 10px;}
+.siiruBoard-galleryBox dl dd span {font-weight: 500;}
+@media all and (min-width:1024px){
+    .siiruBoard-galleryBox dl dt span.title {font-size: 1.5rem}
+    .siiruBoard-galleryBox dl dd {font-size: 1rem}
+}
