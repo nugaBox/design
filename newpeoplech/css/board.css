@@ -60,10 +60,19 @@
 .siiruBoard-galleryBox {float:left;width:100%;border:1px solid #e7eaec;background-color:#fff; margin:0 0 20px;border-radius: 0.8rem}
 .siiruBoard-galleryBox:nth-child(3n){margin-right:0}
 .siiruBoard-galleryBox .photoBox {height: auto; border-radius: 0.6rem 0.6rem 0 0;}
-.siiruBoard-galleryBox dl dt {padding-top: 5px;}
+.siiruBoard-galleryBox dl dt {padding-top: 5px; margin: 10px 15px 0}
 .siiruBoard-galleryBox dl dt span.ctgry {display: inline-block; background-color:#000; color:#fff; font-size:12px; font-weight:500; border-radius:5px; padding:5px}
+.siiruBoard-galleryBox dl dt span.ctgry.event_new {background-color:#3A4767}
+.siiruBoard-galleryBox dl dt span.ctgry.event_plm {background-color:#485C21}
+.siiruBoard-galleryBox dl dt span.ctgry.event_est {background-color:#71323C}
+.siiruBoard-galleryBox dl dt span.ctgry.event_chd {background-color:#197c89}
+.siiruBoard-galleryBox dl dt span.ctgry.event_prt {background-color:#B3517E}
+.siiruBoard-galleryBox dl dt span.ctgry.event_50th {background-color:#3A4767}
+.siiruBoard-galleryBox dl dt span.ctgry.event_thg {background-color:#594C42}
+.siiruBoard-galleryBox dl dt span.ctgry.event_ref {background-color:#71323C}
+.siiruBoard-galleryBox dl dt span.ctgry.event_chr {background-color:#21471C}
 .siiruBoard-galleryBox dl dt span.title {font-weight:500; font-size:1.3rem; padding-top: 10px; padding-bottom: 15px;display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap}
-.siiruBoard-galleryBox dl dd { display: inline-flex; margin: 0 10px 10px; padding: 0 0 10px}
+.siiruBoard-galleryBox dl dd { display: inline-flex; margin: 0 15px 10px; padding: 0 0 10px}
 .siiruBoard-galleryBox dl dd span {font-weight: 500;}
 .imageView img {padding:0;border:0;border-radius:0;max-width: 100%; width:auto}
 @media all and (min-width:768px) {
