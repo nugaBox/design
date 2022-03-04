@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 /* 게시판 레이아웃 */
-#board_layout.content {margin:0 auto; display:table}
+#board_layout.content {margin:0 auto; display:grid}
 .siiru-boardWrap {display:inline-table}
 @media all and (min-width:1200px) {
     .siiru-boardWrap {max-width: 1200px; margin: 0 auto}
@@ -75,16 +75,27 @@
 }
 
 /* 썸네일 게시판 view */
-#bo_v_info{padding:15px 10px;}
-#bo_v_title .bo_v_tit{font-size: 25px;}
-.bo_v_user span{display: block;margin:0 0 10px 0;}
-#bo_v_file{margin:15px 0 0;}
-#bo_v_file li span{margin:0}
-
-#bo_v_atc{padding:50px 0 45px}
-#bo_v_con{font-size: 16px;}
-#bo_v_con>*,#bo_v_con>*>*{font-size: 16px;}
-#bo_vc_w{padding:20px 15px;}
-.bo_anser form{padding:25px 15px}
-#bo_v_con img{margin:0 0 30px 0;}
-#bo_v_atc .vw_pdf{height:300px;margin:30px 0 0;}
+.siiruBoard-view {border:0}
+.siiruBoard-view h4{background: none; margin-top:20px; padding:0; font-size: 1.5rem; font-weight: 500;}
+.siiruBoardInfo .boardInfo-view {background: #eee; margin: 15px 0 30px; padding: 15px 15px 10px;}
+.siiruBoardInfo .boardInfo-view span {display: block; margin: 0 0 10px 0; border:0 !important; padding:0 !important;}
+.siiruBoardInfo .boardInfo-view span strong {display: inline-block; width: 65px; margin-right: 5px;}
+.siiruBoardBody  {margin: 0; border: 0;}
+.siiruBoardBody .videoWrap {position: relative; height:0; padding-bottom: 56.25%;}
+.siiruBoardList {margin: 40px 0 20px}
+.siiruBoardBtnInfo {border:0; margin: 20px 0 0}
+@media all and (min-width:768px) {
+    .siiruBoard-view h4 {margin-top: 30px; font-size: 1.8rem;}
+    .siiruBoardInfo .boardInfo-view {font-size: 1.2rem; padding: 20px 20px 5px;}
+    .siiruBoardInfo .boardInfo-view span {margin-bottom: 15px}
+    .siiruBoardList {font-size: 1.2rem;}
+}
+@media all and (min-width:1024px) {
+    .siiruBoardInfo .boardInfo-view {margin-bottom: 60px; padding: 30px 30px 15px;}
+    .siiruBoardInfo .boardInfo-view span {display: inline-block; margin-right: 25px;}
+    .siiruBoardInfo .boardInfo-view span strong {width:unset; margin-right:15px}
+    .siiruBoardList {margin-top:30px}
+}
+@media all and (min-width:1200px) {
+    .siiruBoardList {margin-top:0}
+}

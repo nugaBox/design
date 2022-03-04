@@ -194,129 +194,47 @@
                 </div>
                 <!--본문 시작-->
                 <div class="content" id="board_layout">
-                    <form id="boardSearchForm" name="boardSearchForm"></form>
-                    <div class="siiruBoard-view">
-                        <form id="boardForm" name="boardForm">
-                            <input type="hidden" id="seq" name="seq">
-                            <h4>[주일낮예배] 그러면 어떻게 살 것인가?</h4>
-                            <div class="siiruBoardInfo">
-                                <div class="boardInfo-view">
-                                    <span>작성자 : 청지기</span>
-                                    <span>작성일 : 2022-02-21 02:20</span>
-                                    <span>13</span>
-                                </div>
-                            </div>
-                            <div class="siiruBoardBody">
-                                <div class="con_block">
-                                    <div class="sermon_video" style="position: relative;  height:0; padding-bottom: 42.25%; ">
-                                        <iframe src="https://www.youtube.com/embed/QWgMggCZuX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; left:50%; transform:translateX(-50%); width:100%; height:100%; max-width:950px; max-height:610px;"></iframe>
-                                    </div>
-                                    <section id="bo_v_info">
-                                        <h2>설교 정보</h2>
-                                        <div class="bo_v_user">
-                        <span><strong>
-							2022년 2월 20일&nbsp;
-							주일낮예배 설교
-								</strong></span><br>
-                                            <span><strong>제목</strong>그러면 어떻게 살 것인가?</span>
-                                            <span><strong>주제</strong>
-							</span><span><strong>본문</strong>로마서 12장 1~2절</span><span><strong>설교자</strong>장 실 목사</span></div>
-                                    </section>
-                                </div>
-                                <div class="boardContents siiru-clr">
-                                </div>
-                                <div class="manageInfo siiru-clr">
-                                    <small>Write : 청지기 (manager) 2022-02-21 02:20 [122.37.61.43]</small>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="siiruBoardBtnInfo">
-                            <div class="siiru-fl">
-                                <button class="moveBtn siiru-btn siiru-btn-warning" data-modal="#moveModal" type="button">이동</button>
-                                <button class="regBtn siiru-btn siiru-btn-warning siiru-ml5" data-modal="#regModal" type="button">작성일</button>
-                            </div>
-                            <div class="siiru-fr">
-                                <a href="/board.do?action=update&amp;pageId=www20&amp;boardId=VIDEO_SERMON&amp;seq=393576&amp;movePage=1" class="siiru-btn siiru-btn-warning siiru-ml5">수정</a>
-                                <button class="delBtn siiru-btn siiru-btn-danger siiru-ml5" data-action="D" type="button">삭제</button>
-                                <a href="/boardList.do?pageId=www20&amp;boardId=VIDEO_SERMON&amp;movePage=1" class="siiru-btn siiru-ml5">목록</a>
-                            </div>
-                        </div>
-                        <div id="privacyModal" class="siiruModal modal" style="display:none;">
-                            <div class="siiruModalHeader"><p>개인정보 열람</p></div>
-                            <div class="siiruModalBody">
-                                <p class="privacy">
-                                    민원인 정보 등 개인정보와 민원내용은 	민원처리 목적으로만<br>
-                                    사용하여야 하며, <span class="text-info">정보주체의 동의</span> 없이 <span class="text-danger">무단으로 제3자에게</span><br>
-                                    <span class="text-danger">제공</span> 한 경우에는 <span class="text-danger">5년 이하의 징역 또는 5천만원 이하의 벌금</span><br>
-                                    에 처할 수 있습니다.
-                                </p>
-                            </div>
-                            <div class="siiruModalFooter siiru-tr">
-                                <input type="checkbox" id="privacyCookie" name="privacyCookie" value="VIDEO_SERMON">
-                                <label for="privacyCookie"> 하루동안 이창을 다시 열지않음 </label>
-                                <a href="#close" class="siiru-btn siiru-btn-small siiru-btn-danger siiru-ml10" rel="modal:close">닫기</a>
-                            </div>
-                        </div>
-                        <div id="moveModal" class="siiruModal modal" style="display:none;">
-                            <div class="siiruModalHeader"><p>게시글 이동</p></div>
-                            <div class="siiruModalBody">
-                                <input type="text" id="boardTable-filter" name="boardTable-filter" placeholder="Search for table data..." value="">
-                                <div id="board" class="boardFindView">
-                                    <div class="scroll-container">
-                                        <table id="boardTable">
-                                            <caption>게시판 목록</caption>
-                                            <tbody>
-                                            <tr><td class="nodata">동일한 유형의 게시판이 없습니다.</td></tr>
-                                            </tbody>
-                                        </table>
+                    <div class="siiru-boardWrap">
+                        <form id="boardSearchForm" name="boardSearchForm"></form>
+                        <div class="siiruBoard-view">
+                            <form id="boardForm" name="boardForm">
+                                <h4>그러면 어떻게 살 것인가?</h4>
+                                <div class="siiruBoardInfo">
+                                    <div class="boardInfo-view">
+                                        <span><strong>분류</strong>주일낮예배</span>
+                                        <span><strong>설교자</strong>장 실 목사</span>
+                                        <span><strong>설교일</strong>2022년 2월 20일</span>
+                                        <br class="pc_br">
+                                        <span><strong>주제</strong>로마서 강해</span>
+                                        <span><strong>본문</strong>로마서 12장 1~2절</span>
                                     </div>
                                 </div>
+                                <div class="siiruBoardBody">
+                                    <div class="con_block">
+                                        <div class="videoWrap">
+                                            <iframe src="https://www.youtube.com/embed/QWgMggCZuX0?rel=0&amp;vq=hd720" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; left:50%; transform:translateX(-50%); width:100%; height:100%; max-width:960px; max-height:540px;"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="boardContents siiru-clr"></div>
+                                </div>
+                            </form>
+                            <div class="siiruBoardList">
+                                <ul>
+                                    <li>
+                                        <span>다음 영상</span>
+                                        <a href="#">분명하고 선명한 기준</a>
+                                    </li>
+                                    <li>
+                                        <span>이전 영상</span>
+                                        <a href="#">무엇을 믿고 살 것인가?</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="siiruModalFooter siiru-tr">
-                                <span id="moveBoardView" class="moveBoard"></span>
-                                <input type="hidden" id="moveBoardId" name="moveBoardId" value="">
-                                <button class="moveSBtn siiru-btn siiru-btn-small siiru-btn-primary" data-action="M" type="button">게시글 이동</button>
-                                <a href="#close" class="siiru-btn siiru-btn-small siiru-btn-danger siiru-ml5" rel="modal:close">닫기</a>
+                            <div class="siiruBoardBtnInfo">
+                                <div class="siiru-fr">
+                                    <a href="#" class="siiru-btn siiru-ml5">목록</a>
+                                </div>
                             </div>
-                        </div>
-                        <div id="regModal" class="siiruModal modal" style="display:none;">
-                            <div class="siiruModalHeader"><p>작성일 수정</p></div>
-                            <div class="siiruModalBody">
-                                <form id="regForm" name="regForm" method="post">
-                                    <dl>
-                                        <dt><span>*</span> <label for="regDate">일자</label></dt>
-                                        <dd>
-                                            <input type="text" id="regDate" name="regDate" class="maskDate small" maxlength="10" value="2022-02-21">
-                                            <small> 2022-03-01</small>
-                                        </dd>
-                                    </dl>
-                                    <dl class="noborder">
-                                        <dt><span>*</span> <label for="regTime">시간</label></dt>
-                                        <dd>
-                                            <input type="text" id="regTime" name="regTime" class="maskFullTime small" maxlength="8" value="02:20:53">
-                                            <small> 09:00:00</small>
-                                        </dd>
-                                    </dl>
-                                </form>
-                            </div>
-                            <div class="siiruModalFooter siiru-tr">
-                                <button class="regSBtn siiru-btn siiru-btn-small siiru-btn-primary" data-action="DU" type="button">저장</button>
-                                <a href="#close" class="siiru-btn siiru-btn-small siiru-btn-danger siiru-ml5" rel="modal:close">닫기</a>
-                            </div>
-                        </div>
-                        <div class="siiruBoardList">
-                            <ul>
-                                <li>
-                                    <span>다음글</span>
-                                    <a href="/boardView.do?pageId=www20&amp;boardId=VIDEO_SERMON&amp;seq=7864700&amp;movePage=1">분명하고 선명한 기준</a>
-                                    <small>2022-02-27</small>
-                                </li>
-                                <li>
-                                    <span>이전글</span>
-                                    <a href="/boardView.do?pageId=www20&amp;boardId=VIDEO_SERMON&amp;seq=5833002&amp;movePage=1">무엇을 믿고 살 것인가?</a>
-                                    <small>2022-02-13</small>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
