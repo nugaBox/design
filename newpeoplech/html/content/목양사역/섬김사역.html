@@ -9,7 +9,7 @@
     <title>광주새백성교회 | 섬김 사역</title>
     <link rel="shortcut icon" href="../../../images/common/favicon.png">
     <link rel="apple-touch-icon" href="../../../images/common/favicon.png">
-    <link href="../../../css/siiru.css" rel="stylesheet" type="text/css">
+    <link href="../../../css/siiru.min.css" rel="stylesheet" type="text/css">
     <link href="../../../css/fontAwesome.min.css" rel="stylesheet" type="text/css">
     <link href="../../../css/swiper.min.css" rel="stylesheet" type="text/css">
     <link href="../../../css/basic.css" rel="stylesheet" type="text/css">
@@ -194,9 +194,131 @@
                     <h3><span>섬김 사역</span></h3>
                 </div>
                 <!--본문 시작-->
-                <div class="content" id="">
-                    <section>
+                <style>
+                    #mission {padding: 0}
+                    .box_famliy{margin:0 0 75px 0}
+                    .box_txt .fa_main{color:#3a2c2d;font-size: 50px;letter-spacing: -0.04em;line-height: 60px;text-align: center;font-weight: 500}
+                    .box_txt .fa_desc{margin:15px 0 0;color:#3a2c2d;letter-spacing: -0.04em;font-size: 17.5px;text-align: center;}
 
+                    .worship_title{display:block;width:285px;padding:13px 0;margin:0 auto 35px;border:2px solid #9fcf2f;font-weight: 500;border-radius: 30px;color:#3a2c2d;font-size: 25px;letter-spacing: -0.04em;text-align: center;}
+                    .worship_title_v2{border-color:#fba1a1}
+
+                    .box_famliy>ul>li{position: relative;margin:0 0 30px 0;padding:0 0 0 40px;color:#3a2c2d;font-size: 16.5px;word-break: keep-all;letter-spacing: -0.04em;line-height: 25px;}
+                    .box_enroll>ul>li:last-child{margin:0 0 20px 0;}
+                    .box_life>ul>li:first-child{margin:0 0 20px 0;}
+                    .box_famliy .num{position: absolute;top:1px;left:0;display:inline-block;width:25px;height:25px;border-radius: 50%;background:#9fcf2f;font-size: 16.5px;font-weight: 500;color:#fff;line-height: 25px;text-align: center;}
+                    .box_life .num{background:#fba1a1}
+
+                    .box_famliy table{margin:0 0 30px 0;}
+                    .box_famliy table th{padding:8px 0;vertical-align: middle;color:#fff;font-weight: 500;font-size: 14.5px;letter-spacing: -0.04em;background: #9fcf2f;text-align: center;}
+                    .box_life table th{background: #fba1a1}
+                    .box_famliy table td{padding:12px 13px;border-bottom:1px solid #e7e7e7;border-right:1px solid #e7e7e7;color:#3a2c2d;font-size: 16.5px;letter-spacing: -0.04em;text-align: center;vertical-align: middle;}
+                    .box_famliy table td a{color:#3a2c2d}
+                    .box_famliy table td:first-child{font-weight:500;background:#f4f7ed;border-right: 0;border-bottom: 1px solid #d6dfc0}
+                    .box_enroll table tr:last-child td{border-bottom:2px solid #dcedb6}
+                    .box_life table tr:last-child td{border-bottom:2px solid #f9c6c6}
+                    .box_life table td:first-child{background: #feebeb;}
+                    .box_famliy table td:last-child{text-align:left;border-right: 0;vertical-align: middle;line-height: 25px;}
+                    .box_life table td:nth-child(2) {padding:20px 13px;font-size: 14.5px;}
+                    .box_life td strong{display:block;margin:0 0 10px 0;font-size: 16.5px;font-weight: 500}
+                    .box_famliy table .bar{color:#f77a7a;}
+                    .box_life>ul>li>ul>li{margin:12px 0;}
+                    .box_life>ul>li:nth-child(2){float:left;width:45%;}
+                    .box_life>ul>li:nth-child(3){float:left;width:55%;}
+                    .box_life>ul>li .pray_int{display: inline-block;margin:0 0 0 20px}
+                    .box_life>ul>li .pray_desc{font-size: 14.5px;}
+
+                    @media screen and (max-width: 1024px){
+                        .box_txt .fa_main{font-size: 40px;line-height: 50px;}
+                        .box_famliy>ul>li{margin:0 0 20px 0;}
+                        .box_life>ul>li:nth-child(2),.box_life>ul>li:nth-child(3){float:none;width:100%}
+                        .box_life>ul>li .pray_desc{font-size: 16px;}
+                    }
+
+                    @media screen and (max-width: 767px){
+                        .sub_layout .box_famliy{margin:0 0 50px 0;}
+                        .box_txt .fa_main{font-size: 22px;line-height: 30px;}
+                        .box_txt .fa_desc{font-size: 15px;line-height: 1.3}
+
+                        .worship_title{width:230px;padding:9px 0;font-size: 20px;}
+                        .box_famliy>ul>li{margin:0 0 20px 0;padding:0 0 0 30px;font-size: 15px;}
+                        .box_famliy .num{top:3px;width:20px;height:20px;line-height: 20px;font-size: 13px}
+                        .box_famliy table td{padding:12px 10px;font-size: 14px;line-height: 1.3}
+                        .box_life table td:nth-child(2){padding:12px 5px;font-size: 12px}
+                        .box_life td strong{font-size: 15px;}
+                        .box_famliy table td a{display: block;}
+                        .box_famliy table .bar{display: none;}
+                        .box_life>ul>li>ul>li{margin:5px 0;}
+
+                        .box_life table th:nth-child(2){width:20%}
+                    }
+
+
+                </style>
+                <div class="content" id="mission">
+                    <section>
+                        <div class="box_famliy box_enroll">
+                            <span class="worship_title">우리 교회의 작은 섬김</span>
+                            <ul>
+                                <li><span class="num">1</span>등록을 원하시는 분들은 새가족 안내 데스크에서 새가족부의 안내에 따라 등록 카드를 작성, 수거함에 제출해 주세요.</li>
+                                <li><span class="num">2</span>등록 카드를 제출하신 분들께는 각 교구 담당 목사님들이 연락을 드리고, 교회 생활 전반에 대해 안내해 드리며,<br />등록 심방을 원하시는 가정을 찾아뵙습니다. </li>
+                                <li><span class="num">3</span>새가족 교육은 연 2회 아래의 내용들을 가지고 진행됩니다. </li>
+                            </ul>
+                            <table>
+                                <caption>새가족 교육</caption>
+                                <colgroup>
+                                    <col style="width:8.5%">
+                                    <col style="width:32%">
+                                    <col>
+                                </colgroup>
+                                <tr>
+                                    <th>주차</th>
+                                    <th>주제</th>
+                                    <th>주요 내용</th>
+                                </tr>
+                                <tr>
+                                    <td>1주차</td>
+                                    <td>역사와 정신</td>
+                                    <td>교회의 발자취 및 비전</td>
+                                </tr>
+                                <tr>
+                                    <td>2주차</td>
+                                    <td>하나님이 주인되시는 삶</td>
+                                    <td>공동체 예배, 개인 경건 생활, 소그룹 참여를 통해 하나님과의 관계 안에서 성장해 가기</td>
+                                </tr>
+                                <tr>
+                                    <td>3주차</td>
+                                    <td>희년 정신을 실천하는 삶</td>
+                                    <td>희년 정신의 실천을 통한 하나님 나라를 이루어가기 및  높은뜻 교회의 희년 사역 안내</td>
+                                </tr>
+                                <tr>
+                                    <td>4주차</td>
+                                    <td>높은뜻, 깊은뜻, 넓은뜻</td>
+                                    <td>교회생활 안내</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="box_famliy box_life">
+                            <span class="worship_title worship_title_v2">선교와 구제 후원</span>
+                            <ul>
+                                <li><span class="bank">우체국</span>504027-01-000349</li>
+                                <li><span class="bank">농협</span>355-0038-7178-43</li>
+                                <li><span class="host">예금주</span>광주새백성교회</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="vision_acts">
+                        <h3 class="sec_title"><span>사도행전의 비전</span></h3>
+                        <article class="acts_area">
+                            <h3>하나님은 우리 교회에게 <br class="m_br">사도행전의 비전을 주셨습니다.</h3>
+                            <p>사도행전의 교회는 금과 은은 없었습니다. <br class="m_br">그러나 예수 그리스도의 능력이 있었습니다.</p>
+                            <p>성령 충만한 사도행전의 성도들에게는 <br class="m_br">예수 그리스도의 이름이 있었습니다.</p>
+                            <p>그 이름이 가는 곳마다 능력으로 역사하였습니다.</p>
+                            <hr>
+                            <p>오늘날 세속화 되어가는 교회에, <br class="m_br">무능력해진 이 시대의 한국 교회에</p>
+                            <p>예수 그리스도의 이름의 능력이 회복되어야 합니다. 이것이 구원의 능력입니다.</p>
+                            <p>말씀의 능력이며, 성령의 역사입니다. <br class="m_br">예수 그리스도의 이름의 능력이 바로 교회의 본질입니다.</p>
+                        </article>
                     </section>
                 </div>
             </div>
@@ -221,7 +343,7 @@
             </div>
             <div class="copyright">
                 <p>Copyright 2001-<script>document.write(new Date().getFullYear());</script> Gwangju New People Church. <br>All Rights Reserved.</p>
-            </div>            
+            </div>
             <div class="go_link_wrap">
                 <a href="#" class="go_link">관련 사이트</a>
                 <i class="fad fa-angle-up"></i>
