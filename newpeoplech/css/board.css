@@ -6,6 +6,7 @@
 /* 게시판 레이아웃 */
 #board_layout.content {margin:0 auto; display:grid}
 .siiru-boardWrap {display:inline-table}
+.siiru-btn-primary {background-color: #2f97f2 !important}
 @media all and (min-width:1200px) {
     .siiru-boardWrap {max-width: 1200px; margin: 0 auto}
 }
@@ -58,9 +59,11 @@
 /* 기본 게시판 view */
 .siiruBoard-view {border:0}
 .siiruBoard-view h4{background: none; margin-top:20px; padding:0; font-size: 1.5rem; font-weight: 500;}
-.siiruBoardInfo .boardInfo-view {background: #eee; margin: 15px 0 30px; padding: 15px 15px 10px;}
+.siiruBoardInfo {margin-bottom:30px}
+.siiruBoardInfo .boardInfo-view {background: #eee; margin: 15px 0 10px; padding: 15px 15px 10px;}
 .siiruBoardInfo .boardInfo-view span {display: block; margin: 0 0 10px 0; border:0 !important; padding:0 !important;}
 .siiruBoardInfo .boardInfo-view span strong {display: inline-block; width: 65px; margin-right: 5px;}
+.siiruBoardInfo dl {border-bottom:1px solid #dde2e8; border-top:0; margin:0}
 .siiruBoardBody  {margin: 0; border: 0;}
 .siiruBoardBody .boardContents {padding: 10px 5px}
 .siiruBoardList {margin: 40px 0 20px}
@@ -70,6 +73,7 @@
 .siiruBoardBtnInfo .siiru-fl {display: none}
 @media all and (min-width:768px) {
     .siiruBoard-view h4 {margin-top: 30px; font-size: 1.8rem;}
+    .siiruBoardInfo dl {margin:0 15px}
     .siiruBoardInfo .boardInfo-view {font-size: 1.2rem; padding: 20px 20px 5px;}
     .siiruBoardInfo .boardInfo-view span {margin-bottom: 15px}
     .siiruBoardBody .boardContents {padding: 25px 15px}
@@ -78,7 +82,8 @@
     .siiruBoardBtnInfo .siiru-fl {display: block;}
 }
 @media all and (min-width:1024px) {
-    .siiruBoardInfo .boardInfo-view {margin-bottom: 60px; padding: 30px 30px 15px;}
+    .siiruBoardInfo {margin-bottom:60px}
+    .siiruBoardInfo .boardInfo-view {padding: 30px 30px 15px;}
     .siiruBoardInfo .boardInfo-view span {display: inline-block; margin-right: 25px;}
     .siiruBoardInfo .boardInfo-view span strong {width:unset; margin-right:15px}
     .siiruBoardList {margin-top:30px}
@@ -86,6 +91,12 @@
 @media all and (min-width:1200px) {
     .siiruBoardList {margin-top:0}
 }
+
+/* 기본 게시판 insert */
+.siiruBoard-write dl dt label {font-weight: 500}
+.siiruBoard-write dl dd label {line-height: 23px}
+.siiruBoard-write dl dd input[type="text"] {height: 33px; border-radius:3px}
+.siiruBoard-write dl#ndtFocus > dd > div {display: none;}
 
 /* 썸네일 게시판 list */
 .siiruBoard-gallery {border-bottom: 0}

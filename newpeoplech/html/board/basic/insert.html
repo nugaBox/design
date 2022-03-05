@@ -194,131 +194,87 @@
                 </div>
                 <!--본문 시작-->
                 <div class="content" id="board_layout">
-                    <div class="siiru-boardWrap">
-                        <form id="boardSearchForm" name="boardSearchForm"></form>
-                        <div class="siiruBoard-view">
-                            <form id="boardForm" name="boardForm" method="post">
-                                <h4>코로나19 관련 당회 공지사항 (8월 다섯째주)</h4>
-                                <div class="siiruBoardInfo">
-                                    <div class="boardInfo-view">
-                                        <span><strong>작성자</strong>청지기</span>
-                                        <span><strong>작성일</strong>2020-08-31 13:54</span>
-                                        <span><strong>조회수</strong>68</span>
+                    <form id="boardSearchForm" name="boardSearchForm" method="post">
+                        <input type="hidden" name="pageId" value="www22">
+                        <input type="hidden" id="movePage" name="movePage" value="1">
+                        <input type="hidden" id="boardId" name="boardId" value="NOTICE">
+                        <input type="hidden" id="searchCtgry" name="searchCtgry" value="">
+                        <input type="hidden" id="searchCtgryNm" name="searchCtgryNm" value="">
+                        <input type="hidden" id="searchSDe" name="searchSDe" value="">
+                        <input type="hidden" id="searchEDe" name="searchEDe" value="">
+                        <input type="hidden" id="searchPrcs" name="searchPrcs" value="">
+                        <input type="hidden" id="searchTy" name="searchTy" value="">
+                        <input type="hidden" id="searchQuery" name="searchQuery" value="">
+                    </form>
+                    <form id="boardForm" name="boardForm" method="post" enctype="multipart/form-data">
+                        <input type="hidden" id="action" name="action" value="I">
+                        <input type="hidden" id="seq" name="seq" value="">
+                        <input type="hidden" id="levelSn" name="levelSn" value="0">
+                        <input type="hidden" id="beginDt" name="beginDt" value="">
+                        <input type="hidden" id="endDt" name="endDt" value="">
+                        <input type="hidden" id="noticeBeginDt" name="noticeBeginDt" value="">
+                        <input type="hidden" id="noticeEndDt" name="noticeEndDt" value="">
+                        <div class="siiruBoard-write">
+                            <dl>
+                                <dt><span>*</span> <label for="boardSj">제목</label></dt>
+                                <dd><input type="text" id="boardSj" name="boardSj" maxlength="200" value=""></dd>
+                            </dl>
+                            <dl>
+                                <dt><span>*</span> <label for="userNm">작성자</label></dt>
+                                <dd><input type="text" class="small2" id="userNm" name="userNm" maxlength="50" value="장누가"></dd>
+                            </dl>
+                            <dl id="ndtFocus">
+                                <dt><label for="noticeAt">공지사항</label></dt>
+                                <dd>
+                                    <input type="checkbox" id="noticeAt" name="noticeAt" value="Y">
+                                    <label for="noticeAt"> 공지사항</label>
+                                    <div>
+                                        <input type="text" class="maskDate nothangul small" id="noticeBeginDate" name="noticeBeginDate" maxlength="10" value="" placeholder="공지사항 시작 일자" title="공지사항 시작 일자" disabled>
+                                        <input type="text" class="maskTime nothangul small" id="noticeBeginTime" name="noticeBeginTime" maxlength="5" value="" placeholder="공지사항 시작 시간" title="공지사항 시작 시간" disabled>
+                                        <span class="separator"> ~ </span>
+                                        <input type="text" class="maskDate nothangul small" id="noticeEndDate" name="noticeEndDate" maxlength="10" value="" placeholder="공지사항 종료 일자" title="공지사항 종료 일자" disabled>
+                                        <input type="text" class="maskTime nothangul small" id="noticeEndTime" name="noticeEndTime" maxlength="5" value="" placeholder="공지사항 종료 시간" title="공지사항 종료 시간" disabled>
+                                        <small>일자 : 2022-03-01, 시간 : 18:00</small>
                                     </div>
-                                    <dl>
-                                        <dt>파일</dt>
-                                        <dd>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">사회적거리두기 좌석안내-30.png</a>
-                                                    <small>[size: 205.23 KB, Download: 5]</small>
-                                                    <a href="#" class="filePreview siiru-btn siiru-btn-small" target="_blank">미리보기</a> </li>
-                                            </ul>
-                                        </dd>
-                                    </dl>
-                                </div>
-                                <div class="siiruBoardBody">
-                                    <div class="imageView">
-                                        <img src="https://www.newpeoplech.com/imageView/L8AHupaR9FncHb3kiaRkwYtMgROdNoZgnnlN4iYF13s=" alt="사회적거리두기 단계에 따른 좌석 안내">
-                                    </div>
-                                    <div class="boardContents siiru-clr">
-                                        <p><span style="font-size: 24px;"><b>사랑하는 광주새백성교회 성도 여러분!</b></span></p><br><p></p><br><p>현재 "코로나19"가 급격히 전염되면서 광주광역시에서는 '사회적 거리두기 3단계'에 준하는 행정명령을 발동했습니다.</p><br><p><span style="color:#820707;"><b>이에 당회에서는 지역과 이웃을 위해 9월 9일(수)까지 최소한의 예배위원만 예배당에 출입하도록 결정했습니다.</b></span> 당분간 주일예배는 온라인 예배(가정예배)로 드리며, 중식교제 및 주일오후예배, 수요일밤예배 역시 쉬도록 하겠습니다. 이후 상황에 따라 별도 공지하겠습니다.</p><br><p>성도님들께서는 예배당에 오시는 것을 자제해주시고, 이 힘든 시기를 극복하기 위해 개인 신앙생활에 더욱 철저해주시며, 서로 전화와 문자로 안부와 교제 나눠주시길 부탁드립니다. 우리는 이 순간을 주 안에서 지혜롭게 극복해 나갈 것을 믿습니다.</p><br><p></p><br><p style="text-align: center; "><b><span style="font-size: 18px;">2020년 8월 29일</span></b></p><br><p style="text-align: center; "><b><span style="font-size: 18px;">대한예수교장로회 광주새백성교회 당회</span></b></p></div>
-                                    <div class="manageInfo siiru-clr">
-                                        <small>Write : 청지기 (manager) 2020-08-31 13:54 [39.114.71.43]</small>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="siiruBoardBtnInfo">
-                                <div class="siiru-fl">
-                                    <button class="moveBtn siiru-btn siiru-btn-warning" data-modal="#moveModal" type="button">이동</button>
-                                    <button class="regBtn siiru-btn siiru-btn-warning siiru-ml5" data-modal="#regModal" type="button">작성일</button>
-                                </div>
-                                <div class="siiru-fr">
-                                    <a href="#" class="siiru-btn siiru-btn-primary siiru-ml5">답글</a>
-                                    <a href="#" class="siiru-btn siiru-btn-warning siiru-ml5">수정</a>
-                                    <button class="delBtn siiru-btn siiru-btn-danger siiru-ml5" data-action="D" type="button">삭제</button>
-                                    <a href="#" class="siiru-btn siiru-ml5">목록</a>
-                                </div>
-                            </div>
-                            <div id="privacyModal" class="siiruModal modal" style="display:none;">
-                                <div class="siiruModalHeader"><p>개인정보 열람</p></div>
-                                <div class="siiruModalBody">
-                                    <p class="privacy">
-                                        민원인 정보 등 개인정보와 민원내용은 	민원처리 목적으로만<br>
-                                        사용하여야 하며, <span class="text-info">정보주체의 동의</span> 없이 <span class="text-danger">무단으로 제3자에게</span><br>
-                                        <span class="text-danger">제공</span> 한 경우에는 <span class="text-danger">5년 이하의 징역 또는 5천만원 이하의 벌금</span><br>
-                                        에 처할 수 있습니다.
-                                    </p>
-                                </div>
-                                <div class="siiruModalFooter siiru-tr">
-                                    <input type="checkbox" id="privacyCookie" name="privacyCookie" value="NOTICE">
-                                    <label for="privacyCookie"> 하루동안 이창을 다시 열지않음 </label>
-                                    <a href="#close" class="siiru-btn siiru-btn-small siiru-btn-danger siiru-ml10" rel="modal:close">닫기</a>
-                                </div>
-                            </div>
-                            <div id="moveModal" class="siiruModal modal" style="display:none;">
-                                <div class="siiruModalHeader"><p>게시글 이동</p></div>
-                                <div class="siiruModalBody">
-                                    <input type="text" id="boardTable-filter" name="boardTable-filter" placeholder="Search for table data..." value="">
-                                    <div id="board" class="boardFindView">
-                                        <div class="scroll-container">
-                                            <table id="boardTable">
-                                                <caption>게시판 목록</caption>
-                                                <tbody>
-                                                <tr><td class="nodata">동일한 유형의 게시판이 없습니다.</td></tr>
-                                                </tbody>
-                                            </table>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="siiru-pt10">파일<span class="btnLayer"><button class="fileAdd siiru-btn siiru-btn-small" type="button">추가</button></span></dt>
+                                <dd class="fileChk">
+                                    <div class="fileLayer">
+                                        <div class="fileInfo">
+                                            <input type="hidden" name="fileSn[]" value="0">
+                                            <input type="hidden" name="rlFileOldNm[]" value="">
+                                            <input type="hidden" name="fileOldNm[]" value="">
+                                            <input type="hidden" name="insrtAt[]" value="">
+                                            <input type="hidden" name="thumbAt[]" value="">
+                                            <input type="hidden" name="fileDelAt[]" value="N">
+                                            <span class="fileView"><a href="" target="_blank"></a></span>
+                                            <input type="checkbox" class="fileCheckbox" id="delFile0" name="fileDelChk[]" data-input="fileDel" value="Y" title="Delete Files">
+                                            <label for="delFile0"> Delete Files </label>
                                         </div>
+                                        <input type="file" name="fileNm0" class="file" title="파일 선택">
+                                        <input type="checkbox" id="insrtFile0" name="insrtChk[]" data-input="insrt" class="fileCheckbox" value="Y">
+                                        <label for="insrtFile0">본문에삽입</label>
+                                        <textarea name="fileAlt[]" rows="3" class="siiru-mt10" title="대체텍스트 또는 동영상 자막"></textarea>
+                                        <small>파일이 이미지일경우 대체텍스트를 정의하고 동영상일경우 자막을 삽입합니다.</small>
                                     </div>
-                                </div>
-                                <div class="siiruModalFooter siiru-tr">
-                                    <span id="moveBoardView" class="moveBoard"></span>
-                                    <input type="hidden" id="moveBoardId" name="moveBoardId" value="">
-                                    <button class="moveSBtn siiru-btn siiru-btn-small siiru-btn-primary" data-action="M" type="button">게시글 이동</button>
-                                    <a href="#close" class="siiru-btn siiru-btn-small siiru-btn-danger siiru-ml5" rel="modal:close">닫기</a>
-                                </div>
-                            </div>
-                            <div id="regModal" class="siiruModal modal" style="display:none;">
-                                <div class="siiruModalHeader"><p>작성일 수정</p></div>
-                                <div class="siiruModalBody">
-                                    <form id="regForm" name="regForm" method="post">
-                                        <dl>
-                                            <dt><span>*</span> <label for="regDate">일자</label></dt>
-                                            <dd>
-                                                <input type="text" id="regDate" name="regDate" class="maskDate small" maxlength="10" value="2020-08-31">
-                                                <small> 2022-03-01</small>
-                                            </dd>
-                                        </dl>
-                                        <dl class="noborder">
-                                            <dt><span>*</span> <label for="regTime">시간</label></dt>
-                                            <dd>
-                                                <input type="text" id="regTime" name="regTime" class="maskFullTime small" maxlength="8" value="13:54:00">
-                                                <small> 09:00:00</small>
-                                            </dd>
-                                        </dl>
-                                    </form>
-                                </div>
-                                <div class="siiruModalFooter siiru-tr">
-                                    <button class="regSBtn siiru-btn siiru-btn-small siiru-btn-primary" data-action="DU" type="button">저장</button>
-                                    <a href="#close" class="siiru-btn siiru-btn-small siiru-btn-danger siiru-ml5" rel="modal:close">닫기</a>
-                                </div>
-                            </div>
-                            <div class="siiruBoardList">
-                                <ul>
-                                    <li>
-                                        <span>다음글</span>
-                                        <a href="#">전자출입명부 개인 QR코드 발급 안내</a>
-                                        <small>2020-08-31</small>
-                                    </li>
-                                    <li>
-                                        <span>이전글</span>
-                                        <a href="#">코로나19 관련 당회 공지사항 (7월 첫째주)</a>
-                                        <small>2020-08-31</small>
-                                    </li>
-                                </ul>
-                            </div>
+                                    <div id="fileForm">
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="siiru-hidden">내용</dt>
+                                <dd class="fullCont">
+                                    <textarea id="boardCn" name="boardCn" rows="20" style="width:98%;height:400px" title="내용"></textarea>
+                                </dd>
+                            </dl>
                         </div>
-                    </div>
+                        <div class="siiru-tc siiru-mb20">
+                            <input type="submit" class="siiru-btn siiru-btn-primary" value="저장">
+                            <a href="/boardList.do?pageId=www22&amp;boardId=NOTICE&amp;movePage=1" class="siiru-btn siiru-ml10">목록</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
