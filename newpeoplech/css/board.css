@@ -55,6 +55,38 @@
     .siiruBoard-list table tbody .notice {width: 50px;}
 }
 
+/* 기본 게시판 view */
+.siiruBoard-view {border:0}
+.siiruBoard-view h4{background: none; margin-top:20px; padding:0; font-size: 1.5rem; font-weight: 500;}
+.siiruBoardInfo .boardInfo-view {background: #eee; margin: 15px 0 30px; padding: 15px 15px 10px;}
+.siiruBoardInfo .boardInfo-view span {display: block; margin: 0 0 10px 0; border:0 !important; padding:0 !important;}
+.siiruBoardInfo .boardInfo-view span strong {display: inline-block; width: 65px; margin-right: 5px;}
+.siiruBoardBody  {margin: 0; border: 0;}
+.siiruBoardBody .boardContents {padding: 10px 5px}
+.siiruBoardList {margin: 40px 0 20px}
+.siiruBoardList li {line-height: 1.6em;}
+.siiruBoardList li small {display: none;}
+.siiruBoardBtnInfo {border:0; margin: 20px 0 0}
+.siiruBoardBtnInfo .siiru-fl {display: none}
+@media all and (min-width:768px) {
+    .siiruBoard-view h4 {margin-top: 30px; font-size: 1.8rem;}
+    .siiruBoardInfo .boardInfo-view {font-size: 1.2rem; padding: 20px 20px 5px;}
+    .siiruBoardInfo .boardInfo-view span {margin-bottom: 15px}
+    .siiruBoardBody .boardContents {padding: 25px 15px}
+    .siiruBoardList {font-size: 1.2rem;}
+    .siiruBoardList li small {display: block;}
+    .siiruBoardBtnInfo .siiru-fl {display: block;}
+}
+@media all and (min-width:1024px) {
+    .siiruBoardInfo .boardInfo-view {margin-bottom: 60px; padding: 30px 30px 15px;}
+    .siiruBoardInfo .boardInfo-view span {display: inline-block; margin-right: 25px;}
+    .siiruBoardInfo .boardInfo-view span strong {width:unset; margin-right:15px}
+    .siiruBoardList {margin-top:30px}
+}
+@media all and (min-width:1200px) {
+    .siiruBoardList {margin-top:0}
+}
+
 /* 썸네일 게시판 list */
 .siiruBoard-gallery {border-bottom: 0}
 .siiruBoard-galleryBox {float:left;width:100%;border:1px solid #e7eaec;background-color:#fff; margin:0 0 20px;border-radius: 0.8rem}
@@ -84,27 +116,5 @@
 }
 
 /* 썸네일 게시판 view */
-.siiruBoard-view {border:0}
-.siiruBoard-view h4{background: none; margin-top:20px; padding:0; font-size: 1.5rem; font-weight: 500;}
-.siiruBoardInfo .boardInfo-view {background: #eee; margin: 15px 0 30px; padding: 15px 15px 10px;}
-.siiruBoardInfo .boardInfo-view span {display: block; margin: 0 0 10px 0; border:0 !important; padding:0 !important;}
-.siiruBoardInfo .boardInfo-view span strong {display: inline-block; width: 65px; margin-right: 5px;}
-.siiruBoardBody  {margin: 0; border: 0;}
 .siiruBoardBody .videoWrap {position: relative; height:0; padding-bottom: 56.25%;}
-.siiruBoardList {margin: 40px 0 20px}
-.siiruBoardBtnInfo {border:0; margin: 20px 0 0}
-@media all and (min-width:768px) {
-    .siiruBoard-view h4 {margin-top: 30px; font-size: 1.8rem;}
-    .siiruBoardInfo .boardInfo-view {font-size: 1.2rem; padding: 20px 20px 5px;}
-    .siiruBoardInfo .boardInfo-view span {margin-bottom: 15px}
-    .siiruBoardList {font-size: 1.2rem;}
-}
-@media all and (min-width:1024px) {
-    .siiruBoardInfo .boardInfo-view {margin-bottom: 60px; padding: 30px 30px 15px;}
-    .siiruBoardInfo .boardInfo-view span {display: inline-block; margin-right: 25px;}
-    .siiruBoardInfo .boardInfo-view span strong {width:unset; margin-right:15px}
-    .siiruBoardList {margin-top:30px}
-}
-@media all and (min-width:1200px) {
-    .siiruBoardList {margin-top:0}
-}
+
