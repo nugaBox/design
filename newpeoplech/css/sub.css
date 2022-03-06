@@ -210,6 +210,10 @@
 	.pp_box01 .pastor_txt{padding:0 0 0 30px}
 	.pp_box01 .pastor_txt ul {background:none}
 	.pp_box01 .pastor_txt ul li{font-size:16px; line-height:28px}
+	/* pp_item 가운데정렬 시 적용 */
+	.pp_box02 .pp_list {text-align:center}
+	.pp_box02 .pp_list .pp_item{display:inline-block; float:none}
+	/* ----------------------- */
 	.pp_box02 .pp_list .pp_item{width:20%; margin:0 4% 30px !important}
 	.pp_box02 .pp_list .pp_info li{font-size: 14px}
 	.pp_box02 .pp_list .pp_info li:first-child{font-size: 20px}
@@ -221,7 +225,9 @@
 	.pp_box01 .pastor_txt{padding: 0 0 0 40px}
 	.pp_box01 .pastor_txt ul li{font-size:17px; line-height:30px}
 	.pp_box02 .pp_list .pp_item{width:180px; margin:0 6% 30px !important}
-	.pp_box02 .pp_list .pp_item:first-child{margin-left:0 !important}
+	/* pp_item 왼쪽 정렬 시 적용 */
+	/*.pp_box02 .pp_list .pp_item:first-child{margin-left:0 !important}*/
+	/* ----------------------- */
 	.pp_box02 .pp_list .pp_info li{font-size: 16px}
 	.pp_box02 .pp_list .pp_info li:first-child{font-size: 22px}
 }
@@ -238,7 +244,7 @@
 #worship_time article {margin: 20px auto 60px}
 #worship_time article:last-child {margin-bottom: 20px}
 #worship_time h3 {padding: 0 0 10px}
-#worship_time h3 small {display: inline-block; padding: 7px 5px 5px; background: #eee; border-radius: 5px; color: #000; font-size: .9rem; position: relative; top: -3px; margin-left: 5px}
+#worship_time h3 small {display: inline-block; padding: 7px 5px 5px; background: #d8d8d8; border-radius: 5px; color: #000; font-size: .9rem; position: relative; top: -3px; margin-left: 5px}
 #worship_time p {margin-top: 15px; text-indent: -17px; left: 17px; position: relative; padding: 0 17px 0 0}
 #worship_time p a {color:#e12f42; font-weight: 500; text-decoration: underline}
 #worship_time table {width: 100%}
@@ -247,7 +253,6 @@
 #worship_time table th{padding:8px 0;border-right: 1px solid #abda3c;background: #9fcf2f;color:#fff;font-weight:500;letter-spacing: -0.04em;font-size: 1rem;text-align: center}
 #worship_time table th:last-child{border-right: 0;}
 #worship_time table td {padding:10px;border-right:1px solid #e7e7e7;border-bottom:1px solid #e7e7e7;line-height: 1.4rem;vertical-align: middle;font-size: .94rem;letter-spacing: -0.04em;text-align: center;color:#3a2c2d;}
-#worship_time table td:last-child{border-right: 0;}
 #worship_time table tr:last-child, #worship_time table .td_bor {border-bottom:2px solid #ddedb8}
 #worship_time table td.td_fs{background: #f4f7ed;font-weight: 500;border-right: 0;border-bottom:1px solid #d6dfc0}
 #worship_time table td b, #worship_time table td small{display: block; margin-top: 10px}
@@ -259,7 +264,7 @@
 #worship_time .time_corona table col:nth-child(1) {width: 30%}
 #worship_time .time_corona table col:nth-child(2) {width: 33%}
 #worship_time .time_corona table th{background:#fba1a1;border-color:#f9c5c5}
-#worship_time .time_corona table td.td_fs{background:#feebeb}
+#worship_time .time_corona table td.td_fs{background:#feebeb; border-bottom: 1px solid #f7e2e2;}
 #worship_time .time_corona table tr:last-child, #worship_time .time_corona table .td_bor {border-bottom:2px solid #f7e2e2}
 @media all and (min-width:375px){
 	#worship_time .time_24hour table tr td:nth-child(1) br {display: none}
@@ -383,6 +388,46 @@
 @media all and (min-width:1200px) {
 	.teams-card {max-width: 1200px; margin: 0 auto}
 	.teams-card .card {flex-basis: 22%; margin: 0 auto 40px;}
+}
+
+/* 섬김사역 */
+#mission {padding:0}
+#mission section .sec_subtitle {border: 2px solid #9fcf2f;}
+#mission section article {margin: 20px auto 60px; padding:20px}
+.mission-card {display: block;padding:20px 8px}
+.mission-card .card {display: block; background-color: #fff; border-radius: .4rem; box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3), 0 0 0 1px rgba(10, 10, 10, 0.03); color: #4a4a4a; max-width: 90%; position: relative; margin: 0 auto 30px}
+.mission-card .card .card-img {display: block; height:10em; background: no-repeat center center; background-blend-mode: multiply; background-size: 100% auto; border-radius: .4rem .4rem 0 0}
+.mission-card .card:nth-child(1) .card-img{background-color: rgba(48, 186, 149, 0.5); background-image: url('../images/sub/teams/team1.png');}
+.mission-card .card:nth-child(2) .card-img{background-color: rgba(15, 174, 231, 0.5); background-image: url('../images/sub/teams/team2.png');}
+.mission-card .card:nth-child(3) .card-img{background-color: rgba(217, 59, 110, 0.5); background-image: url('../images/sub/teams/team3.png');}
+.mission-card .card:nth-child(4) .card-img{background-color: rgba(242, 175, 59, 0.5); background-image: url('../images/sub/teams/team4.png'); background-position-y: 30%;}
+.mission-dona table {width: 100%}
+.mission-dona table col:nth-child(1) {width: 35%}
+.mission-dona table col:nth-child(2) {width: 40%}
+.mission-dona table th{padding:8px 0;border-right: 1px solid #abda3c;background: #9fcf2f;color:#fff;font-weight:500;letter-spacing: -0.04em;font-size: 1rem;text-align: center}
+.mission-dona table th:last-child{border-right: 0;}
+.mission-dona table td {padding:10px;border-right:0;border-bottom:1px solid #e7e7e7;line-height: 1.4rem;vertical-align: middle;font-size: .94rem;letter-spacing: -0.04em;text-align: center;color:#3a2c2d;}
+.mission-dona table td.dona-name {display: none}
+.mission-dona table tr:last-child, #worship_time table .td_bor {border-bottom:2px solid #ddedb8}
+.mission-dona table td.td_fs{background: #f4f7ed;font-weight: 500;border-right: 0;border-bottom:1px solid #d6dfc0}
+.mission-dona table td b, #worship_time table td small{display: block; margin-top: 10px}
+.mission-dona table td small span {font-size: .94rem}
+@media all and (min-width:768px) {
+	#mission {padding: 20px 30px}
+	#mission article {max-width: 960px}
+	.mission-card {display: flex; justify-content: space-between; flex-wrap: wrap;}
+	.mission-card .card {flex-basis: 40%; margin: 0 auto 70px;}
+	.mission-dona table td {border-right:1px solid #e7e7e7;}
+	.mission-dona table td.dona-name {display: revert}
+	.mission-dona table td:nth-child(3)  {border-right:0}
+	.mission-dona table tr.dona-name-m {display: none}
+}
+@media all and (min-width:1024px){
+	#mission {padding: 20px 30px 60px}
+}
+@media all and (min-width:1200px) {
+	.mission-card {max-width: 1200px; margin: 0 auto}
+	.mission-card .card {flex-basis: 22%; margin: 0 auto 40px;}
 }
 
 /*======== 설교 영상 ========*/
