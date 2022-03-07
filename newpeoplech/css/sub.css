@@ -414,6 +414,7 @@
 .mission-dona table th:last-child{border-right: 0;}
 .mission-dona table td {padding:10px;border-right:0;border-bottom:1px solid #e7e7e7;line-height: 1.4rem;vertical-align: middle;font-size: .94rem;letter-spacing: -0.04em;text-align: center;color:#3a2c2d;}
 .mission-dona table td.dona-name {display: none}
+.mission-dona table td.dona-num a:before {content: "\f0c5";	font-family: "Font Awesome 5 Pro"; font-weight: 300; margin-right: 6px;}
 .mission-dona table tr:last-child, #worship_time table .td_bor {border-bottom:2px solid #ddedb8}
 .mission-dona table td.td_fs{background: #f4f7ed;font-weight: 500;border-right: 0;border-bottom:1px solid #d6dfc0}
 .mission-dona table td b, #worship_time table td small{display: block; margin-top: 10px}

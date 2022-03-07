@@ -262,13 +262,13 @@
                                     <th scope="col" colspan="3">후원계좌</th>
                                 </tr>
                                 <tr>
-                                    <td class="td_fs">우체국</td>
-                                    <td>504027-01-000349</td>
+                                    <td class="td_fs dona-bank">우체국</td>
+                                    <td class="dona-num"><a href="#">504027-01-000349</a></td>
                                     <td class="dona-name" rowspan="2">예금주 : 광주새백성교회</td>
                                 </tr>
                                 <tr>
-                                    <td class="td_fs">농협</td>
-                                    <td>355-0038-7178-43</td>
+                                    <td class="td_fs dona-bank">농협</td>
+                                    <td class="dona-num"><a href="#">355-0038-7178-43</a></td>
                                 </tr>
                                 <tr class="dona-name-m">
                                     <td colspan="2">예금주 : 광주새백성교회</td>
@@ -281,6 +281,23 @@
             </div>
         </div>
     </section>
+    <script>
+        $(document).ready(function(){
+            // 후원계좌 클립보드 복사
+            $( '.dona-num a' ).click(function() {
+                var bank = $(this).parents('tr').children('.dona-bank').text();
+                var num = $(this).text();
+                var tempElem = document.createElement('textarea');
+
+                tempElem.value = bank + ' ' + num;
+                document.body.appendChild(tempElem);
+                tempElem.select();
+                document.execCommand( 'Copy' );
+                alert( '후원계좌가 클립보드에 복사되었습니다.' );
+                document.body.removeChild(tempElem);
+            });
+        });
+    </script>
     <!--footer start-->
     <footer id="footer_area">
         <div class="container">
