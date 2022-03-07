@@ -432,7 +432,7 @@
 	.mission-card .card .card-content .title {font-size:1.6rem}
 	.mission-card .card:nth-child(2) .card-content ul, .mission-card .card:nth-child(3) .card-content ul {padding-top: 5px;}
 	.mission-card .card .card-content ul li {font-size:1rem}
-	.mission-dona table td {border-right:1px solid #e7e7e7;}
+	.mission-dona table td {border-right:1px solid #e7e7e7;font-size: 1.05rem;}
 	.mission-dona table td.dona-name {display: revert}
 	.mission-dona table td:nth-child(3)  {border-right:0}
 	.mission-dona table tr.dona-name-m {display: none}
