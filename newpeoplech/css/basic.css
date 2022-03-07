@@ -1,143 +1,143 @@
 /*
  * 2020.07.11 Nuga Jang
  */
- @charset "utf-8"; 
+ @charset "utf-8";
 
 /*** Fonts ***/
 @import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap); 
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap);
 @font-face {
-    font-family: 'Noto Sans Korean'; 
-    font-style: normal; 
-    font-weight: 100; 
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 100;
     src: local('Noto Sans Thin'), local('NotoSans-Thin'),
     url(../fonts/NotoSansKR-Thin-Hestia.eot),
     url(../fonts/NotoSansKR-Thin-Hestia.eot?#iefix) format('embedded-opentype'),
     url(../fonts/NotoSansKR-Thin-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Thin-Hestia.otf) format('opentype'); 
+    url(../fonts/NotoSansKR-Thin-Hestia.otf) format('opentype');
 }
 @font-face {
-    font-family: 'Noto Sans Korean'; 
-    font-style: normal; 
-    font-weight: 300; 
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 300;
     src: local('Noto Sans Light'), local('NotoSans-Light'),
     url(../fonts/NotoSansKR-Light-Hestia.eot),
     url(../fonts/NotoSansKR-Light-Hestia.eot?#iefix) format('embedded-opentype'),
     url(../fonts/NotoSansKR-Light-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Light-Hestia.otf) format('opentype'); 
+    url(../fonts/NotoSansKR-Light-Hestia.otf) format('opentype');
 }
 @font-face {
-    font-family: 'Noto Sans Korean'; 
-    font-style: normal; 
-    font-weight: 350; 
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 350;
     src: local('Noto Sans DemiLight'), local('NotoSans-DemiLight'),
     url(../fonts/NotoSansKR-DemiLight-Hestia.eot),
     url(../fonts/NotoSansKR-DemiLight-Hestia.eot?#iefix) format('embedded-opentype'),
     url(../fonts/NotoSansKR-DemiLight-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-DemiLight-Hestia.otf) format('opentype'); 
+    url(../fonts/NotoSansKR-DemiLight-Hestia.otf) format('opentype');
 }
 @font-face {
-    font-family: 'Noto Sans Korean'; 
-    font-style: normal; 
-    font-weight: 400; 
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 400;
     src: local('Noto Sans Regular'), local('NotoSans-Regular'),
     url(../fonts/NotoSansKR-Regular-Hestia.eot),
     url(../fonts/NotoSansKR-Regular-Hestia.eot?#iefix) format('embedded-opentype'),
     url(../fonts/NotoSansKR-Regular-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Regular-Hestia.otf) format('opentype'); 
+    url(../fonts/NotoSansKR-Regular-Hestia.otf) format('opentype');
 }
 @font-face {
-    font-family: 'Noto Sans Korean'; 
-    font-style: normal; 
-    font-weight: 500; 
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 500;
     src: local('Noto Sans Medium'), local('NotoSans-Medium'),
     url(../fonts/NotoSansKR-Medium-Hestia.eot),
     url(../fonts/NotoSansKR-Medium-Hestia.eot?#iefix) format('embedded-opentype'),
     url(../fonts/NotoSansKR-Medium-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Medium-Hestia.otf) format('opentype'); 
+    url(../fonts/NotoSansKR-Medium-Hestia.otf) format('opentype');
 }
 @font-face {
-    font-family: 'Noto Sans Korean'; 
-    font-style: normal; 
-    font-weight: 700; 
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 700;
     src: local('Noto Sans Bold'), local('NotoSans-Bold'),
     url(../fonts/NotoSansKR-Bold-Hestia.eot),
     url(../fonts/NotoSansKR-Bold-Hestia.eot?#iefix) format('embedded-opentype'),
     url(../fonts/NotoSansKR-Bold-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Bold-Hestia.otf) format('opentype'); 
+    url(../fonts/NotoSansKR-Bold-Hestia.otf) format('opentype');
 }
 @font-face {
-    font-family: 'Noto Sans Korean'; 
-    font-style: normal; 
-    font-weight: 900; 
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 900;
     src: local('Noto Sans Black'), local('NotoSans-Black'),
     url(../fonts/NotoSansKR-Black-Hestia.eot),
     url(../fonts/NotoSansKR-Black-Hestia.eot?#iefix) format('embedded-opentype'),
     url(../fonts/NotoSansKR-Black-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Black-Hestia.otf) format('opentype'); 
+    url(../fonts/NotoSansKR-Black-Hestia.otf) format('opentype');
 }
 /* 100 - Thin */
 @font-face {
-    font-family: 'S-CoreDream'; 
-    src: url('../fonts/S-CoreDream-1Thin.woff') format('woff'); 
-    font-weight: 100; 
-    font-style: normal; 
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
 }
 /* 200 - ExtraLight */
 @font-face {
-    font-family: 'S-CoreDream'; 
-    src: url('../fonts/S-CoreDream-2ExtraLight.woff') format('woff'); 
-    font-weight: 200; 
-    font-style: normal; 
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
 }
 /* 300 - Light */
 @font-face {
-    font-family: 'S-CoreDream'; 
-    src: url('../fonts/S-CoreDream-3Light.woff') format('woff'); 
-    font-weight: 300; 
-    font-style: normal; 
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-3Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
 }
 /* 400 - Regular */
 @font-face {
-    font-family: 'S-CoreDream'; 
-    src: url('../fonts/S-CoreDream-4Regular.woff') format('woff'); 
-    font-weight: 400; 
-    font-style: normal; 
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
 /* 500 - Medium */
 @font-face {
-    font-family: 'S-CoreDream'; 
-    src: url('../fonts/S-CoreDream-5Medium.woff') format('woff'); 
-    font-weight: 500; 
-    font-style: normal; 
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }
 /* 600 - Bold */
 @font-face {
-    font-family: 'S-CoreDream'; 
-    src: url('../fonts/S-CoreDream-6Bold.woff') format('woff'); 
-    font-weight: 600; 
-    font-style: normal; 
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
 }
 /* 700 - ExtraBold */
 @font-face {
-    font-family: 'S-CoreDream'; 
-    src: url('../fonts/S-CoreDream-7ExtraBold.woff') format('woff'); 
-    font-weight: 700; 
-    font-style: normal; 
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
 }
 /* 800 - Heavy */
 @font-face {
-    font-family: 'S-CoreDream'; 
-    src: url('../fonts/S-CoreDream-8Heavy.woff') format('woff'); 
-    font-weight: 800; 
-    font-style: normal; 
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
 }
 /* 900 - Black */
 @font-face {
-    font-family: 'S-CoreDream'; 
-    src: url('../fonts/S-CoreDream-9Black.woff') format('woff'); 
-    font-weight: 900; 
-    font-style: normal; 
+    font-family: 'S-CoreDream';
+    src: url('../fonts/S-CoreDream-9Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
 }
 
 /*** Reset ***/
@@ -352,5 +352,50 @@ br.pc_br {display:none !important}
     br.pc_br {display:block !important}
 }
 
+/* block */
+.m_block {display:block !important}
+.m_t_block {display:block !important}
+.m_pc_block {display:block !important}
+.t_block {display:none !important}
+.t_pc_block {display:none !important}
+.pc_block {display:none !important}
+@media all and (min-width:768px){
+    .m_block {display:none !important}
+    .m_t_block {display:block !important}
+    .m_pc_block {display:none !important}
+    .t_block {display:block !important}
+    .t_pc_block {display:block !important}
+    .pc_block {display:none !important}
+}
+@media all and (min-width:1024px){
+    .m_t_block {display:none !important}
+    .m_pc_block {display:block !important}
+    .t_block {display:none !important}
+    .t_pc_block {display:block !important}
+    .pc_block {display:block !important}
+}
+
+/* inline-block */
+.m_in_block {display:inline-block !important}
+.m_t_in_block {display:inline-block !important}
+.m_pc_in_block {display:inline-block !important}
+.t_in_block {display:none !important}
+.t_pc_in_block {display:none !important}
+.pc_in_block {display:none !important}
+@media all and (min-width:768px){
+    .m_in_block {display:none !important}
+    .m_t_in_block {display:inline-block !important}
+    .m_pc_in_block {display:none !important}
+    .t_in_block {display:inline-block !important}
+    .t_pc_in_block {display:inline-block !important}
+    .pc_in_block {display:none !important}
+}
+@media all and (min-width:1024px){
+    .m_t_in_block {display:none !important}
+    .m_pc_in_block {display:inline-block !important}
+    .t_in_block {display:none !important}
+    .t_pc_in_block {display:inline-block !important}
+    .pc_in_block {display:inline-block !important}
+}
 .blind {position:absolute; overflow:hidden; width:1px; height:1px; padding:0; margin-top:-1px; font-size:0; line-height:0; text-indent:-9999px}
 caption,legend {overflow:hidden; width:0px; height:0px; padding:0; font-size:0; line-height:0; text-indent:-9999px}
