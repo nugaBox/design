@@ -130,3 +130,12 @@
 /* 썸네일 게시판 view */
 .siiruBoardBody .videoWrap {position: relative; height:0; padding-bottom: 56.25%;}
 
+/* 주보 게시판 list */
+.weekly-board thead tr th.type {width:30%}
+.weekly-board tbody tr th small {margin-left:8px}
+@media all and (min-width:768px) {
+    .weekly-board thead tr th.type {width:15%}
+}
+@media all and (min-width:1024px){
+    .weekly-board thead tr th.type {width:12%}
+}
