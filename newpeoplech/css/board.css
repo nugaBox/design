@@ -128,7 +128,10 @@
 }
 
 /* 썸네일 게시판 view */
-.siiruBoardBody .videoWrap {position: relative; height:0; padding-bottom: 56.25%;}
+.siiruBoardBody .con_block {text-align: center;}
+.siiruBoardBody .con_block .videoWrap {position: relative; height:0; padding-bottom: 56.25%;}
+.siiruBoardBody .con_block .youtubeBtn {display: inline-block; margin-top: 20px; padding: 15px; background: #eee; border-radius: 6px; font-weight: 500;}
+.siiruBoardBody .con_block .youtubeBtn:before {display:inline-block; content:""; background:url(../images/common/youtube-icon-30.png); background-size:cover; width: 20px; height:15px; position: relative; top: 2px; left: -2px;}
 
 /* 주보 게시판 list */
 .weekly-board thead tr th.type {width:30%}
