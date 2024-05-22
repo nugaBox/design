@@ -249,7 +249,7 @@ only screen and (min-width: 768px) {
   .area_search .list_recomm_search li + li{gap:20px;padding-left: 20px}
   .area_search .list_recomm_search li + li:before{height: 13px}
   .area_search .list_recomm_search a{font-size: 16px}
-  .area_quickmenu .list_quickmenu{grid-template-columns: repeat(4, 1fr)}
+  .area_quickmenu .list_quickmenu{grid-template-columns: repeat(6, 1fr)}
   .area_quickmenu .list_quickmenu .txt_quick{padding-top: 11px;font-size: 18px;line-height: 28px}
   .area_quickmenu .list_quickmenu .ico_comm{width: 90px;height: 90px}
 

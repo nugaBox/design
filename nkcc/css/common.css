@@ -150,7 +150,7 @@ html, body{width: auto;height: auto}
 .area_foot .logo_foot{display: inline-flex;gap:10px;align-items: center}
 .area_foot .logo_foot a, .area_foot .logo_foot img{display: block}
 .area_foot .logo_foot img{width: 100%}
-.area_foot .logo_foot .link_logo{width: 113px}
+.area_foot .logo_foot .link_logo{width: 200px}
 .area_foot .logo_foot .link_wa{width: 90px}
 .area_foot .info_page{order:1;padding-top: 20px}
 .area_foot .info_page ul{display: flex;gap:0 10px;flex-wrap: wrap;justify-content: center}
