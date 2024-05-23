@@ -106,7 +106,7 @@ only screen and (min-width: 1400px){
 
   .area_visual_info{height: auto;text-align: left}
 
-  .info_txt_visual{position: absolute;bottom:346px;left: var(--page-default-padding-x);height: auto}
+  .info_txt_visual{position: absolute;bottom:346px;left: var(--page-default-padding-x);height: auto; padding-left:50px}
   .info_txt_visual em{font-size: 30px;line-height: 36px}
   .info_txt_visual .tit{font-size: 60px;line-height: 70px}
   .info_txt_visual .tit_more{font-size: 30px;line-height: 36px}
@@ -114,7 +114,7 @@ only screen and (min-width: 1400px){
   
   .slide_main_visual .inner_comm{position: relative;height: 100%}
   .slide_main_visual .swiper-slide{height: 827px; padding:0}
-  .slide_main_visual .nav_slide{top:auto;bottom:255px;right: auto;left: var(--page-default-padding-x)}
+  .slide_main_visual .nav_slide{top:auto;bottom:255px;right: auto;left: var(--page-default-padding-x);  padding-left:50px}
   .slide_main_visual .nav_slide .bar_progress{width: 207px;margin-right: 23px}
   .slide_main_visual .nav_slide .btn_ctrl{width: 50px;height: 50px;font-size: 28px}
   .slide_main_visual .nav_slide .btn_ctrl,
@@ -160,7 +160,7 @@ only screen and (min-width: 1400px){
 
 /* ---------- section_main2 ---------- */
 .section_main2{padding-bottom: 120px;background: #F5F7FB}
-.box_section2{position: relative;z-index: 10;margin-top: -16px;padding:29px 29px 29px;border-radius: 20px;background: #fff;box-shadow: 0 8px 15px rgba(30, 30, 30,.07)}
+.box_section2{position: relative;z-index: 10;margin-top: -150px;padding:29px 29px 29px;border-radius: 20px;background: #fff;box-shadow: 0 8px 15px rgba(30, 30, 30,.07)}
 .area_search{text-align: center}
 .form_search{padding-top: 16px}
 .area_search .group_search{display: flex;gap: 10px;align-items: center;padding:13px 20px 13px 22px;border-radius: 29px;border:2px solid #073A7F}
@@ -182,13 +182,16 @@ only screen and (min-width: 1400px){
 .area_search .list_recomm_search a{display: block;font-size: 13px;line-height: 22px;color:#333}
 
 .area_quickmenu{padding-top: 19px}
-.area_quickmenu .list_quickmenu{display: grid;row-gap:18px;grid-template-columns: repeat(2, 1fr)}
+.area_quickmenu .list_quickmenu{display: grid;row-gap:18px;grid-template-columns: repeat(3, 1fr)}
 .area_quickmenu .list_quickmenu a{display: block}
 .area_quickmenu .list_quickmenu .ico_comm{width: 65px;height: 65px;margin:0 auto}
-.area_quickmenu .list_quickmenu .ico_quick1{background-image: url(../images/main/ico_quick1.png)}
-.area_quickmenu .list_quickmenu .ico_quick2{background-image: url(../images/main/ico_quick2.png)}
-.area_quickmenu .list_quickmenu .ico_quick3{background-image: url(../images/main/ico_quick3.png)}
-.area_quickmenu .list_quickmenu .ico_quick4{background-image: url(../images/main/ico_quick4.png)}
+.area_quickmenu .list_quickmenu .ico_quick1{background-image: url(../images/main/main_icon1.png)}
+.area_quickmenu .list_quickmenu .ico_quick2{background-image: url(../images/main/main_icon2.png)}
+.area_quickmenu .list_quickmenu .ico_quick3{background-image: url(../images/main/main_icon3.png)}
+.area_quickmenu .list_quickmenu .ico_quick4{background-image: url(../images/main/main_icon4.png)}
+.area_quickmenu .list_quickmenu .ico_quick5{background-image: url(../images/main/main_icon5.png)}
+.area_quickmenu .list_quickmenu .ico_quick6{background-image: url(../images/main/main_icon6.png)}
+.area_quickmenu .list_quickmenu .ico_quick_youtube{background-image: url(../images/main/main_icon_youtube.png)}
 .area_quickmenu .list_quickmenu .txt_quick{padding-top: 5px;font-weight: 500;font-size: 14px;line-height: 20px;color:#000;text-align: center}
 
 .area_section2{padding-top: 40px}
