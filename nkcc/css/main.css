@@ -46,10 +46,12 @@ only screen and (min-width: 1024px) {
 
 .area_visual_info{display: flex;flex-direction: column;justify-content: center;align-items: center;height: 400px;text-align: center;word-break: keep-all;word-wrap: break-word}
 .info_txt_visual em{display: block;font-weight: 500;font-size: 16px;line-height: 19px;color:#fff}
-.info_txt_visual .tit{display: block;padding-top: 8px;font-family: 'HSBombaram21-Regular', sans-serif;font-size: 30px;line-height: 38px;color:#fff}
-.info_txt_visual .tit_more{display: block;padding-top: 2px;font-family: 'HSBombaram21-Regular', sans-serif;font-size: 16px;line-height: 20px;color:rgba(255,255,255,.1)}
-.info_txt_visual p{padding:20px 20px 0;font-weight: 300;font-size: 14px;line-height: 20px;color:#fff;text-shadow: 3px 3px 4px rgba(0,0,0,.4)}
+/* .info_txt_visual .tit{display: block;padding-top: 8px;font-family: 'HSBombaram21-Regular', sans-serif;font-size: 30px;line-height: 38px;color:#fff} */
+/* .info_txt_visual .tit_more{display: block;padding-top: 2px;font-family: 'HSBombaram21-Regular', sans-serif;font-size: 16px;line-height: 20px;color:rgba(255,255,255,.1)} */
+.info_txt_visual .tit{display: block;padding-top: 8px;font-family: 'Bitgoeul_Medium', sans-serif;font-size: 30px;line-height: 38px;color:#fff}
+.info_txt_visual .tit_more{display: block;padding-top: 2px;font-family: 'Bitgoeul_Medium', sans-serif;font-size: 16px;line-height: 20px;color:rgba(255,255,255,.1)}
 
+.info_txt_visual p{padding:20px 20px 0;font-weight: 300;font-size: 14px;line-height: 20px;color:#fff;text-shadow: 3px 3px 4px rgba(0,0,0,.4)}
 .area_popup_zone{position: absolute;top:500px;left: 20px;right: 20px;z-index: 10;max-width: 390px;margin:0 auto}
 .area_popup_zone img{display: block;width: 100%}
 
