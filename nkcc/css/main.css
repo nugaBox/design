@@ -110,7 +110,7 @@ only screen and (min-width: 1400px){
   .section_main1 .bg_land{top:100px;width: 788px;height: 660px;margin-left: -220px;background: url(../images/main/bg_land.png) 0 0 no-repeat;background-size: cover}
   .section_main1 .bg_visual_line{top:303px;width: 509px;height: 299px;margin-left: -145px;background: url(../images/main/bg_visual_line.png) 0 0 no-repeat;background-size: cover}
   
-  .area_popup_zone{top:auto;left: auto;bottom:170px;right: var(--page-default-padding-x);max-width: 350px}
+  .area_popup_zone{top:auto;left: auto;bottom:120px;right: var(--page-default-padding-x);max-width: 350px}
   .head_popup_zone .btn_ctrl, .head_popup_zone .btn_action{cursor: pointer}
   .head_popup_zone .btn_ctrl:hover,
   .head_popup_zone .btn_action:hover,
@@ -119,15 +119,15 @@ only screen and (min-width: 1400px){
 
   .area_visual_info{height: auto;text-align: left}
 
-  .info_txt_visual{position: absolute;bottom:346px;left: var(--page-default-padding-x);height: auto; padding-left:50px}
+  .info_txt_visual{position: absolute;bottom:246px;left: var(--page-default-padding-x);height: auto; padding-left:50px}
   .info_txt_visual em{font-size: 30px;line-height: 36px}
   .info_txt_visual .tit{font-size: 60px;line-height: 70px}
   .info_txt_visual .tit_more{font-size: 30px;line-height: 36px}
   .info_txt_visual p{max-width: 670px;padding:32px 0 0;font-size: 20px;line-height: 32px}
   
   .slide_main_visual .inner_comm{position: relative;height: 100%}
-  .slide_main_visual .swiper-slide{height: 827px; padding:0}
-  .slide_main_visual .nav_slide{top:auto;bottom:255px;right: auto;left: var(--page-default-padding-x);  padding-left:50px}
+  .slide_main_visual .swiper-slide{height: 727px; padding:0}
+  .slide_main_visual .nav_slide{top:auto;bottom:155px;right: auto;left: var(--page-default-padding-x);  padding-left:50px}
   .slide_main_visual .nav_slide .bar_progress{width: 207px;margin-right: 23px}
   .slide_main_visual .nav_slide .btn_ctrl{width: 50px;height: 50px;font-size: 28px}
   .slide_main_visual .nav_slide .btn_ctrl,
