@@ -2018,3 +2018,145 @@ p.exp .ex{position:absolute; top:0; left:0;}
 .sur_row.btn.btn_con.btn_blue{line-height:30px;}
 
 map {display: block; height: 0;}
+
+
+/* 섬기는사람들 */
+
+
+.list_thumb {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.list_thumb>li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 48%;
+    border: #ccc solid 1px;
+    margin-bottom: 15px
+}
+
+.list_thumb>li>div {
+    width: 100%;
+    background-color: #fcfcfc;
+    background-image: url(/home/www/images/sub/thumb_default.png);
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.list_thumb>li>ul {
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    background: #fcfcfc;
+    border-top: #ccc solid 1px
+}
+
+.list_thumb>li>ul>li {
+    font-size: 14px;
+    line-height: 1.5
+}
+
+.list_thumb.row>li>div {
+    height: 150px;
+    background-size: cover
+}
+
+.list_thumb.row>li>div.default {
+    background-image: url(/home/www/images/sub/thumb_default.png);
+    background-size: auto 35px
+}
+
+.list_thumb.column>li {
+    margin-bottom: 15px
+}
+
+.list_thumb.column>li>div {
+    height: 200px;
+    background-size: contain
+}
+
+.list_thumb.column>li>ul {
+    border-top: 0;
+    height: auto
+}
+
+
+.sub_tab>ul {
+    display: flex;
+    border-bottom: #333 solid 1px
+}
+
+.sub_tab>ul>li {
+    width: 33.333%
+}
+
+.sub_tab>ul>li>a {
+    display: block;
+    border: #ccc solid 1px;
+    border-bottom: #333 solid 1px;
+    border-left: 0;
+    margin-bottom: -1px;
+    padding: 15px 0;
+    background: #fcfcfc;
+    text-align: center;
+    font-weight: 600
+}
+
+.sub_tab>ul>li:first-child>a {
+    border-left: #ccc solid 1px
+}
+
+.sub_tab>ul>li.active>a,.sub_tab>ul>li>a:hover {
+    border: #333 solid 1px;
+    border-bottom: #fff solid 1px;
+    background: #fff
+}
+
+.sub_tab_con {
+    display: none
+}
+
+
+@media all and (min-width: 768px) {
+
+    .list_thumb {
+        justify-content: flex-start
+    }
+
+    .list_thumb>li {
+        width: 32%;
+        margin-right: 2%
+    }
+
+    .list_thumb>li:nth-child(3n) {
+        margin-right: 0
+    }
+
+    .list_thumb>li>ul {
+        padding: 20px
+    }
+
+    .list_thumb.row>li>div {
+        height: 210px;
+        min-height: 210px
+    }
+
+    .list_thumb.row>li>ul {
+        padding: 20px
+    }
+}
+
+@media all and (min-width: 1024px) {
+
+    .list_basic li {
+        font-size: 16px
+    }
+
+    .list_basic.lt01 li:before,.list_basic.lt02 li:before {
+        top: 6px
+    }
+}
+
