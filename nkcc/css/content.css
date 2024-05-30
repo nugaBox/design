@@ -1668,6 +1668,18 @@ p.exp .ex{position:absolute; top:0; left:0;}
 	.text_box_b strong{font-size:18px;}
 }
 
+/* 이메일무단수집거부 */
+.mail_wrap p{margin:30px 0; text-align: center; color:#646363; font-size: 20px; line-height: 35px; letter-spacing: -0.025em}
+@media screen and (max-width: 767px){
+  .co_wrap{padding:0 15px 10px 15px}
+  .co_wrap .co_title:first-child{margin:30px 0 20px}
+  .co_wrap .co_title{margin:40px 0 20px; font-size: 19px; line-height: 1.3}
+  .mail_wrap img{width:45%; max-width: 200px}
+  .mail_wrap p{font-size: 14px; line-height: 1.6; word-break: keep-all}
+  .mail_wrap p br{display: none}
+}
+
+
 /* 홍추가 */
 .list_title > li{padding-left:20px!important;}
 .list_title > li > strong{display:block; margin-bottom:10px;}
