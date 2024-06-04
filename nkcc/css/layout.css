@@ -243,6 +243,8 @@
 .footer .go_top{display:flex;justify-content:center;align-items:center;color:#fff;background:#07387d;width:50px;height:50px;/* position:absolute; */right:0;top: 0px;font-size:25px;margin:15px auto 0 auto;}
 
 /*=========== 서브레이아웃 =============*/
+.content_area {padding-bottom: 60px}
+
 /*서브레이아웃==========서브비주얼영역*/
 .sub_visual_area{position:relative; display:flex; justify-content:center; align-items:center; flex-direction:column; height:320px; background-image:url("../images/sub/bg_subvisual.jpg"); background-position:center; background-repeat:no-repeat; background-size:cover;}
 .sub_visual_area.bg01{background-image:url("../images/sub/bg_subvisual01.jpg")}

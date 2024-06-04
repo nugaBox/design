@@ -10,7 +10,7 @@
   <meta content="website" property="og:type">
   <meta content="새광주교회" property="og:site_name">
   <meta content="새광주교회" property="og:title">
-  <title>인사말 | 새광주교회</title>
+  <title>오시는길 | 새광주교회</title>
   <link href="../../../images/common/favicon.png" rel="shortcut icon">
   <link href="../../../css/lib/swiper-11.0.5.min.css" rel="stylesheet" type="text/css">
   <link href="../../../css/lib/aos.min.css" rel="stylesheet" type="text/css">
@@ -215,7 +215,7 @@
     
     <section class="content_area">
       <div class="sub_visual_area bg01">
-        <h2 class="sub_title">인사말</h2>
+        <h2 class="sub_title">오시는길</h2>
         <div class="share_box_wrap">
           <ul class="share_box">
             <li class="print">
@@ -248,7 +248,7 @@
               <a href="#none">교회소개</a>
             </li>
             <li class="has_sub">
-              <span class="blind">선택된 페이지</span> <a href="#none">인사말</a>
+              <span class="blind">선택된 페이지</span> <a href="#none">오시는길</a>
               <ul>
                 <li>
                   <a href="#none">인사말</a>
@@ -277,43 +277,73 @@
         </div>
       </div>
       <div class="content_top">
-        <h3>인사말</h3>
+        <h3>오시는길</h3>
       </div>
       <div class="content" id="skip_content" tabindex="-1">
-        <!--
-                      <div class="box_default box_st01">
-                          <div class="inner">
-                              <span>AI 융복합지구</span>
-                              <p>4차 산업혁명 시대를 이끌어 갈 세계적 수준의 국가 AI 데이터센터 구축으로 인공지능 광주시대를 열어갑니다.</p>
-                          </div>
-                      </div>
-                      -->
-        <div class="inner">
-          <div class="new_greeting_wrap">
-            <div class="top">
-              <p><span>내가 이 반석 위에 교회를 세우리니</span>새광주교회 홈페이지에 오신 것을 환영합니다</p>
-            </div>
-            <div class="bottom">
-              <div class="img">
-                <img src="../../../images/sub/greeting_2024.jpg" alt="새광주교회 조상원 담임목사">
-              </div>
-              <div class="txt">
-                <p>할렐루야!</p>
-                <p>저희 새광주교회 홈페이지들 찾아주신 여러분을 진심으로 환영합니다.</p>
-                <p>온라인 공간을 통하여 성도 간의 활발한 소등과 믿음의 신실한 교제가 이루어지기를 원합니다.
-                    <br>이 만남의 장을 성령 안에서 서로를 세워가는 아름다운 행복발전소를 만들어 가기를 소원합니다.
-                    <br>서로를 알아가고, 서로를 세우고, 서로에게 힘을 복돋아주는 사랑과 행복의 공동체 공간으로 이 홈페이지가 활용되기를 바랍니다.</p>
-                    <p>"내가 이 반석위에 교회를 세우리니(마16:18)"
-                    <br>예수님께서 "내가 교회들 세우신다고" 선언하셨습니다.
-                    <br>우리 교회를 주님이 사랑하십니다.
-                    <br>그리고 주님이 우리교회를 회복시키시고 시대적사명을 감당할 교회로 세워나갈 것입니다.
-                    <br>우리가 할 일은 그것을 믿고 마음과 뜻을 합하여 최선을 다하여 주님의 뜻을 받들어 나가는 것입니다.
-                    <br>그럴 때 주님께서도 우리 교회를 온전하게 세워나가실 것입니다.</p>
-                <p class="name">새광주교회 담임목사 <span>조상원</span></p>
-              </div>
-            </div>
-          </div>	
+       
+        <div class="inner">	
+          <div class="location">
+          <div class="map_box">
+            <div id="map_area" class="map tc"></div>
+            <p>[61931] 광주광역시 서구 금화로492번길 5 (농성동)<br> Tel . 062-369-3309(대표전화)</p>
+          </div>
+          <h4 class="mt20">교통안내</h4>
+          <ul class="traffic">
+            <li>
+              <span class="icon" title="버스 아이콘"><i class="fal fa-bus"></i></span>
+              <dl>
+                <dt>버스 이용시</dt>
+                <dd><span>서구청, 서광주한전</span>
+                  <ul>
+                    <li>- 간선 : 송정19, 금호36, 봉선37, 문흥39, 금남59</li>
+                    <li>- 지선 : 매월61, 송암68, 송암72, 송암74, 1187</li>
+                    <li>- 광역 : 160</li>
+                  </ul>
+                </dd>
+                <dd><span>농성파출소</span>
+                  <ul>
+                    <li>- 간선 : 금남59</li>
+                    <li>- 지선 : 매월61, 송암74, 1187</li>
+                  </ul>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <span class="icon" title="승용차 아이콘"><i class="fal fa-train-subway"></i></span>
+              <dl>
+                <dt>지하철 이용시</dt>
+                <dd>1호선 : 돌고개역 하차 (2번 출구 이용)</dd>
+              </dl>
+            </li>
+          </ul>
         </div>
+        </div>
+        <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a41fd3fb9a242ab9de9838f53fe906ba"></script>
+        <script>
+          var mapContainer = document.getElementById('map_area'), // 지도를 표시할 div 
+            mapOption = { 
+              center: new kakao.maps.LatLng(35.1502784718146, 126.89179055501), // 지도의 중심좌표
+              level: 3 // 지도의 확대 레벨
+            };
+        
+            // 지도를 생성한다 
+            var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+            // 지도에 마커를 생성하고 표시한다
+            var marker = new kakao.maps.Marker({
+                position: new kakao.maps.LatLng(35.1502784718146, 126.89179055501), // 마커의 좌표
+                map: map // 마커를 표시할 지도 객체
+            });
+
+            // 커스텀 오버레이를 생성하고 지도에 표시한다
+            var customOverlay = new kakao.maps.CustomOverlay({
+              map: map,
+              content: '<div style="padding:5px;background:#fff; border:1px #000 solid; text-align:center; font-size:1.2em; font-weight:400">새광주교회</div>', 
+              position: new kakao.maps.LatLng(35.1502784718146, 126.89179055501), // 커스텀 오버레이를 표시할 좌표
+              xAnchor: 0.5, // 컨텐츠의 x 위치
+              yAnchor: 2.6 // 컨텐츠의 y 위치
+            });
+        </script>
       </div><!--컨텐츠 영역 끝-->
     </section>
     <!-- Footer -->
