@@ -316,6 +316,8 @@
 .sub_tab li a{display:flex; line-height:1.2; text-align:center; font-size:14px; color:#0c0c0c; padding:12px 0; justify-content:center; align-items:center; height:100%;}
 .sub_tab li.active a{background:#0c0c0c; color:#fff;}
 
+.inner{margin:60px auto 20px;}
+
 @media all and (max-width:365px){
 	.sub_menu > li:first-child{display:none !important;}
 }
@@ -808,7 +810,7 @@
 	.sub_tab li a{padding:18px 0; font-size:16px;}
 	
 	.content{padding:0 0 30px 0; min-height:500px;}
-	.inner{max-width:1400px; margin:0 auto;}
+	.inner{max-width:1400px; margin:80px auto 20px;}
 }
 /*1600px==========*/
 @media all and (min-width:1600px){

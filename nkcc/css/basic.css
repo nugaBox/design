@@ -321,3 +321,10 @@ input[type='checkbox'] + label,input[type='radio'] + label {display:inline-block
 
 .blind { position:absolute; overflow:hidden; width:1px; height:1px; padding:0; margin-top:-1px; font-size:0; line-height:0; text-indent:-9999px}
 caption, legend { overflow:hidden; width:0px; height:0px; padding:0; margin-top:-1px; font-size:0; line-height:0; text-indent:-9999px}
+
+br.br_m {display:block}
+br.br_p {display:none}
+@media all and (min-width: 1024px) {
+    br.br_m {display:none}
+    br.br_p {display:block}  
+}
