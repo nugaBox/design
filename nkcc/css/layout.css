@@ -1,8 +1,4 @@
 @charset "utf-8"; 
-/*!
- *@(주)가민정보시스템
- *@2021.10.20 류승호초안
- */
 .goog-te-gadget-icon{display:none;}
 .goog-te-menu-value{ display:block; width:18px; height:18px; margin:0 !important; overflow:hidden  }
 .goog-te-menu-value span{ display:block; text-indent:-9999px; border:0 !important}
@@ -42,7 +38,7 @@
 .gnb_m > ul { padding:15px 25px;}
 .gnb_m > ul > li{position:relative;}
 .gnb_m > ul > li > a{padding:15px 0; font-size:18px;}
-.gnb_m > ul > li.has_sub:after{position:absolute; right:15px; top:15px; display:inline-block; content:"\f067"; font-size:0.85em; font-family:"Font Awesome 6 Pro"; font-weight:bold; color:#fff;}
+.gnb_m > ul > li.has_sub:after{position:absolute; right:15px; top:15px; display:inline-block; content:"\f067"; font-size:0.85em; font-family:"Font Awesome 5 pro"; font-weight:bold; color:#fff;}
 .gnb_m > ul > li.has_sub.open:after{content:"\f068"}
 .gnb_m > ul > li > ul{display:none; padding-left:20px;}
 .gnb_m > ul > li > ul > li > a{font-size:16px; padding:10px 0;}
@@ -235,7 +231,7 @@
 .footer .related_site > a{position:relative; display:block; border:#000 solid 1px; border-radius:8px; padding:10px 50px 10px 30px; color:#000; font-size:16px; font-weight:bold;}
 .footer .related_site > a.active{border-radius:0 0 10px 10px; background:#6d6762; color:#fff; border:#6d6762 solid 1px;}
 .footer .related_site > a.active:after{ content:"\f0d7"}
-.footer .related_site > a:after{display:inline-block; position:absolute; right:15px; top:50%; transform:translateY(-50%); content:"\f0d8"; font-family:"Font Awesome 6 Pro"; font-weight:bold;}
+.footer .related_site > a:after{display:inline-block; position:absolute; right:15px; top:50%; transform:translateY(-50%); content:"\f0d8"; font-family:"Font Awesome 5 pro"; font-weight:bold;}
 .footer .related_site ul{display:none; position:absolute; left:0; right:0; bottom:38px; border-radius:10px 10px 0 0; overflow:hidden; padding:0px;}
 .footer .related_site ul:last-child{}
 .footer .related_site ul li a{display:block; padding:16px; line-height:1.4; border-bottom:#afaba7 dashed 1px; color:#fff; font-size:12px; background:#8a8581;}
@@ -278,7 +274,7 @@
 /*서브레이아웃==========breadcrumb*/
 .breadcrumb li{position:relative; display:inline-block; font-size:14px; margin-right:15px; }
 .breadcrumb li a{display:block; line-height:1.3; color:rgba(255,255,255,0.6);}
-.breadcrumb li:after{display:inline-block; position:absolute; right:-13px; top:50%; transform:translateY(-50%); content:"\f0da"; font-family:"Font Awesome 6 Pro"; font-weight:bold; color:#fff}
+.breadcrumb li:after{display:inline-block; position:absolute; right:-13px; top:50%; transform:translateY(-50%); content:"\f0da"; font-family:"Font Awesome 5 Pro"; font-weight:bold; color:#fff}
 .breadcrumb li:last-child a{color:#ff8f21; font-weight:500}
 .breadcrumb li:last-child:after{display:none;}
 
@@ -291,7 +287,7 @@
 .sub_menu > li:last-child > a{color:#ffb300;}
 .sub_menu > li:last-child:after{color:#ffb300 !important; }
 .sub_menu > li.has_sub > a{padding:0 30px 0 10px; min-width:140px; text-align:center;} 
-.sub_menu > li.has_sub:after{position:absolute; right:5px; top:50%; transform:translateY(-50%); color:#fff; display:inline-block; content:"\f32d"; font-family:"Font Awesome 6 Pro"; font-weight:bold;}
+.sub_menu > li.has_sub:after{position:absolute; right:5px; top:50%; transform:translateY(-50%); color:#fff; display:inline-block; content:"\f32d"; font-family:"Font Awesome 5 pro"; font-weight:bold;}
 .sub_menu > li.open > a{color:#f16611; background:#fff; font-weight:bold;}
 .sub_menu > li.open:before{position:absolute; left:0; right:0; top:0; background:#f16611; content:""; height:1px;}
 .sub_menu > li.has_sub.open:after{color:#f16611 !important;}
@@ -609,7 +605,7 @@
 	.gnb_wrap .etc_menu .sns_wrap a.sns04 span {position: absolute;left: 105%;top: 50%;transform: translateY(-50%);display: block;text-indent: 0;font-size: 12px;width: 58px;font-weight: 400;color: #000;}
 	.etc_menu .language{position:relative; display:inline-block; text-align:center; vertical-align:middle; margin-right:10px;}
 	.etc_menu .language > a{position:relative; display:block; color:#000; font-size:14px; font-weight:bold; padding:5px 25px 5px 10px; border:#000 solid 1px; border-radius:5px;}
-	.etc_menu .language > a:after{display:inline-block; position:absolute; right:8px; top:50%; transform:translateY(-50%); content:"\f107"; font-family:"Font Awesome 6 Pro"; font-size:18px; font-weight:500;}
+	.etc_menu .language > a:after{display:inline-block; position:absolute; right:8px; top:50%; transform:translateY(-50%); content:"\f107"; font-family:"Font Awesome 5 pro"; font-size:18px; font-weight:500;}
 	.etc_menu .language > ul{display:none; position:absolute; top:30px; left:0; right:0; padding:5px 0; background:#fff; border:#000 solid 1px; border-radius:5px; }
 	.etc_menu .language > ul > li > a{display:block; padding:5px 0; font-size:14px; color:#000;}
 	.etc_menu .language > ul > li > a:hover{color:#666}

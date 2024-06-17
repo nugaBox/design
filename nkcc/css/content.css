@@ -122,7 +122,7 @@ p.exp .ex{position:absolute; top:0; left:0;}
 
 .btn_set{padding:10px 0;}
 .btn_con{display:inline-block; padding:0 12px; line-height:30px; border-radius:3px; font-size:14px; font-weight:500; border:0;}
-.btn_con:before{display:inline-block; vertical-align:0px; font-family:"Font Awesome 6 Pro"; margin-left:10px;}
+.btn_con:before{display:inline-block; vertical-align:0px; font-family:"font awesome 6 Pro"; margin-left:10px;}
 
 .btn_blk{background:#414141; color:#fff!important}
 .btn_blk:hover{background-color:#000; color:#fff!important;}
@@ -181,10 +181,10 @@ p.exp .ex{position:absolute; top:0; left:0;}
 .scroltable-nav {display:none; position:absolute; width:60px; height:100%; cursor:pointer;}
 .scroltable-nav.scroltable-nav-left { left:0; background:linear-gradient(to left, rgba(255,255,255,0), #fff);}
 .scroltable-nav.scroltable-nav-right { right:0; background:linear-gradient(to right, rgba(255,255,255,0), #fff);}
-.scroltable-nav.scroltable-nav-left:before{display:inline-block; position:absolute; left:0; top:40%; content:"\f0a6"; font-family:"Font Awesome 6 Pro"}
-.scroltable-nav.scroltable-nav-left:after{display:inline-block; position:absolute; left:0; top:40%; margin-top:20px; content:"\f33e"; font-family:"Font Awesome 6 Pro"}
-.scroltable-nav.scroltable-nav-right:before{display:inline-block; position:absolute; right:0; top:40%; content:"\f0a6"; font-family:"Font Awesome 6 Pro"}
-.scroltable-nav.scroltable-nav-right:after{display:inline-block; position:absolute; right:0; top:40%; margin-top:20px; content:"\f340"; font-family:"Font Awesome 6 Pro"}
+.scroltable-nav.scroltable-nav-left:before{display:inline-block; position:absolute; left:0; top:40%; content:"\f0a6"; font-family:"font awesome 6 Pro"}
+.scroltable-nav.scroltable-nav-left:after{display:inline-block; position:absolute; left:0; top:40%; margin-top:20px; content:"\f33e"; font-family:"font awesome 6 Pro"}
+.scroltable-nav.scroltable-nav-right:before{display:inline-block; position:absolute; right:0; top:40%; content:"\f0a6"; font-family:"font awesome 6 Pro"}
+.scroltable-nav.scroltable-nav-right:after{display:inline-block; position:absolute; right:0; top:40%; margin-top:20px; content:"\f340"; font-family:"font awesome 6 Pro"}
 
 /*paging*/
 .paging{clear:both; text-align:center; padding:25px 0 0 0}
@@ -1630,16 +1630,16 @@ p.exp .ex{position:absolute; top:0; left:0;}
 
 /* 다운로드 버튼 */
 .d_btn_con{display:inline-block; position:relative; color:#3d4571; background:#f4f7fc; border:1px solid #abc2e9; border-radius:5px; padding:13px 30px; background-position:90% center; background-repeat:no-repeat; transition:ease 0.3s; margin-bottom:5px;}
-.d_btn_con:after{font-family:"Font Awesome 6 Pro"; position:absolute; top:50%; transform:translateY(-50%); right:15px; font-weight:600; font-size:16px; color:#567cd4;}
+.d_btn_con:after{font-family:"font awesome 6 Pro"; position:absolute; top:50%; transform:translateY(-50%); right:15px; font-weight:600; font-size:16px; color:#567cd4;}
 .d_btn_con2{display:inline-block; position:relative; color:#0b3c80;}
-.d_btn_con2:after{font-family:"Font Awesome 6 Pro"; position:absolute; top:50%; transform:translateY(-50%); right:15px; font-weight:600; font-size:16px; color:#567cd4;}
+.d_btn_con2:after{font-family:"font awesome 6 Pro"; position:absolute; top:50%; transform:translateY(-50%); right:15px; font-weight:600; font-size:16px; color:#567cd4;}
 .btn_down, .btn_blank, .btn_link{padding:0px 40px 0px 10px;}
 
 .btn_blue{background:#567cd4; color:#fff; border:1px solid #567cd4;}
 .btn_gray{background:#596070; color:#fff; border:1px solid #596070;}
 .btn_line{background:#fff; border:1px solid #343d4c; color:#343d4c;}
 
-.btn_down:after{content:"\f34a"; font-size:18px; font-family:"Font Awesome 6 Pro"; }
+.btn_down:after{content:"\f34a"; font-size:18px; font-family:"font awesome 6 Pro"; }
 .btn_blank:after{content:"\f2d2";}
 .btn_link:after{content:"\f0a9";}
 
