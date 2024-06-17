@@ -1,22 +1,15 @@
 @charset "utf-8";
-/*!
- *@(주)가민정보시스템
- *@2021.10.20 류승호초안
- *@추가수정 : 수정시 작성
- */
-
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap');
 
 @font-face {
      font-family: 'Bitgoeul_Bold';
-     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Bitgoeul_Bold.woff') format('woff');
+     src: url('../fonts/Bitgoeul_Bold.woff') format('woff');
      font-weight: normal;
      font-style: normal;
 }
 
 @font-face {
      font-family: 'Bitgoeul_Medium';
-     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Bitgoeul_Medium.woff') format('woff');
+     src: url('../fonts/Bitgoeul_Medium.woff') format('woff');
      font-weight: normal;
      font-style: normal;
 }
@@ -49,10 +42,10 @@
     font-style: normal;
     font-weight: 100;
     src: local('Noto Sans Thin'), local('NotoSans-Thin'),
-    url(../fonts/NotoSansKR-Thin-Hestia.eot),
-    url(../fonts/NotoSansKR-Thin-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/NotoSansKR-Thin-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Thin-Hestia.otf) format('opentype');
+    url('../fonts/NotoSansKR-Thin-Hestia.eot'),
+    url('../fonts/NotoSansKR-Thin-Hestia.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansKR-Thin-Hestia.woff') format('woff'),
+    url('../fonts/NotoSansKR-Thin-Hestia.otf') format('opentype');
 }
 
 @font-face {
@@ -60,10 +53,10 @@
     font-style: normal;
     font-weight: 300;
     src: local('Noto Sans Light'), local('NotoSans-Light'),
-    url(../fonts/NotoSansKR-Light-Hestia.eot),
-    url(../fonts/NotoSansKR-Light-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/NotoSansKR-Light-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Light-Hestia.otf) format('opentype');
+    url('../fonts/NotoSansKR-Light-Hestia.eot'),
+    url('../fonts/NotoSansKR-Light-Hestia.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansKR-Light-Hestia.woff') format('woff'),
+    url('../fonts/NotoSansKR-Light-Hestia.otf') format('opentype');
 }
 
 @font-face {
@@ -71,10 +64,10 @@
     font-style: normal;
     font-weight: 350;
     src: local('Noto Sans DemiLight'), local('NotoSans-DemiLight'),
-    url(../fonts/NotoSansKR-DemiLight-Hestia.eot),
-    url(../fonts/NotoSansKR-DemiLight-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/NotoSansKR-DemiLight-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-DemiLight-Hestia.otf) format('opentype');
+    url('../fonts/NotoSansKR-DemiLight-Hestia.eot'),
+    url('../fonts/NotoSansKR-DemiLight-Hestia.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansKR-DemiLight-Hestia.woff') format('woff'),
+    url('../fonts/NotoSansKR-DemiLight-Hestia.otf') format('opentype');
 }
 
 @font-face {
@@ -82,10 +75,10 @@
     font-style: normal;
     font-weight: 400;
     src: local('Noto Sans Regular'), local('NotoSans-Regular'),
-    url(../fonts/NotoSansKR-Regular-Hestia.eot),
-    url(../fonts/NotoSansKR-Regular-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/NotoSansKR-Regular-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Regular-Hestia.otf) format('opentype');
+    url('../fonts/NotoSansKR-Regular-Hestia.eot'),
+    url('../fonts/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansKR-Regular-Hestia.woff') format('woff'),
+    url('../fonts/NotoSansKR-Regular-Hestia.otf') format('opentype');
 }
 
 @font-face {
@@ -93,10 +86,10 @@
     font-style: normal;
     font-weight: 500;
     src: local('Noto Sans Medium'), local('NotoSans-Medium'),
-    url(../fonts/NotoSansKR-Medium-Hestia.eot),
-    url(../fonts/NotoSansKR-Medium-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/NotoSansKR-Medium-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Medium-Hestia.otf) format('opentype');
+    url('../fonts/NotoSansKR-Medium-Hestia.eot'),
+    url('../fonts/NotoSansKR-Medium-Hestia.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansKR-Medium-Hestia.woff') format('woff'),
+    url('../fonts/NotoSansKR-Medium-Hestia.otf') format('opentype');
 }
 
 @font-face {
@@ -104,10 +97,10 @@
     font-style: normal;
     font-weight: 700;
     src: local('Noto Sans Bold'), local('NotoSans-Bold'),
-    url(../fonts/NotoSansKR-Bold-Hestia.eot),
-    url(../fonts/NotoSansKR-Bold-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/NotoSansKR-Bold-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Bold-Hestia.otf) format('opentype');
+    url('../fonts/NotoSansKR-Bold-Hestia.eot'),
+    url('../fonts/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansKR-Bold-Hestia.woff') format('woff'),
+    url('../fonts/NotoSansKR-Bold-Hestia.otf') format('opentype');
 }
 
 @font-face {
@@ -115,10 +108,10 @@
     font-style: normal;
     font-weight: 900;
     src: local('Noto Sans Black'), local('NotoSans-Black'),
-    url(../fonts/NotoSansKR-Black-Hestia.eot),
-    url(../fonts/NotoSansKR-Black-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/NotoSansKR-Black-Hestia.woff) format('woff'),
-    url(../fonts/NotoSansKR-Black-Hestia.otf) format('opentype');
+    url('../fonts/NotoSansKR-Black-Hestia.eot'),
+    url('../fonts/NotoSansKR-Black-Hestia.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansKR-Black-Hestia.woff') format('woff'),
+    url('../fonts/NotoSansKR-Black-Hestia.otf') format('opentype');
 }
 
 
@@ -170,8 +163,8 @@ input.disable { background-color:#f4f4f4; }
 
 /*check_box*/
 input[type='checkbox'],input[type='radio']{margin-right:15px; width:20px; height:20px; opacity:0; position:absolute; margin:4px 0; cursor:pointer}
-input[type='checkbox'] + label {display:inline-block;  background:url(../images/sub/icon_checked.png) 0px 0px  no-repeat;  font-size:14px;  height:20px;   padding-left:25px; cursor:pointer; line-height:20px; text-align:left; background-size:20px; }
-input[type='radio'] + label {display:inline-block;  background:url(../images/sub/icon_checked.png) 0px -40px  no-repeat;  font-size:14px;  height:20px;   padding-left:30px; cursor:pointer; background-size:20px; text-align:left;  }
+input[type='checkbox'] + label {display:inline-block;  background:url('../images/sub/icon_checked.png') 0px 0px  no-repeat;  font-size:14px;  height:20px;   padding-left:25px; cursor:pointer; line-height:20px; text-align:left; background-size:20px; }
+input[type='radio'] + label {display:inline-block;  background:url('../images/sub/icon_checked.png') 0px -40px  no-repeat;  font-size:14px;  height:20px;   padding-left:30px; cursor:pointer; background-size:20px; text-align:left;  }
 input[type='checkbox']:checked + label{ background-position: 0px -20px}
 input[type='radio']:checked + label{ background-position: 0px -60px}
 label{ line-height:18px;}
@@ -180,7 +173,7 @@ input[type='checkbox']:focus + label{ outline:3px solid #666; }
 input[type='checkbox'] + label,input[type='radio'] + label {display:inline-block; }
 }
 .call_link{white-space: nowrap}
-.call_link:before{ display:inline-block; content:"\f67d"; vertical-align:-2px; font-family:"Font Awesome 5 pro"; font-weight:500; margin-right:10px; font-size:20px; } 
+.call_link:before{ display:inline-block; content:"\f67d"; vertical-align:-2px; font-family:"Font Awesome 6 Pro"; font-weight:500; margin-right:10px; font-size:20px; } 
 
 .select_custom{ background:url("../images/sub/arrow_down.svg") 96% center no-repeat; background-size:20px 20px; padding:0 10px; -webkit-appearance:none; -moz-appearance:none; }
 .select_custom::-ms-expand{ display:none } 
