@@ -110,15 +110,17 @@ html, body{width: auto;height: auto}
 .btn_sitemap .ico_comm:before, .btn_sitemap .ico_comm:after {position: absolute;width: var(--btn-icon-width);height: var(--btn-icon-height);background: var(--btn-icon-color);content: ''}
 .btn_sitemap .ico_comm:before {top: calc( -1 * var(--btn-icon-gap));right: 0}
 .btn_sitemap .ico_comm:after {top: var(--btn-icon-gap);right: 0}
-
+.m_gnb_area nav .nav_logo {display:block;height:80px;}
+.m_gnb_area nav .nav_logo img {position: relative;top: 15px;left: 10px;}
 .m_gnb_area .inner_comm{display: flex;align-items: center;min-height: 80px;padding-top:10px;padding-bottom:10px;;background: #fff}
 .m_gnb_area .link_logo{margin-right: auto}
+.m_gnb_area .link_logo img {position:relative; top:5px; left:-10px;}
 .m_gnb_area .btn_sitemap{--btn-icon-color:#000;--btn-icon-gap: 10px;--btn-icon-width:20px;--btn-icon-center-width:14px}
 .m_gnb_area nav{overflow: auto;position: fixed;top:0;left: 0;bottom:0;width: calc(100% - 80px);max-width: 400px;background: #fff;opacity: 0;visibility: hidden;transform:translateX(-100%);transition: all .3s;box-shadow: 5px 0 5px rgba(0,0,0,.1)}
 .m_gnb_area .btn_sitemap[aria-expanded="true"] + nav{transform: translateX(0);opacity: 1;visibility: visible}
-.m_gnb_area .list_language{padding:25px 20px 10px;display: flex;gap: 10px}
+.m_gnb_area .list_language{padding:25px 20px;display: flex;gap: 10px}
 .m_gnb_area .list_language li{flex:1;min-width: 0}
-.m_gnb_area .list_language a{display: flex;justify-content: center;padding:5px 0;border:1px solid #F1F1F1;border-radius: 5px;font-weight: 300;font-size: 14px;line-height: 24px;color:#000;text-align: center}
+.m_gnb_area .list_language a{display: flex;justify-content: center;padding:5px 0;background-color:#e0e0e0;border-radius: 5px;font-weight: 500;font-size: 15px;line-height: 24px;color:#000;text-align: center}
 
 .m_gnb .link_depth1{display: flex;align-items: center;position: relative;padding:10px 60px 8px 32px;border-bottom: 1px solid #f1f1f1;font-weight: 700;font-size: 19px;line-height: 26px;color:#000}
 .m_gnb .link_depth1:after{position: absolute;top:50%;right: 32px;font-weight: 100;font-family: "Font Awesome 6 Pro";transform: translateY(-50%);content:'\f107'}
@@ -184,10 +186,6 @@ html, body{width: auto;height: auto}
   100% {opacity: 1;transform: translateX(0)}
 }
 
-@media
-only screen and (min-width: 360px) {
-  .m_gnb_area .list_language a{font-size: 18px}
-}
 @media
 only screen and (min-width: 768px) {
   .wrapper{--page-default-padding-x: 30px}
