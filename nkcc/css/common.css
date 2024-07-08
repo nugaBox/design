@@ -32,12 +32,12 @@ html, body{width: auto;height: auto}
 /* .pc_gnb .box_gnb{display: none;position: absolute;top:100%;left: 0;right: 0;z-index: 10;border-bottom: 1px solid #e5e5e5;background: #f6f6f6} */
 /* .pc_gnb .box_gnb .tit_bg{display: flex;justify-content: flex-end;width: 429px;height: 359px;margin-left: 8%;margin-right: 10%;padding:40px 70px 0 0;font-family: 'HSBombaram21-Regular', sans-serif;font-size: 28px;line-height: 34px;color:#fff;background: 0 0 no-repeat;background-size: cover;text-align: right;word-break: keep-all} */
 .pc_gnb .box_gnb .tit_bg{display: flex;justify-content: flex-end;padding:40px 70px 0 0;font-family: 'HSBombaram21-Regular', sans-serif;font-size: 28px;line-height: 34px;color:#fff;background: 0 0 no-repeat;background-size: cover;text-align: right;word-break: keep-all}
-.pc_gnb .box_gnb .tit_bg.menu1 {margin-left:255px;}
-.pc_gnb .box_gnb .tit_bg.menu2 {margin-left:415px;}
-.pc_gnb .box_gnb .tit_bg.menu3 {margin-left:580px;}
-.pc_gnb .box_gnb .tit_bg.menu4 {margin-left:740px;}
-.pc_gnb .box_gnb .tit_bg.menu5 {margin-left:900px;}
-.pc_gnb .box_gnb .tit_bg.menu6 {margin-left:1060px;}
+.pc_gnb .box_gnb .tit_bg.menu1 {margin-left:250px;}
+.pc_gnb .box_gnb .tit_bg.menu2 {margin-left:385px;}
+.pc_gnb .box_gnb .tit_bg.menu3 {margin-left:530px;}
+.pc_gnb .box_gnb .tit_bg.menu4 {margin-left:670px;}
+.pc_gnb .box_gnb .tit_bg.menu5 {margin-left:810px;}
+.pc_gnb .box_gnb .tit_bg.menu6 {margin-left:950px;}
 .pc_gnb .box_gnb .tit_bg span{display: block;width: 260px;animation: pcGnbTitAni forwards 1s}
 .pc_gnb .bg_gnb{position: absolute;bottom:0;right: 0;width: 543px;height: 358px;background: 0 0 no-repeat;background-size: cover;animation: pcGnbBgAni forwards 1s;content:''}
 
@@ -78,7 +78,7 @@ html, body{width: auto;height: auto}
 .pc_gnb_area.on .pc_gnb > li.on .link_depth1{color:#0067fa}
 .pc_gnb_area.on .pc_gnb .link_depth1.active{color:#0067fa}
 .pc_gnb_area.on nav:before{position: absolute;top:91px;left: 0;right: 0;height: 1px;background: rgba(121, 121, 121, .1);content:''}
-.pc_gnb_area.on .link_depth1{padding:24px 40px 23px}
+.pc_gnb_area.on .link_depth1{padding:24px 30px 23px}
 .pc_gnb_area.on .btn_sitemap{--btn-icon-color:#000}
 .pc_gnb_area.on .set_lang .link_lang{border-color:#000;color:#000}
 
