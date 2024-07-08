@@ -123,7 +123,7 @@ html, body{width: auto;height: auto}
 .m_gnb_area .list_language a{display: flex;justify-content: center;padding:5px 0;background-color:#e0e0e0;border-radius: 5px;font-weight: 500;font-size: 15px;line-height: 24px;color:#000;text-align: center}
 
 .m_gnb .link_depth1{display: flex;align-items: center;position: relative;padding:10px 60px 8px 32px;border-bottom: 1px solid #f1f1f1;font-weight: 700;font-size: 19px;line-height: 26px;color:#000}
-.m_gnb .link_depth1:after{position: absolute;top:50%;right: 32px;font-weight: 100;font-family: "Font Awesome 6 Pro";transform: translateY(-50%);content:'\f107'}
+.m_gnb .has_sub .link_depth1:after{position: absolute;top:50%;right: 32px;font-weight: 100;font-family: "Font Awesome 6 Pro";transform: translateY(-50%);content:'\f107'}
 .m_gnb .link_depth1[aria-expanded="true"]:after{content:'\f068'}
 .m_gnb .link_depth2{display: block;position: relative;font-weight: 300;font-size: 18px;line-height: 35px;color:#4B4B4B;}
 
