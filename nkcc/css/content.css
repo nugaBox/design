@@ -2144,3 +2144,36 @@ map {display: block; height: 0;}
 	/* 박스 아이템 다섯 개 일때 정렬 */
 	.pp_box02 .pp_list .pp_item:nth-child(5n){margin-left:1% !important}
 }
+
+/* 기관소개 */
+.organ_intro_wrap .plan_vr_box .cont {position:relative; top:-20px}
+.organ_intro_wrap .plan_vr_box .cont .text ul li {width:unset}
+.organ_intro_wrap .top{max-width: 560px;}
+.organ_intro_wrap .organ_intro_list {font-size: 1.2em; padding: 5px; line-height: 1.8em; margin-bottom: 20px;}
+.organ_intro_wrap .organ_intro_list .title_li {font-size:1.25em; font-weight: bold; margin-bottom: 15px}
+.organ_intro_wrap .thumb_info .thumb {background-size: 180%; background-position: top;}
+.organ_intro_wrap .thumb_info .thumb_info_txt_wrap strong {color: #2f68cf;}
+.organ_intro_wrap .img_box .org_image{display:block; background-size:cover; height:300px;  border-radius: 30px 0 30px 0;}
+.organ_intro_wrap.organ_woman .img_box .org_image{background-image: url(../images/sub/page_woman.png);}
+.organ_intro_wrap.organ_man .img_box .org_image{background-image: url(../images/sub/page_man.png);}
+.organ_intro_wrap.organ_middle .thumb_info .thumb {background-size: cover;}
+.organ_intro_wrap.organ_middle .thumb_info p {text-align: center; font-size: 1.05em;}
+.organ_intro_wrap.organ_middle .thumb_info .thumb_info_txt_wrap {text-align:center}
+.organ_intro_wrap.organ_middle .thumb_info .thumb_info_txt_wrap .slogan {font-size:1.4em; padding: 0 0 30px;}
+.organ_intro_wrap.organ_youth .thumb_info .thumb {background-size: cover;}
+@media all and (min-width:768px){
+	.organ_intro_wrap .img_box .org_image{height:400px}
+	.organ_intro_wrap.organ_middle .thumb_info p {font-size: 1.2em;}
+	.organ_intro_wrap.organ_youth .top{max-width: 400px;}
+	.organ_intro_wrap.organ_man .plan_vr_box .title {width:15%}
+}
+@media all and (min-width:1024px){
+	.organ_intro_wrap .img_box .org_image{height:650px}
+	.organ_intro_wrap .plan_vr_box .cont {position:absolute; top:unset}
+	.organ_intro_wrap .thumb_info .thumb_info_txt_wrap span {margin: 20px 0 10px; padding:0}
+	.organ_intro_wrap .thumb_info .thumb_info_txt_wrap ul {margin-bottom:30px}
+	.organ_intro_wrap.organ_middle .thumb_info p {text-align: left;}
+	.organ_intro_wrap.organ_middle .thumb_info .thumb_info_txt_wrap {text-align:left}
+	.organ_intro_wrap.organ_middle .thumb_info .thumb_info_txt_wrap .slogan {font-size:1.7em}
+	.organ_intro_wrap.organ_youth .top{max-width: 240px;}
+}
