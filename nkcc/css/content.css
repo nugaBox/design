@@ -2168,16 +2168,19 @@ map {display: block; height: 0;}
 	.organ_intro_wrap.organ_man .plan_vr_box .title {width:15%}
 }
 @media all and (min-width:1024px){
-	.organ_intro_wrap .top{margin: 50px auto}
+	.organ_intro_wrap .top{margin: 50px auto; position: relative;}
+	.organ_intro_wrap.organ_man .top{left: -130px;}
+	.organ_intro_wrap.organ_woman .top{max-width: 360px; left: -100px;}
+	.organ_intro_wrap.organ_child .top{left: -100px;}
+	.organ_intro_wrap.organ_middle .top{left: -100px;}
+	.organ_intro_wrap.organ_youth .top{max-width: 240px;left: -150px;}
 	.organ_intro_wrap .img_box .org_image{height:650px}
 	.organ_intro_wrap .plan_vr_box .cont {position:absolute; top:unset}
 	.organ_intro_wrap .thumb_info .thumb_info_txt_wrap span {margin: 20px 0 10px; padding:0}
 	.organ_intro_wrap .thumb_info .thumb_info_txt_wrap ul {margin-bottom:30px}
-	.organ_intro_wrap.organ_woman .top{max-width: 360px;}
 	.organ_intro_wrap.organ_middle .thumb_info p {text-align: left;}
 	.organ_intro_wrap.organ_middle .thumb_info .thumb_info_txt_wrap {text-align:left}
 	.organ_intro_wrap.organ_middle .thumb_info .thumb_info_txt_wrap .slogan {font-size:1.7em}
-	.organ_intro_wrap.organ_youth .top{max-width: 240px;}
 }
 
 /* 교육양육 */
