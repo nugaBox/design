@@ -2184,13 +2184,12 @@ map {display: block; height: 0;}
 .sector_info.info03{background-image:url(../images/sub/vision/vision_03_bg.jpg); background-color:#272727de; background-blend-mode: multiply;}
 .sector_info > li{color:#fff; line-height:1.7; position:relative; margin-bottom:15px; letter-spacing:-1.1px; font-size:1.2em}
 .sector_info > li:last-child{margin-bottom:0;}
-.sector_info > li > span{background:#00235e; font-weight:bold; color:#fff; width: 70px; padding:3px 10px;  border-radius:5px; position:absolute; top:-2px; left:0; text-align:center;}
+.sector_info > li > span{background:#00235e; font-weight:bold; color:#fff; width: 100px; padding:3px 10px;  border-radius:5px; position:absolute; top:-2px; left:0; text-align:center;}
 .sector_info > li > strong {font-weight: bold;}
-.sector_info > li > .missionary {padding-left:90px; font-weight: bold; }
+.sector_info > li > .missionary {padding-left:120px; font-weight: bold; }
 .sector_info > li > ul > li{word-break:keep-all;}
 .sector_info.info02 > li{color:#000}
 .sector_info.info02 > li > strong {font-size:1.2em; font-weight: bold; text-decoration: underline;}
-.sector_info.info03 > li > .missionary {padding-left:90px; font-weight: bold; }
 .sector_box .nav_slide {width:100%; position: relative; top: 120px; z-index: 999;}
 .sector_box .nav_slide > button {background-color: transparent; color: #fff; font-size: 50px; border: transparent; position:absolute}
 .sector_box .nav_slide > .btn_ctrl {display: none;}
@@ -2200,8 +2199,8 @@ map {display: block; height: 0;}
 	.sector_box .nav_slide {top: 220px;}
 	.vision_wrap .top {max-width:unset}
 	.sector_info > li{letter-spacing:0;}
-	.sector_info > li > span{width: 100px;}
-	.sector_info.info03 > li > .missionary {padding-left:120px; font-weight: bold; }
+	.sector_info > li > span{width: 120px;}
+	.sector_info > li > .missionary {padding-left:140px; font-weight: bold; }
 }
 @media all and (min-width:1024px){	
 	.vision_wrap .top {max-width: 550px;margin: 20px auto 50px;}
@@ -2212,7 +2211,6 @@ map {display: block; height: 0;}
 	.sector_box .sector_info{width:45%; box-shadow:0 1px 10px 0 rgb(0, 0, 0 / 30%); padding:50px; height:600px}
 	.sector_info {font-size:0.85em}
 	.sector_info > li{margin-bottom:15px; line-height:1.3;}
-	.sector_info > li > span{width:95px;}
 }
 @media all and (min-width:1200px){	
 	.vision_wrap .top {position: relative;left: -130px;}
