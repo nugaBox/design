@@ -285,6 +285,66 @@ const ui = (function () {
 
   }
 
+  // 비전/사역 슬라이드
+  const $slideVisionWrap = $('.slide_vision_wrap')
+  if ($slideVisionWrap.length) {
+    const $slide = $slideVisionWrap
+    
+    $slide.each(function (idx, el) {
+      const $el = $(el)
+      const areaSlide = $el.parent('.sector_box').get(0)
+      const prevEl = areaSlide.querySelector('.btn_prev')
+      const nextEl = areaSlide.querySelector('.btn_next')
+      const pause = areaSlide.querySelector('.pause')
+      const play = areaSlide.querySelector('.play')
+
+      const swiperOptions = {
+        a11y: {
+          containerMessage: idx === 0 ? '카드뉴스 슬라이드' : '뉴스레터', // 슬라이드 컨테이너의 제목(기본값 null)
+          prevSlideMessage: '이전 슬라이드',
+          nextSlideMessage: '다음 슬라이드',
+          slideLabelMessage: idx === 0 ? '현재 슬라이드 : {{index}} / 전체 슬라이드 : {{slidesLength}}' : '',
+        },
+        on: {
+          transitionStart: () => { // 다음이든 이전이든 슬라이드가 넘어가지 않아도 트렌지션이 시작되면 발생함
+            updatePlayPauseButtonIcon(play, pause)
+            if (play && pause) {
+              pause.disabled = true
+              play.disabled = true
+            }
+          },
+          transitionEnd: () => { // 다음이든 이전이든 슬라이드가 넘어가지 않아도 트렌지션이 시작되면 발생함
+            if (play && pause) {
+              pause.disabled = false
+              play.disabled = false
+            }
+          },
+          lock: (swiper) => {
+            swiper.el.classList.add('inactive')
+            swiper.params.loop = false
+          },
+          unlock: (swiper) => {
+            swiper.el.classList.remove('inactive')
+            swiper.params.loop = true
+          },
+        },
+        loop: true,
+        autoplay: {
+          delay: 4000, // autoplay 간격
+          pauseOnMouseEnter: true, // 자동재생시 마우스 올리면 정지 (기본값 false)
+        },
+        navigation: { prevEl, nextEl },
+        slidesPerView: 1, // 화면에 슬라이드를 몇개 노출 시킬 것인지 ('auto'는 요소(.swiper-slide) 자체 너비)
+        spaceBetween: '10', // 슬라이드간 간격 너비(px)
+      }
+
+      const swiper = new Swiper(el, swiperOptions)
+      handlePauseAndResume(pause, () => swiper.autoplay.pause())
+      handlePauseAndResume(play, () => swiper.autoplay.resume())
+    })
+
+  }
+
   function MoveResponse( options ) {
 		this.setting = {
 			section: window,
