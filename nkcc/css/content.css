@@ -2177,3 +2177,25 @@ map {display: block; height: 0;}
 	.organ_intro_wrap.organ_middle .thumb_info .thumb_info_txt_wrap .slogan {font-size:1.7em}
 	.organ_intro_wrap.organ_youth .top{max-width: 240px;}
 }
+
+/* 교육양육 */
+.edu_top_box{word-break:keep-all; text-align:center; padding: 30px 20px 20px;background-color: #e7eef3;}
+.edu_top_box .edu_img{box-shadow:rgba(0,0,0,0.2) 1px 1px 10px;display:block;width:250px;height:150px;margin:0 auto;background-size: contain;}
+.edu_top_box .edu_img.st1{background:url(../images/sub/edu/edu_st01.jpeg) no-repeat 0; background-size: cover;}
+.edu_top_box .edu_img.st2{background:url(../images/sub/edu/edu_st02.jpeg) no-repeat 0; background-size: cover;}
+.edu_top_box .edu_img.st3{background:url(../images/sub/edu/edu_st03.jpg) no-repeat 0; background-size: cover;}
+.edu_top_box .edu_img.st4{background:url(../images/sub/edu/edu_st04.jpg) no-repeat 0; background-size: cover;}
+.edu_top_box strong{margin:20px 0;display: block;color: #352e93; font-size:18px;}
+.edu_top_box p{line-height:1.4;}
+.edu_top_box p:last-child{margin-top:10px;}
+@media (min-width:1024px) {
+	.edu_top_box{margin-bottom:70px;text-align:left;position:relative;width:100%;height:250px;padding: 40px 40px 30px 474px;}
+	.edu_top_box .edu_img{width:400px;height:240px;position:absolute;top: 40px;left: 40px;}
+    .edu_top_box .edu_img.st2{width:400px;}
+	.edu_top_box strong{font-size:22px;}
+}
+@media (min-width:1440px) {
+	.edu_top_box{margin-bottom:80px;}
+    .edu_top_box strong{font-size:24px;}
+    .edu_top_box.st01{height:270px;}
+}
