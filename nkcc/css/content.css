@@ -2189,12 +2189,12 @@ map {display: block; height: 0;}
 .sector_info > li > .missionary {padding-left:120px; font-weight: bold; }
 .sector_info > li > ul > li{word-break:keep-all;}
 .sector_info.info02 > li{color:#000}
-.sector_info.info02 > li > strong {font-size:1.2em; font-weight: bold; text-decoration: underline;}
+.sector_info.info02 > li > strong {font-size:1.3em; font-weight: bold;}
 .sector_box .nav_slide {width:100%; position: relative; top: 120px; z-index: 999;}
-.sector_box .nav_slide > button {background-color: transparent; color: #fff; font-size: 50px; border: transparent; position:absolute}
+.sector_box .nav_slide > button {background-color: transparent; color: #fff; font-size: 45px; border: transparent; position:absolute}
 .sector_box .nav_slide > .btn_ctrl {display: none;}
-.sector_box .nav_slide > .btn_prev {left:15px}
-.sector_box .nav_slide > .btn_next {right:15px}
+.sector_box .nav_slide > .btn_prev {left:5px}
+.sector_box .nav_slide > .btn_next {right:5px}
 @media all and (min-width:768px){
 	.sector_box .nav_slide {top: 220px;}
 	.vision_wrap .top {max-width:unset}
@@ -2203,12 +2203,12 @@ map {display: block; height: 0;}
 	.sector_info > li > .missionary {padding-left:140px; font-weight: bold; }
 }
 @media all and (min-width:1024px){	
-	.vision_wrap .top {max-width: 550px;margin: 20px auto 50px;}
+	.vision_wrap .top {max-width: 550px;margin: 40px auto 50px;}
 	.vision_wrap .top p span {text-align: center;}
 	.sector_box{position:relative; display:flex; margin-bottom:50px;}
 	.sector_box .nav_slide {top: 280px;}
-	.sector_box img{width:55%; height:600px;}
-	.sector_box .sector_info{width:45%; box-shadow:0 1px 10px 0 rgb(0, 0, 0 / 30%); padding:50px; height:600px}
+	.sector_box img{width:55%; height:500px;}
+	.sector_box .sector_info{width:45%; box-shadow:0 1px 10px 0 rgb(0, 0, 0 / 30%); padding:50px; height:500px}
 	.sector_info {font-size:0.85em}
 	.sector_info > li{margin-bottom:15px; line-height:1.3;}
 }
