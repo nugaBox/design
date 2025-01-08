@@ -14,11 +14,15 @@ $(document).ready(function() {
     // 작업 진행내용 있는 경우
     if($('.co-progress')){
         // 작업 진행도 바
-        var taskNum = $('li').length;
-        var checkNum = $('.fa-check-circle').length;
+        var taskNum = $('.co-list > li').length;
+        var checkNum = $('.co-list > li').has('.fa-check-circle').length;
         var progress = checkNum / taskNum * 100
-        $('#progressNum').text(progress.toFixed(1)+'%');
-        $('#progressBar').progressbar({ value: progress });
+        // 소수점 표시
+        // $('#progressNum').text(progress.toFixed(1)+'%');
+        // $('#progressBar').progressbar({ value: progress });
+        // 정수 표시
+        $('#progressNum').text(Math.round(progress) + '%');
+        $('#progressBar').progressbar({ value: Math.round(progress) });
 
         // 작업 진행상태 클릭
         $('.progress').on('click',function(){
