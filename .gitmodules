@@ -1,0 +1,15 @@
+[submodule "repos/newpeoplech-html"]
+	path = repos/newpeoplech-html
+	url = https://github.com/nugaBox/newpeoplech-html.git
+[submodule "repos/nkcc-html"]
+	path = repos/nkcc-html
+	url = https://github.com/nugaBox/nkcc-html.git
+[submodule "repos/univ-html"]
+	path = repos/univ-html
+	url = https://github.com/nugaBox/univ-html.git
+[submodule "repos/dimetime-html"]
+	path = repos/dimetime-html
+	url = https://github.com/nugaBox/dimetime-html.git
+[submodule "repos/changeok-html"]
+	path = repos/changeok-html
+	url = https://github.com/nugaBox/changeok-html.git
