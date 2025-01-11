@@ -5,8 +5,8 @@
 
 ## Directory
 
-- `assets` : 정적 파일
 - `dashboard` : 프로젝트별 작업현황
+- `public` : 정적 파일
 - `repos` : 레포지토리 소스 (서브모듈 방식)
 - `sites` : 레포지토리 링크 (심볼릭링크)
 
